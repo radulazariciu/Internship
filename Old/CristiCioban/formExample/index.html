@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Form Example</title>
+        <script>
+            function validateForm(){
+                var x = document.forms["myForm"]["q"].value;
+                if(x == null || x=="") {
+                    alert("You must search for something");
+                    return false;
+                }
+                else if(x.length <3){
+                    alert("The searched word must be at least 3 characters long");
+                    return false;
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <form name="myForm" action="https://www.google.ro/search" method="GET" accept-charset="UTF-8" onsubmit="return validateForm()">
+            Your text:<br/>
+            <input type="text" name="q" value="" />
+            <br/><br/>
+            <input type="submit" value="Submit"/>
+        </form>
+        
+    </body>
+</html>

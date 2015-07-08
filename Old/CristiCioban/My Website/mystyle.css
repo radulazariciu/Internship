@@ -1,0 +1,27 @@
+.center {
+    position: absolute;
+    left: 107px;
+    width: 800px;
+    
+}
+#center2{
+    width: 70%;
+}
+img{
+    width: 1000px;
+    height: 500px;
+}
+#bigTitle{
+    font-size: 50px;
+    margin-bottom: 5px;
+}
+#smallTitle{
+    font-size: 30px;
+    color: darkgrey;
+    margin-top: 20px;
+}
+#footNote {
+    margin-top: 50px;
+    font-size: 13px;
+    
+}
