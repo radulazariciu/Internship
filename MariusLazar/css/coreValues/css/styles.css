@@ -53,9 +53,8 @@ body{
 .sqare{
     height: 200px;
     width: 200px;
-    background-color: #6cd271;
+    background-color: rgba(108, 210, 113, 0.75);
     float:left;
-
     margin:10px;
     border-radius: 10px;
 }
@@ -63,11 +62,11 @@ body{
 .square-inside{
     position: relative;
     text-align: left;
-    margin:15px;
-    border:3px solid rgba(255, 255, 255, 0.75);
+    margin:10px;
+    border:3px solid rgba(255, 255, 255, 0.5);
     border-radius: 5px;
     height: 60%;
-    padding: 20px 10px;
+    padding: 27px 10px;
     
 }
 
