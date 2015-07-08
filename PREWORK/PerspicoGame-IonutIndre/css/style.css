@@ -1,0 +1,19 @@
+body {
+	background-color: black;
+	border: solid;
+}
+
+#containter{
+	border: solid;
+	border-color: red;
+	width: 400px;
+	height: 400px;
+}
+
+.canvas {
+	margin: 0px 0px 0px 0px;
+}
+
+#gameArea {
+	margin-left: 30%;
+}
