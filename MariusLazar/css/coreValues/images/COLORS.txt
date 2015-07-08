@@ -1,0 +1,12 @@
+VERDE
+#6cd271 - transparenta 75%
+MOV
+#3a2d79
+ALB
+#ffffff
+BODERE
+#ffffff - transparenta 50%
+
+FONT
+Montserrat
+Include from GOOGLE FONTS
