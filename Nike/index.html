@@ -8,8 +8,7 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/bootstrap.min.css">
-  
-  <link rel="stylesheet" href="css/slider.css">
+ 
   <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 
   <!-- jQuery library (served from Google) -->
@@ -22,6 +21,8 @@
 
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
+   <!-- slider stylesheet -->
+  <link rel="stylesheet" href="css/slider.css">
   <script src="js/index.js"></script>
 
 </head>
@@ -105,8 +106,8 @@
     <!-- slidebox    
         http://bxslider.com/examples/easing
       -->
-      <div>
-        <ul class="bxslider" id="homepageslider">
+      <div class="slider">
+        <ul class="bxslider sliderimg">
          <li><img src="images/homepage/federer.jpg" /></li>
          <li><img src="images/homepage/team.jpg" /></li>
          <li><img src="images/homepage/bballer.jpeg" /></li>
@@ -118,24 +119,37 @@
 
 
 
-      <div class="container">
+      <div class="container bottomcontainer">
        <!-- sub slider -->
         <div class="row">
-          <div class="col-md-4">
-            <h2>Heading</h2>
-            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-            <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          <div class="col-md-1"></div>
+          <div class="col-md-2">
+            <p><strong>GIFT CARDS</strong></p>
+            
+            <p><strong>FIND A STORE</strong></p>
+            
+            <p><strong>SIGN UP FOR EMAIL</strong></p>
+            
+            <p><strong>JOIN NIKE+</strong></p>
+           
           </div>
-          <div class="col-md-4">
-            <h2>Heading</h2>
-            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-            <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          <div class="col-md-2">
+            <p><strong>GET HELP</strong></p>
+            <p>Order Status</p>
+            <p>Shipping and Delivery</p>
+            <o>Returns</p>
+            <p>Payment Options</p>
+            <p>Contact Us</p> 
           </div>
-          <div class="col-md-4">
-            <h2>Heading</h2>
-            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-            <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          <div class="col-md-2">
+            <p><strong>NEWS</strong></p>
+            <p><strong>ABOUT NIKE</strong></p>
+            <p>Careers</p>
+            <p>Investors</p>
+            <p>Supply Chain</p>
+            <p>Nike Better Worls</p>
           </div>
+
         </div>
 
 
@@ -152,7 +166,7 @@
         <!-- footer-ul  -->
 
 
-        <footer>
+        <footer class="footer">
           <p>&copy; Company 2015</p>
         </footer>
       </div> <!-- /container -->        
@@ -169,9 +183,8 @@
      $(document).ready(function(){
         $('.bxslider').bxSlider({
             mode: 'fade',
-            captions: 'true',
-            auto: 'true',
-            autoControls: 'false',
+            auto: true ,
+            hideControlOnEnd: false
         });
       });
       </script>
