@@ -1,0 +1,87 @@
+.navbar {
+  position: relative;
+  margin-bottom: 0px;
+  min-height: 1px;
+}
+
+.navbar-default {
+  background-color: #000000;
+  border: 0;
+  height: 30px; 
+}
+
+.navbar-default .navbar-brand {
+  color: #FFF;
+  padding: 6px 12px;
+}
+
+.white {
+  color: #FFF;
+}
+
+.navbar-default .navbar-brand:hover {
+  color: #ff9900;
+}
+
+.navbar-header {
+  height: 30px; 
+}
+
+#topNavbarButtons1 {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+#topNavbarButtons2 {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+#topNavbarButtons3 {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+#topNavbarButtons4 {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+#topNavbarButtons5 {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+#topNavbarButtons6 {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+#topNavbarButtons7 {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+#topNavbarButtons8 {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+@media (min-width: 768px) {
+  .navbar {
+    border-radius: 0px;
+  }
+
+  .navbar-right {
+    float: right!important;
+    margin-right: 0px;
+  }
+}
