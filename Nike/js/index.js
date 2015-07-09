@@ -5,15 +5,14 @@ $(document).ready(function() {
 	helpButton.addEventListener("mouseout", helpMouseOut);
 
 	function helpHover() {
-		
-	}
-
+		 $("#topNavbar").find('.dropdown-menu').stop(false, false).delay(200).fadeIn(500);
+		}
 	function helpClick() {
-		location.href = "help.html"
+		//location.href = "help.html";		
 	}
 
-	function helpMouseOut() {
-		
+	function helpMouseOut() {		
+  		$("#topNavbar").find('.dropdown-menu').stop(false, false).delay(200).fadeOut(500);
 	}
 
 });
