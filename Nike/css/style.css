@@ -108,6 +108,10 @@
   left: auto;
   width: 220px;  
 }
+.dropdown-menu>li>a {
+  background-color: #424141;
+  color: #424141; 
+}
 
 .dropdown-menu::before, 
 .dropdown-menu::after {
