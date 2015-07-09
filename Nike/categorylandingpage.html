@@ -13,16 +13,10 @@
 
   <!-- jQuery library (served from Google) -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <!-- bxSlider Javascript file -->
-  <script src="js/jquery.bxslider.min.js"></script>
-  <!-- bxSlider CSS file -->
-  <link href="lib/jquery.bxslider.css" rel="stylesheet" />
-  
-
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-   <!-- slider stylesheet -->
-  <link rel="stylesheet" href="css/slider.css">
+  <link rel="stylesheet" type="text/css" href="css/categorystyle.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
   <script src="js/index.js"></script>
 
 </head>
@@ -94,6 +88,9 @@
 </nav>
 
 
+     <div class="jumbotron">
+
+     </div>
 
 
 
@@ -101,28 +98,15 @@
 
 
 
-
-    <!-- slidebox    
-        http://bxslider.com/examples/easing
-      -->
-      <div class="slider">
-        <ul class="bxslider sliderimg">
-         <li><img src="images/homepage/federer.jpg" /></li>
-         <li><img src="images/homepage/team.jpg" /></li>
-         <li><img src="images/homepage/bballer.jpeg" /></li>
-         <li><img src="images/homepage/nike-Ink.jpg" /></li>
-        </ul>
-      </div>
+     
 
 
 
-
-      <footer>
+      <!--fixed footer-->
       <div class="container bottomcontainer">
-       <!-- sub slider -->
+       
         <div class="row">
           <div class="col-md-1"></div>
-          
           <div class="col-md-2">
             <p><strong>GIFT CARDS</strong></p>
             
@@ -133,7 +117,6 @@
             <p><strong>JOIN NIKE+</strong></p>
            
           </div>
-          
           <div class="col-md-2">
             <p><strong>GET HELP</strong></p>
             <p>Order Status</p>
@@ -142,7 +125,6 @@
             <p>Payment Options</p>
             <p>Contact Us</p> 
           </div>
-          
           <div class="col-md-2">
             <p><strong>NEWS</strong></p>
             <p><strong>ABOUT NIKE</strong></p>
@@ -153,11 +135,14 @@
           </div>
 
         </div>
-      </div>
-      <hr/>
-    </footer>
-   
-                     
+
+  <!-- footer-ul  -->
+        <footer class="footer">
+          <p>&copy; Company 2015</p>
+        </footer>
+      </div> <!-- /container -->        
+
+
 
 
       <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
@@ -166,13 +151,7 @@
 
       
       <script>
-     $(document).ready(function(){
-        $('.bxslider').bxSlider({
-            mode: 'fade',
-            auto: true ,
-            hideControlOnEnd: false
-        });
-      });
+    
       </script>
 
     </body>
