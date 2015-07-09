@@ -4,6 +4,17 @@
   min-height: 1px;
 }
 
+#topNavbarButtons6 {
+  background-image: url("../img/emailSignUp.png");
+  padding: 51px;
+  margin-top: 3px;
+}
+
+#topNavbarButtons6:hover {
+  background-image: url("../img/emailSignUpOrange.png");
+  padding: 50px;
+  margin-top: 4px;
+}
 .navbar-default {
   background-color: #000000;
   border: 0;
@@ -15,8 +26,8 @@
   padding: 6px 12px;
 }
 
-.white {
-  color: #FFF;
+#topNavbarButtons1 {
+  color: #ff9900;
 }
 
 .navbar-default .navbar-brand:hover {
@@ -67,7 +78,11 @@
   font-weight: bold;
 }
 
-
+.dropdown-menu::before, 
+.dropdown-menu::after {
+    border: none;
+    content: none;
+}
 
 
 
