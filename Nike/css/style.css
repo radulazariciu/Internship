@@ -15,6 +15,32 @@
   padding: 50px;
   margin-top: 4px;
 }
+
+#topNavbarButtons3 {
+  background-image: url("../img/image.png");
+  background-repeat: no-repeat;  
+  margin-top: 5px;
+  max-width: 50px;
+}
+
+#topNavbarButtons3:hover{
+  background-image: url("../img/imageOrange.png");
+  margin-top: 5px;
+}
+
+#topNavbarButtons4 {
+  background-image: url("../img/hurley.png");
+  background-repeat: no-repeat;
+  min-width: 50px;
+  margin-top: 6px;
+  margin-left: 3px;
+}
+
+#topNavbarButtons4:hover {
+  background-image: url("../img/hurleyOrange.png");
+  margin-top: 5px;
+}
+
 .navbar-default {
   background-color: #000000;
   border: 0;
@@ -48,16 +74,6 @@
   font-weight: bold;
 }
 
-#topNavbarButtons3 {
-  font-size: 15px;
-  font-weight: bold;
-}
-
-#topNavbarButtons4 {
-  font-size: 15px;
-  font-weight: bold;
-}
-
 #topNavbarButtons5 {
   font-size: 15px;
   font-weight: bold;
@@ -78,13 +94,33 @@
   font-weight: bold;
 }
 
+.dropdown-menu {
+  background-color: #424141;
+  right: 0;
+  left: auto;
+  width: 220px;  
+}
+
+.dropdown-menu:hover {
+  background-color: #424141;
+  color: #424141;
+  right: 0;
+  left: auto;
+  width: 220px;  
+}
+
 .dropdown-menu::before, 
 .dropdown-menu::after {
     border: none;
     content: none;
 }
 
-
+pre {
+  background-color: #424141;
+  color: #FFF;
+  border: 0;
+  padding: 0;
+}
 
 
 
