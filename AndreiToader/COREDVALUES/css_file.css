@@ -67,6 +67,17 @@ div.div1
     height: 20px;
 }
 
+.smallImages {
+	clear: both;
+	max-width: 40px;
+	max-height: 40px;
+	position: absolute;
+	bottom: 15px;
+	right: 20px;
+	opacity: 1.00;
+	color: rgba(0, 0, 0, 1);
+}
+
 
 #img {
     position:aboslute;
@@ -81,6 +92,12 @@ div.div1
 	width: 450px;
 	
 					
+}
+
+.alignment {
+	width: 33%;
+	float: left;  
+	text-align: center;	
 }
 
 .topText {
@@ -106,3 +123,12 @@ div.div1
     bottom:0;
     right:0;
 }
+
+#theArrow { 
+ 	width: 50px; 
+    height: 50px; 
+ 	position: absolute; 
+ 	margin-top: -7px; 
+ 	left: -7px; 
+ } 
+
