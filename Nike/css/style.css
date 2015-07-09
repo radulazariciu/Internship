@@ -1,0 +1,29 @@
+.navbar {
+  position: relative;
+  margin-bottom: 0px;
+}
+
+.navbar-default {
+  background-color: #000000;
+  border: 0;
+}
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 768px) {
+  .navbar {
+    border-radius: 0px;
+  }
+
+  .navbar-right {
+    float: right!important;
+    margin-right: 0px;
+  }
+}
