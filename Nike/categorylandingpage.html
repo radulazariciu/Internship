@@ -13,10 +13,12 @@
 
   <!-- jQuery library (served from Google) -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link rel="stylesheet" type="text/css" href="css/categorystyle.css">
-  <link rel="stylesheet" type="text/css" href="css/main.css">
+
+  
+  <link rel="stylesheet" href="css/main.css">
   <script src="js/index.js"></script>
 
 </head>
@@ -31,21 +33,29 @@
     <div class="navbar-header">
       <a class="navbar-brand" href="#" id="topNavbarButtons1">SHOP</a>
       <a class="navbar-brand" href="#" id="topNavbarButtons2">NIKE+</a>
-      <a class="navbar-brand" href="#" id="topNavbarButtons3">Image</a>
-      <a class="navbar-brand" href="#" id="topNavbarButtons4">HURLEY</a>
+      <a class="navbar-brand" href="#" id="topNavbarButtons3"></a>
+      <a class="navbar-brand" href="#" id="topNavbarButtons4"></a>
     </div>      
-    <div class="nav navbar-nav navbar-right">      
+    <div class="nav navbar-nav navbar-right">  
+    <a class="navbar-brand" href="#" id="topNavbarButtons5">SITE FEEDBACK</a>    
       <a class="navbar-brand" href="#" id="topNavbarButtons6"></a>
       <a class="navbar-brand glyphicon glyphicon-shopping-cart" href="#" id="topNavbarButtons7" ></a>
       <a class="navbar-brand dropdown-toggle" href="#"  id="topNavbarButtons8" data-toggle="dropdown">HELP</a>  
-          <ul class="dropdown-menu" role="menu">
-          <li><a href="#">GET HELP</a></li>
-          <li class="divider"></li>
-          <li><a href="#">Shipping & Delivery</a></li>
-          <li><a href="#">Returns</a></li>
-          <li class="divider"></li>
-          <li><a href="#">About Us</a></li>
+          <ul class="dropdown-menu" role="menu" id="topDropDown">
+          <li><a class="tdOptions" href="#"><pre><h4>GET HELP</h4></pre></a></li>
+          <li><a class="tdOptions" href="#"><pre>Shipping & Delivery</pre></a></li>
+          <li><a class="tdOptions" href="#"><pre>Returns</pre></a></li>
+          <li><a class="tdOptions" href="#"><pre>Order Status</pre></a></li>
+          <li><a class="tdOptions" href="#"><pre>Size Charts</pre></a></li>
+          <li><a class="tdOptions" href="#"><pre>Launch Calendar</pre></a></li>
+          <li><a class="tdOptions" href="#"><pre>NIKEiD</pre></a></li>
+          <li><a class="tdOptions" href="#"><pre>Member Bedefits</pre></a></li>
+          <li><a class="tdOptions" href="#"><pre>Contact Us</pre></a></li>
+          <li><a class="tdOptions" href="#"><pre>Nike+</pre></a></li> 
+          <li><a href="#"><pre></pre></a></li>
+          <li><a href="#"><pre><h5>View All</h5></pre></a></li>
         </ul>
+
     </div>     
   </nav>
 </div>
@@ -88,9 +98,6 @@
 </nav>
 
 
-     <div class="jumbotron">
-
-     </div>
 
 
 
@@ -98,15 +105,20 @@
 
 
 
-     
+
+    <!-- slidebox    
+        http://bxslider.com/examples/easing
+      -->
+      
 
 
 
-      <!--fixed footer-->
+      <footer class="container-fluid">
       <div class="container bottomcontainer">
-       
+       <!-- sub slider -->
         <div class="row">
           <div class="col-md-1"></div>
+          
           <div class="col-md-2">
             <p><strong>GIFT CARDS</strong></p>
             
@@ -117,6 +129,7 @@
             <p><strong>JOIN NIKE+</strong></p>
            
           </div>
+          
           <div class="col-md-2">
             <p><strong>GET HELP</strong></p>
             <p>Order Status</p>
@@ -125,6 +138,7 @@
             <p>Payment Options</p>
             <p>Contact Us</p> 
           </div>
+          
           <div class="col-md-2">
             <p><strong>NEWS</strong></p>
             <p><strong>ABOUT NIKE</strong></p>
@@ -135,14 +149,22 @@
           </div>
 
         </div>
-
-  <!-- footer-ul  -->
-        <footer class="footer">
-          <p>&copy; Company 2015</p>
-        </footer>
-      </div> <!-- /container -->        
-
-
+        <hr/>
+        <div id="bottombox">
+         © 2015 Nike, Inc. All Rights Reserved  
+          <span id="footernote">
+           
+            <a href="#">Guides</a>
+            <a href="#">Terms of use</a>
+          <a href="#">Nike Privacy Policy</a>
+          
+          </span>
+        </div>
+      </div>
+      
+    </footer>
+   
+                     
 
 
       <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
@@ -151,7 +173,7 @@
 
       
       <script>
-    
+     
       </script>
 
     </body>
