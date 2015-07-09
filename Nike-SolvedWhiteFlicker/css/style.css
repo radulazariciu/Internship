@@ -1,0 +1,158 @@
+.navbar {
+  position: relative;
+  margin-bottom: 0px;
+  min-height: 1px;
+}
+
+#topNavbarButtons6 {
+  background-image: url("../img/emailSignUp.png");
+  padding: 51px;
+  margin-top: 3px;
+}
+
+#topNavbarButtons6:hover {
+  background-image: url("../img/emailSignUpOrange.png");
+  padding: 50px;
+  margin-top: 4px;
+}
+
+#topNavbarButtons3 {
+  background-image: url("../img/image.png");
+  background-repeat: no-repeat;  
+  margin-top: 5px;
+  max-width: 50px;
+}
+
+#topNavbarButtons3:hover{
+  background-image: url("../img/imageOrange.png");
+  margin-top: 5px;
+}
+
+#topNavbarButtons4 {
+  background-image: url("../img/hurley.png");
+  background-repeat: no-repeat;
+  min-width: 50px;
+  margin-top: 6px;
+  margin-left: 3px;
+}
+
+#topNavbarButtons4:hover {
+  background-image: url("../img/hurleyOrange.png");
+  margin-top: 5px;
+}
+
+.navbar-default {
+  background-color: #000000;
+  border: 0;
+  height: 30px; 
+}
+
+.navbar-default .navbar-brand {
+  color: #FFF;
+  padding: 6px 12px;
+}
+
+#topNavbarButtons1 {
+  color: #ff9900;
+}
+
+.navbar-default .navbar-brand:hover {
+  color: #ff9900;
+}
+
+.navbar-header {
+  height: 30px; 
+}
+
+#topNavbarButtons1 {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+#topNavbarButtons2 {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+#topNavbarButtons5 {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+#topNavbarButtons6 {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+#topNavbarButtons7 {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+#topNavbarButtons8 {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.dropdown-menu {
+  background-color: #424141;
+  right: 0;
+  left: auto;
+  width: 220px;  
+}
+
+.dropdown-menu:hover {
+  background-color: #424141;
+  right: 0;
+  left: auto;
+  width: 220px;  
+}
+
+.dropdown-menu::before, 
+.dropdown-menu::after {
+    border: none;
+    content: none;
+}
+
+pre {
+  background-color: #424141;
+  color: #FFF;
+  border: 0;
+  padding: 0;
+}
+
+pre:hover {
+  color: #ff9900;
+
+}
+
+
+
+@media (min-width: 768px) {
+  .navbar {
+    border-radius: 0px;
+  }
+
+  .navbar-right {
+    float: right!important;
+    margin-right: 0px;
+  }
+}
+
+
+.tdOptions {
+	background-color: #414141;
+}
+
+.sameBackground {
+  background-color: #414141;
+}
+
+
+.tdOptions:hover {
+  background-color: #414141;
+}
+
+.sameBackground:hover {
+  background-color: #414141;
+}
