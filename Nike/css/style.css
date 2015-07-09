@@ -8,9 +8,10 @@
   border: 0;
 }
 
-
-
-
+#topNavbar {
+  min-height: 10px;
+  max-height: 30px;
+}
 
 
 
