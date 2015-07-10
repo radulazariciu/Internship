@@ -1,0 +1,20 @@
+#topNavbarButtons6{
+	margin-top: 0px;
+}
+.small-top-text a{
+	text-decoration: underline;
+	color:black;
+	font-size: 12px;
+}
+.small-top-text {
+	padding-top: 10px;
+}
+.page-title,.number-of-items{
+	text-align: center;
+	font-weight: bold;
+	font-size: 25px;
+}
+.number-of-items{
+	font-size: 15px;
+	color: #888888 ;
+}
