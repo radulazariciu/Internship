@@ -1,4 +1,67 @@
 .underbar{
 	background-color: #E0E0E0 ;
 	height: 60px;
+	margin-bottom: 25px;
+}
+.gridcontainer{
+	margin: 0px;
+	padding: 0px;
+	position: relative;
+
+}
+.leftmenu{
+
+	background-color:  #E0E0E0 ;
+	font-family: Helvetica,Arial,sans-serif;
+	bottom: auto;
+	width: 220px;
+	position: relative;
+	left: 23px;
+	color: #000;
+}
+.left-selection{
+	border-radius: 2px;
+	background-size: auto auto;
+	background-color: #EEE;
+	padding: 20px 0px 16px;
+}
+.leftmenu header {
+	font-size: 0.975em;	
+	padding-top: 20px 0px 16px;
+	
+}
+
+
+#subtitle1{
+	font-size: 0.940em;	
+}
+.categorytitle{
+	font-size: 0.945em;	
+	color: black;
+	text-decoration: none;
+}
+.sub-menu-selector{
+	position: absolute;
+	right: 15px;
+}
+.facet-menu{
+	position: relative;
+	font-size: 15px;
+	display: block;
+	line-height: 1;
+	padding: 14px 13px 5px 20px;
+	color: #000;
+}
+.facet-menu .selected-facet{
+	color: #FFF;
+	cursor: default;
+	text-decoration: none;
+	font: 14px/40px Helvetica,Arial,sans-serif;
+	border-radius: 2px;
+	background: black;
+	display: block;
+	height: 40px;
+	margin: 0px 18px 10px;
+	padding: 0px 6px 0px 9px;
+	position: relative;
 }
