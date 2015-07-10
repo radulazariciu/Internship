@@ -1,0 +1,243 @@
+body {
+	margin: 0xp;
+}
+
+#wrapHeader {
+
+	background: #525252 none repeat scroll 0% 0%;
+	text-shadow: none;
+	width: auto;
+	height: 100px;
+	margin: 0xp;
+	position: relative;
+	line-height: 1.4;
+	font-family: "InterfaceR",Arial,Helvetica,sans-serif;
+}
+
+#firstHeader {
+	background: #F5F5F5 none repeat scroll 0% 0%;
+	height: 36px;
+	position: relative;
+	z-index: 100;
+	font-size: 16px;
+}
+
+#secondHeader {
+	/*border-bottom: 1px solid #DADEE2;*/
+	background-color: #525252;
+}
+
+#mobile-top-header {
+	max-width: 1216px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0px 0.5em;
+}
+
+navFirst ul {
+	margin: 0px;
+	padding: 0px;
+	float:right;
+}
+
+navFirst li {
+	float: left;
+	list-style-type: none;
+	height: 36px;
+	margin-left: 1.3em;
+}
+
+navFirst li>a {
+	color: #20A2FF;
+    line-height: 36px;
+    font-size: 0.875em;
+}
+
+navFirst a:link {
+    text-decoration: none;
+}
+
+navFirst a:visited {
+    text-decoration: none;
+}
+
+navFirst a:hover {
+    text-decoration: underline;
+}
+
+navFirst a:active {
+    text-decoration: underline;
+}
+
+navFirst li>span {
+	color: #20A2FF;
+	line-height: 36px;
+	font-size: 0.875em;
+}
+
+#loginPicture {
+	width: 15px;
+	height: 15px;
+	position: relative;
+	top: 4px;
+}
+
+.loginAccout:hover {
+	background-color: #20A2FF;
+	text-decoration: underline;
+}
+
+navFirst i {
+	color:#20A2FF;
+	
+}
+
+#backetIcon {
+	position: relative;
+	top: 7px;
+	color: white;
+}
+
+#basketField {
+
+	background-color:  #20A2FF;
+	padding: 0.5px 15px 0px 15px;
+}
+
+#loginLI {
+	padding: 0px 20px 0px 10px;
+}
+
+#mobileBottomHeader {
+	max-width: 1216px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0px 0.5em;
+}
+
+#logoSamsung {
+	max-width: 186px;
+	vertical-align: middle;
+	position:relative;
+	top:15px;
+}
+
+#bottomLogo {
+	color: #FFF;
+	text-transform: uppercase;
+	padding: 0px;
+	font-size: 18px;
+	display: table-cell;
+	height: 50px;
+	vertical-align: middle;
+	padding: 0px 0.3em;
+	border-left: 0px none;
+	padding-left: 0px;
+	min-width: 186px;
+	/*Because of the margin top of nav menu*/
+	position: relative;
+	top: -22px;
+}
+
+nav ul ul {
+	display: none;
+}
+
+nav li {
+
+}
+
+nav ul li:hover > ul {
+	display: block;
+}
+
+nav ul {
+	background: #525252; 
+	padding: 0px 20px;
+	border-radius: 10px;  
+	list-style: none;
+	/*Is covering the other menu*/
+	position: relative;
+	top: 22px;
+	display: inline-table;
+}
+
+nav ul:after {
+	content: ""; clear: both; display: block;
+}
+
+nav ul li {
+	float: left;
+}
+
+nav ul li:hover a {
+	color: white;
+}
+	
+nav ul li a {
+	display: block; padding: 25px 40px;
+	color: white; text-decoration: none;
+}
+
+nav ul ul {
+	background: #5f6975; border-radius: 0px; padding: 0;
+	position: absolute; top: 100%;
+}
+	
+nav ul ul li {
+	float: none; 
+	border-top: 1px solid #6b727c;
+	border-bottom: 1px solid #575f6a;
+	position: relative;
+}
+
+nav ul ul li a {
+	padding: 15px 40px;
+	color: #fff;
+}	
+
+nav ul ul li a:hover {
+	background: #4b545f;
+}
+
+nav ul ul ul {
+	position: absolute; 
+	left: 100%;
+	top:0;
+}
+
+nav {
+	margin-left: 187px;
+	margin-top: -97px;
+}
+
+
+search input {
+	background-color: #f5f5f5; 
+    font-size: 20px; 
+    border: 0px; 
+    text-transform: uppercase; 
+    margin-top: 0px; 
+    color: #999; 
+    letter-spacing: 1px; 
+    padding: 4px 8px;
+    font-family: calibri, helvetica, arial;
+    position: relative;
+    left:45%;
+}
+
+#wrapperUL {
+	position: relative;
+	left: 10%;
+}
+
+#searchBox {
+	margin-top: -36px;
+}
+
+#milkMusic {
+	margin-top: -33px;
+	position: relative;
+	top: 20px;
+	left: -60px;
+}
