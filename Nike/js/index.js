@@ -7,6 +7,11 @@ $(document).ready(function() {
 	helpButton.addEventListener("mouseout", helpMouseOut);
 	topDDL.addEventListener("mouseover", topDDLover);
 	topDDL.addEventListener("mouseout", topDDLoverOut);
+	$('.bxslider').bxSlider({
+            mode: 'fade',
+            auto: true ,
+            hideControlOnEnd: false
+        });
 
 	function helpHover() {	
 		$("#topNavbar").find('.dropdown-menu').stop(false, false).delay(0).fadeIn(0);
@@ -38,4 +43,5 @@ $(document).ready(function() {
 	function topDDLoverOut() {
 		$("#topNavbar").find('.dropdown-menu').stop(false, false).delay(2000).fadeOut(0);
 	}
+
 });
