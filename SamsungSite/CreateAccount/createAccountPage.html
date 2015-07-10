@@ -3,6 +3,7 @@
 <head>
 	<title>Create Account</title>
 	<link rel="stylesheet" href="css/createAccountStyle.css">
+	<script type="text/javascript" src="js/createAccount.js"></script>
 </head>
 <body>
 	
@@ -24,7 +25,7 @@
 		<label>Date Of Birth</label>
 
 		<!-- Month dropdown -->
-		<select name="month" id="month" onchange="" size="1">
+		<select id="monthPick"name="month" id="month" onchange="" size="1">
 		    <option value="01">January</option>
 		    <option value="02">February</option>
 		    <option value="03">March</option>
@@ -40,7 +41,7 @@
 		</select>
 
 		<!-- Day dropdown -->
-		<select name="day" id="day" onchange="" size="1">
+		<select id="dayPick" name="day" id="day" onchange="" size="1">
 		    <option value="01">01</option>
 		    <option value="02">02</option>
 		    <option value="03">03</option>
@@ -74,7 +75,7 @@
 		    <option value="31">31</option>
 		</select>
 
-	    <select id="birthyear" name="birthyear">
+	    <select id="yearPick" id="birthyear" name="birthyear">
 	    	<option value="2007">2007</option>
 	    	<option value="2006">2006</option>
 	    	<option value="2005">2005</option>
@@ -187,7 +188,7 @@
 	    <br>
 
 		<label>Email Address</label>
-		<input id="emailAddress" class="block-level" type="text" value="Email Address" maxlength="150" tabindex="1"><br>
+		<input id="emailAddress" name="email" class="block-level" type="text" value="Email Address" maxlength="150" tabindex="1"><br>
 		<label>Confirm Mail</label>
 		<input id="emailConfirm" class="block-level" type="text" value="Confirm Mail" maxlength="150" tabindex="1"><br>
 		<label>Cell Phone</label>
@@ -200,14 +201,14 @@
 		<input id="passwordConfirmForm" class="block-level" type="text" value="Confirm Password" maxlength="150" tabindex="1"><br>
 		<p class="smallInfo">Password is case-sensitive and Must be at least 10 characters and use a combination of letters and numbers.</p>
 		<form action="">
-			<input type="checkbox" >Please send me information and special offers on innovative Samsung products.<br>
+			<input id="checkForm" type="checkbox" >Please send me information and special offers on innovative Samsung products.<br>
 		</form>
 	</div>
 
 	<div id="bottomCreateAccount">
 		<p>By submitting this form you agree to our</p>
 		<a href="termAndCond.html">Terms & Conditions.</a><br>
-		 <button type="button"> Submit</button> 
+		 <button id="submitData"type="button"> Submit</button> 
 		 <button type="button">Cancel</button> 
 	</div>
 
