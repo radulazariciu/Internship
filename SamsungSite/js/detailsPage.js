@@ -1,8 +1,9 @@
 document.addEventListener("DOMContentLoaded", function(event) { 
 
-makeGray();
+//makeGray();
 
     var overviewID = document.getElementById("overviewID");
+    overviewID.style.background = 'gray';
     var aboutID = document.getElementById("aboutID");
     var specsID = document.getElementById("specsID");
     var reviewsID = document.getElementById("reviewsID");
@@ -22,21 +23,16 @@ function checklist(e) {
     console.log(Item);
     var elemItem = document.getElementById(Item);
     console.log(elemItem);
-    elemItem.style.background = '#ffffff !important';
-    
+
+    overviewID.style.background = 'white';
+    aboutID.style.background = 'white';
+    specsID.style.background = 'white';
+    reviewsID.style.background = 'white';
+    accessoriesID.style.background = 'white';
+    manualID.style.background = 'white';
+
+    elemItem.style.background = 'gray';
    
 };
-
-function makeGray()
-{
-    var list = document.getElementById("menuList").getElementsByTagName('li');
-    for(i=0; i<list.length; i++)
-    {
-            list[i].style.background = '#ffffff';
-    }
-       
-    list[0].style.background = 'gray';
-
-}
 
 });
