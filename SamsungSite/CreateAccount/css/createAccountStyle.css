@@ -82,3 +82,19 @@ button {
 #middleCreateAccount {
 	margin-left: 5%;
 }
+
+.button-secondary{
+	width: 150px;
+	height: 50px;
+	padding:5px 10px;
+	background-color: transparent;
+	border: 3px solid #009CFF;
+	border-radius: 5px;
+	color:#009CFF;
+	margin:15px;
+}
+
+.button-secondary:hover{
+	background-color: #009CFF !important;
+	color:white !important;
+}
