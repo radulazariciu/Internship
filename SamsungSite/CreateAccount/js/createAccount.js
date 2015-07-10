@@ -50,8 +50,43 @@ document.addEventListener("DOMContentLoaded", function(event) {
 		var selection= e.target.id;
 		switch (selection) {
 		case "firstName":
-			if (firstNameInput.value = "") {firstNameInput.value = "First Name";}
-		//	else {firstNameInput.value = "";}
+			if(firstNameInput.value=="") firstNameInput.value = "First Name";
+			else firstNameInput.value = "";
+		break;
+
+		case "secondName":
+			if(secondNameInput.value=="") secondNameInput.value = "Second Name";
+			else secondNameInput.value = "";
+		break;
+
+		case "emailAddress":
+			if(emailAddressInput.value=="") emailAddressInput.value = "Email Adress";
+			else emailAddressInput.value = "";
+		break;
+
+		case "emailConfirm":
+			if(emailConfirmInput.value=="") emailConfirmInput.value = "Confirm Email";
+			else emailConfirmInput.value = "";
+		break;
+
+		case "cellPhone":
+			if(cellPhoneInput.value=="") cellPhoneInput.value = "+407XXXXXXXX";
+			else cellPhoneInput.value = "";
+		break;
+
+		case "zipForm":
+			if(zipFormInput.value=="") zipFormInput.value = "Zip Code";
+			else zipFormInput.value = "";
+		break;
+
+		case "passwordForm":
+			if(passwordFormInput.value=="") passwordFormInput.value = "Password";
+			else passwordFormInput.value = "";
+		break;
+
+		case "passwordConfirmForm":
+			if(passwordConfirmInput.value=="") passwordConfirmInput.value = "Confirm Password";
+			else passwordConfirmInput.value = "";
 		break;
 		}
 	}
