@@ -125,7 +125,6 @@ pre {
 
 pre:hover {
   color: #ff9900;
-
 }
 
 
@@ -171,13 +170,8 @@ pre:hover {
   background-color: #fff;  
 }
 
-.container-fluid {
-  
-}
-
 #bs-example-navbar-collapse-1 {  
-  height: 50px !important;
-  
+  height: 50px !important;  
 }
 
 .nav .navbar-nav .navbar-right {
@@ -190,7 +184,33 @@ pre:hover {
   width: 500px;
 }
 
-.dropdown {   
-  right: 0px;
+.navbar-form .form-control {
+    display: inline-block;
+    width: 301px;
+    vertical-align: middle;    
 }
 
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus,
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  background-color: #fff;  
+  color: #ff9900; 
+}
+
+#nikeLogo {
+  background-image: url("../img/logo.png");
+  background-repeat: no-repeat; 
+  height: 71px;
+  width: 70px;
+  vertical-align: middle; 
+}
+
+#nikeLogo:hover {
+  background-image: url("../img/logoOrange.png");
+  background-repeat: no-repeat; 
+  height: 71px;
+  width: 70px;
+  vertical-align: middle;
+}
