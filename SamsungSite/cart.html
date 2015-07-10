@@ -1,0 +1,149 @@
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/cart-styles.css"/>
+	<link rel="stylesheet" type="text/css" href="css/footer-styles.css"/>
+	<link rel="stylesheet" type="text/css" href="css/other.css"/>
+	<link rel="stylesheet" href="css/headerStyle.css" type="text/css">
+	<link rel="stylesheet" href="font-awesome-4.3.0/css/font-awesome.min.css">
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	<script src="js/headerFunctions.js"></script>
+</head>
+<body >
+<div id="wrapHeader">
+		<div id="firstHeader">
+			<div id="mobile-top-header"> 
+				<navFirst>
+					<ul>
+						<li>
+							<img src="img/oo_icon.gif" title="Feedback" border="0">
+							<a href="#" id="oo-feedback">Feedback</a>
+						</li>
+						<li>
+							<a href="http://www.samsung.com/us/business/" >For Business</a>
+						</li>
+						<li>
+							<a href="http://www.samsung.com/us/aboutsamsung">About Us</a>
+						</li>
+						<li id="loginLI"class="loginAccount">
+							<i id="loginIcon" class="fa fa-user fa-lg"></i>
+							<span id="loginText" class="loginAccount">Login</span>
+						</li>
+						<li id="basketField">
+							<i id="backetIcon" class="fa fa-cart-arrow-down fa-lg"></i>
+						</li>
+					</ul>
+				</navFirst>
+			</div>
+		</div>
+		<div id="secondHeader">	
+			<div id="mobile-bottom-header">
+				<ul id="wrapperUL">
+					<li id="bottomLogo">
+						<img id="logoSamsung" src="img/samsung-logo.png" title="Feedback" border="0">
+					</li>
+					<nav>
+						<ul>
+							<li><a href="#">DISCOVER</a>
+								<ul>
+									<li><a href="#">Guide To Galaxy</a>
+										<ul>
+											<li><a href="#">Explore 4k SUHD TV</a></li>
+											<li><a href="#">A new Era of Computing</a></li>
+										</ul>
+									</li>
+									<li><a href="#">Illustrator</a></li>
+									<li><a href="#">Web Design</a></li>
+								</ul>
+							</li>
+							<li><a href="#">SHOP PRODUCTS</a></li>
+							<li><a href="#">APPS</a></li>
+							<li><a href="#">OWNERS & SUPPORT</a></li>
+							<!--
+							<li id="milkMusic">
+								<a href="#"><img src="img/milk-navigation.png" title="Feedback" border="0">MILK MUSIC</a>
+							</li>
+							-->
+						</ul>
+						<search>
+							<form id="searchBox" method="get" action="http://www.google.com/search">
+   								<input id="search" name="q"type="text" placeholder="Search">
+								<input id="submit" type="submit" value="Search">
+							</form>
+						</search>
+					</nav>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="main-container-cart">
+		<div class="top-cart">
+			<h1 class="float-left">Shopping cart</h1>
+			<img src="images/help.png" alt="samsung help"/ class="float-right">
+		</div>
+
+		<table class="cart-table">
+			<thead>
+				<tr>
+					<th class="item-col">ITEM</th>
+					<th>QUANTITY</th>
+					<th>PRICE</th>
+					<th>TOTAL</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="item-col">
+						<img src="images/samsung_s6.png" alt="samsung"/>
+						Samsung Galaxy S6
+					</td>
+					<td>
+						<div class="min-box">1</div>
+						<button class="button-tertiary">Remove</button>
+					</td>
+					<td>
+						$29.99
+					</td>
+					<td>
+						$29.99
+					</td>	
+				</tr>
+
+				<tr>
+					<td class="item-col">
+						<img src="images/samsung_s6.png" alt="samsung"/>
+						Samsung Galaxy S6
+					</td>
+					<td>
+						<div class="min-box">1</div>
+						<button class="button-tertiary">Remove</button>
+					</td>
+					<td>
+						$29.99
+					</td>
+					<td>
+						$29.99
+					</td>	
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<th>&nbsp;</th>
+					<th>&nbsp;</th>
+					<th>Sub-total:</th>
+					<th id="sub-total">$29.99</th>
+				</tr>
+			</tfoot>
+		</table>
+		<div class="bottom-cart">
+
+			<img src="images/shopping_cart.png" alt="shopping"/ class="float-left">
+
+			<button class="button-secondary float-right">Continue Shopping</button>
+			<button class="button-secondary float-right">CHECKOUT</button>
+
+		</div>
+
+	</div>
+</body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Details page</title>
+        <meta charset = "utf-8">
+        <link href = "css/detailsStyle.css" rel = "stylesheet" type = "text/css">
+        <link rel="stylesheet" href="css/headerStyle.css">
+         <link rel="stylesheet" href="font-awesome-4.3.0/css/font-awesome.min.css">
+       <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+         <script src="js/headerFunctions.js"></script>
+        <script src = "js/detailsPage.js"></script>
+    </head>
+    <body><div id="wrapHeader">
+        <div id="firstHeader">
+            <div id="mobile-top-header"> 
+                <navFirst>
+                    <ul>
+                        <li>
+                            <img src="img/oo_icon.gif" title="Feedback" border="0">
+                            <a href="#" id="oo-feedback">Feedback</a>
+                        </li>
+                        <li>
+                            <a href="http://www.samsung.com/us/business/" >For Business</a>
+                        </li>
+                        <li>
+                            <a href="http://www.samsung.com/us/aboutsamsung">About Us</a>
+                        </li>
+                        <li id="loginLI"class="loginAccount">
+                            <i id="loginIcon" class="fa fa-user fa-lg"></i>
+                            <span id="loginText" class="loginAccount">Login</span>
+                        </li>
+                        <li id="basketField">
+                            <i id="backetIcon" class="fa fa-cart-arrow-down fa-lg"></i>
+                        </li>
+                    </ul>
+                </navFirst>
+            </div>
+        </div>
+        <div id="secondHeader"> 
+            <div id="mobile-bottom-header">
+                <ul id="wrapperUL">
+                    <li id="bottomLogo">
+                        <img id="logoSamsung" src="img/samsung-logo.png" title="Feedback" border="0">
+                    </li>
+                    <nav>
+                        <ul>
+                            <li><a href="#">DISCOVER</a>
+                                <ul>
+                                    <li><a href="#">Guide To Galaxy</a>
+                                        <ul>
+                                            <li><a href="#">Explore 4k SUHD TV</a></li>
+                                            <li><a href="#">A new Era of Computing</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Illustrator</a></li>
+                                    <li><a href="#">Web Design</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">SHOP PRODUCTS</a></li>
+                            <li><a href="#">APPS</a></li>
+                            <li><a href="#">OWNERS & SUPPORT</a></li>
+                            <!--
+                            <li id="milkMusic">
+                                <a href="#"><img src="img/milk-navigation.png" title="Feedback" border="0">MILK MUSIC</a>
+                            </li>
+                            -->
+                        </ul>
+                        <search>
+                            <form id="searchBox" method="get" action="http://www.google.com/search">
+                                <input id="search" name="q"type="text" placeholder="Search">
+                                <input id="submit" type="submit" value="Search">
+                            </form>
+                        </search>
+                    </nav>
+                </ul>
+            </div>
+        </div>
+    </div>
+        <div class  = "divWrapper">
+        <div class = "divInline" id = "menuList" onload = "makeGray()">
+            <ul>
+                <li class = "leftBorder" onclick = "checklist(this)">OVERVIEW</li>
+                <li class = "leftBorder" onclick = "checklist(this)">ABOUT</li>
+                <li class = "leftBorder" onclick = "checklist(this)">SPECS</li>
+                <li class = "leftBorder" onclick = "checklist(this)">REVIEWS</li>
+                <li class = "leftBorder" onclick = "checklist(this)">ACCESSORIES</li>
+                <li class = "leftBorder" onclick = "checklist(this)">MANUAL</li>
+            </ul>
+        </div>
+        <div class = "divInline">
+            <div class = "divInline">
+                <img src = "images/samsung2.jpg" width = "800px" height = 200px/>
+            </div>
+            <div class ="divInlineRight">
+                <div class = "subdivProductDetails">
+                <div class = "productTitle">
+                    <h1>Samsung Galaxy s6 edge,32GB(Sprint),Gold platinium</h1>
+                </div>
+                <div class = "review">
+                    <div class = "reviewImages">
+                        <img src = "images/star.jpg"/>
+                    </div>
+                    <div class = "reviewImages">
+                        <img src = "images/star.jpg"/>
+                    </div>
+                    <div class = "reviewImages">
+                        <img src = "images/star.jpg"/>
+                    </div>
+                    <div class = "reviewImages">
+                        <img src = "images/star.jpg"/>
+                    </div>
+                    <div class = "reviewImages">
+                        <img src = "images/star.jpg">
+                    </div>
+                </div>
+                <div class = "review">
+                    <p class = "writeReview">(286) 
+                    </p>
+                </div>
+                <div class = "review">
+                    <p class = "writeReview">Write a review</p>
+                </div>
+                <div class ="productDetails">
+                    <div class = "color">
+                        <div class = "colorName">
+                            COLOR:
+                        </div>
+                        <div class = "colorsImages">
+                            <img src = "images/blackColor.png">
+                        </div>
+                        <div class = "colorsImages">
+                            <img src = "images/yellowColor%5D.png">
+                        </div>
+                    </div>
+                    <div class = "internalMemory">
+                        <div class = "internalMemoryName">
+                            <p>INTERNAL MEMORY:</p>
+                        </div>
+                        <div class = "internalMemoryOptions">
+                            <p>32GB</p>
+                        </div>
+                    </div>
+                    <div class = "informations">
+                        <ul type = "disc">
+                            <li>Reimagined design inside and out</li>
+                            <li>Innovative Dual-Edge Screen</li>
+                            <li>16MP-rear-facing camera</li>
+                        </ul>
+                        <p>Price will vary by retailer. To see priceing from authorized Samsung retailers,click the link bellow</p>
+                        <table border = "0">
+                            <tr>
+                                <td class = "cellBottom">
+                                    <button type = "button" id = "orderButton" class ="button-secondary">Order</button>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+    </body>
+</html>

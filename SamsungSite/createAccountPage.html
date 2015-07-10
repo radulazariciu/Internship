@@ -2,11 +2,81 @@
 <html>
 <head>
 	<title>Create Account</title>
+	
+	<link rel="stylesheet" href="css/headerStyle.css">
 	<link rel="stylesheet" href="css/createAccountStyle.css">
+	<link rel="stylesheet" href="font-awesome-4.3.0/css/font-awesome.min.css">
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	<script src="js/headerFunctions.js"></script>
 	<script type="text/javascript" src="js/createAccount.js"></script>
 </head>
-<body>
-	
+<body style="margin:0px;">
+	<div id="wrapHeader">
+		<div id="firstHeader">
+			<div id="mobile-top-header"> 
+				<navFirst>
+					<ul>
+						<li>
+							<img src="img/oo_icon.gif" title="Feedback" border="0">
+							<a href="#" id="oo-feedback">Feedback</a>
+						</li>
+						<li>
+							<a href="http://www.samsung.com/us/business/" >For Business</a>
+						</li>
+						<li>
+							<a href="http://www.samsung.com/us/aboutsamsung">About Us</a>
+						</li>
+						<li id="loginLI"class="loginAccount">
+							<i id="loginIcon" class="fa fa-user fa-lg"></i>
+							<span id="loginText" class="loginAccount">Login</span>
+						</li>
+						<li id="basketField">
+							<i id="backetIcon" class="fa fa-cart-arrow-down fa-lg"></i>
+						</li>
+					</ul>
+				</navFirst>
+			</div>
+		</div>
+		<div id="secondHeader">	
+			<div id="mobile-bottom-header">
+				<ul id="wrapperUL">
+					<li id="bottomLogo">
+						<img id="logoSamsung" src="img/samsung-logo.png" title="Feedback" border="0">
+					</li>
+					<nav>
+						<ul>
+							<li><a href="#">DISCOVER</a>
+								<ul>
+									<li><a href="#">Guide To Galaxy</a>
+										<ul>
+											<li><a href="#">Explore 4k SUHD TV</a></li>
+											<li><a href="#">A new Era of Computing</a></li>
+										</ul>
+									</li>
+									<li><a href="#">Illustrator</a></li>
+									<li><a href="#">Web Design</a></li>
+								</ul>
+							</li>
+							<li><a href="#">SHOP PRODUCTS</a></li>
+							<li><a href="#">APPS</a></li>
+							<li><a href="#">OWNERS & SUPPORT</a></li>
+							<!--
+							<li id="milkMusic">
+								<a href="#"><img src="img/milk-navigation.png" title="Feedback" border="0">MILK MUSIC</a>
+							</li>
+							-->
+						</ul>
+						<search>
+							<form id="searchBox" method="get" action="http://www.google.com/search">
+   								<input class="inputFeel" id="search" name="q"type="text" placeholder="Search">
+								<input  class="inputFeel"  id="submit" type="submit" value="Search">
+							</form>
+						</search>
+					</nav>
+				</ul>
+			</div>
+		</div>
+	</div>
 	<div id="topCreateAccount">
 		<h2 class="topDivElem">CREATE A SAMSUNG ACCOUNT</h2>
 		<div id="floatLeftLogIn">
@@ -19,8 +89,8 @@
 		<label class="smallInfo">Required *</label>
 		<br>
 		<label>Your Name</label>
-		<input id="firstName" class="block-level" type="text" value="First Name" maxlength="150" tabindex="1">
-		<input id="secondName" class="block-level" type="text" value="Second Name" maxlength="150" tabindex="1"><br>
+		<input class="inputFeel"  id="firstName" class="block-level" type="text" value="First Name" maxlength="150" tabindex="1">
+		<input  class="inputFeel" id="secondName" class="block-level" type="text" value="Second Name" maxlength="150" tabindex="1"><br>
 
 		<label>Date Of Birth</label>
 
@@ -188,20 +258,20 @@
 	    <br>
 
 		<label>Email Address</label>
-		<input id="emailAddress" name="email" class="block-level" type="text" value="Email Address" maxlength="150" tabindex="1"><br>
+		<input  class="inputFeel" id="emailAddress" name="email" class="block-level" type="text" value="Email Address" maxlength="150" tabindex="1"><br>
 		<label>Confirm Mail</label>
-		<input id="emailConfirm" class="block-level" type="text" value="Confirm Mail" maxlength="150" tabindex="1"><br>
+		<input  class="inputFeel" id="emailConfirm" class="block-level" type="text" value="Confirm Mail" maxlength="150" tabindex="1"><br>
 		<label>Cell Phone</label>
-	    <input id="cellPhone" class="block-level" type="text" value="+407XXXXXXXX" maxlength="150" tabindex="1"><br>
+	    <input class="inputFeel"  id="cellPhone" class="block-level" type="text" value="+407XXXXXXXX" maxlength="150" tabindex="1"><br>
 	    <label>Zip Code</label>
-		<input id="zipForm" class="block-level" type="text" value="Zip Code" maxlength="150" tabindex="1"><br>
+		<input  class="inputFeel" id="zipForm" class="block-level" type="text" value="Zip Code" maxlength="150" tabindex="1"><br>
 		<label>Password</label>
-		<input id="passwordForm" class="block-level" type="text" value="Password" maxlength="150" tabindex="1"><br>
+		<input  class="inputFeel" id="passwordForm" class="block-level" type="text" value="Password" maxlength="150" tabindex="1"><br>
 		<label>Confirm Password</label>
-		<input id="passwordConfirmForm" class="block-level" type="text" value="Confirm Password" maxlength="150" tabindex="1"><br>
+		<input  class="inputFeel" id="passwordConfirmForm" class="block-level" type="text" value="Confirm Password" maxlength="150" tabindex="1"><br>
 		<p class="smallInfo">Password is case-sensitive and Must be at least 10 characters and use a combination of letters and numbers.</p>
 		<form action="">
-			<input id="checkForm" type="checkbox" >Please send me information and special offers on innovative Samsung products.<br>
+			<input class="inputFeel"  id="checkForm" type="checkbox" >Please send me information and special offers on innovative Samsung products.<br>
 		</form>
 	</div>
 
