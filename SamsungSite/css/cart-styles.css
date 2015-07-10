@@ -1,4 +1,6 @@
-
+body {
+ margin:0px !important;
+}
 .main-container-cart{
 	position: relative;
 	width:960px;
@@ -53,4 +55,11 @@
 .bottom-cart{
 	margin: 40px 0;
 	height: 100px;
+}
+
+
+
+#search , #submit {
+	position: relative !important;
+	top: 5px !important;
 }

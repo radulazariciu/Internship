@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Details page</title>
+        <meta charset = "utf-8">
+        <link href = "details-styles.css" rel = "stylesheet" type = "text/css">
+        <script src = "details_page.js"></script>
+    </head>
+    <body>
+        <div class  = "divWrapper">
+        <div class = "divInline" id = "menuList" onload = "makeGray()">
+            <ul>
+                <li class = "leftBorder" onclick = "checklist(this)">OVERVIEW</li>
+                <li class = "leftBorder" onclick = "checklist(this)">ABOUT</li>
+                <li class = "leftBorder" onclick = "checklist(this)">SPECS</li>
+                <li class = "leftBorder" onclick = "checklist(this)">REVIEWS</li>
+                <li class = "leftBorder" onclick = "checklist(this)">ACCESSORIES</li>
+                <li class = "leftBorder" onclick = "checklist(this)">MANUAL</li>
+            </ul>
+        </div>
+        <div class = "divInline">
+            <div class = "divInline">
+                <img src = "images/samsung2.jpg" width = "800px" height = 200px/>
+            </div>
+            <div class ="divInlineRight">
+                <div class = "subdivProductDetails">
+                <div class = "productTitle">
+                    <h1>Samsung Galaxy s6 edge,32GB(Sprint),Gold platinium</h1>
+                </div>
+                <div class = "review">
+                    <div class = "reviewImages">
+                        <img src = "images/star.jpg"/>
+                    </div>
+                    <div class = "reviewImages">
+                        <img src = "images/star.jpg"/>
+                    </div>
+                    <div class = "reviewImages">
+                        <img src = "images/star.jpg"/>
+                    </div>
+                    <div class = "reviewImages">
+                        <img src = "images/star.jpg"/>
+                    </div>
+                    <div class = "reviewImages">
+                        <img src = "images/star.jpg">
+                    </div>
+                </div>
+                <div class = "review">
+                    <p class = "writeReview">(286) 
+                    </p>
+                </div>
+                <div class = "review">
+                    <p class = "writeReview">Write a review</p>
+                </div>
+                <div class ="productDetails">
+                    <div class = "color">
+                        <div class = "colorName">
+                            COLOR:
+                        </div>
+                        <div class = "colorsImages">
+                            <img src = "images/blackColor.png">
+                        </div>
+                        <div class = "colorsImages">
+                            <img src = "images/yellowColor%5D.png">
+                        </div>
+                    </div>
+                    <div class = "internalMemory">
+                        <div class = "internalMemoryName">
+                            <p>INTERNAL MEMORY:</p>
+                        </div>
+                        <div class = "internalMemoryOptions">
+                            <p>32GB</p>
+                        </div>
+                    </div>
+                    <div class = "informations">
+                        <ul type = "disc">
+                            <li>Reimagined design inside and out</li>
+                            <li>Innovative Dual-Edge Screen</li>
+                            <li>16MP-rear-facing camera</li>
+                        </ul>
+                        <p>Price will vary by retailer. To see priceing from authorized Samsung retailers,click the link bellow</p>
+                        <table border = "0">
+                            <tr>
+                                <td class = "cellBottom">
+                                    <button type = "button" id = "orderButton" class="orderButton">Order</button>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+    </body>
+</html>

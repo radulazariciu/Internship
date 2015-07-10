@@ -24,7 +24,7 @@ label {
 	margin-bottom: 20px;
 }
 
-input {
+.inputFeel {
 	border: 1px solid #DADEE2;
 	font-family: InterfaceR,Arial,Helvetica,San-Serif;
 	font-size: 0.875em;

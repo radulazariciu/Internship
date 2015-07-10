@@ -23,6 +23,7 @@
 	border-radius: 5px;
 	color:#009CFF;
 	margin:15px;
+	font-weight: bold;
 }
 
 .button-secondary:hover{

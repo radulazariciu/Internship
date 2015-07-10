@@ -49,7 +49,8 @@ table {
 	position:relative;
 	color:white;
     background: linear-gradient(0deg, white, #577BD9 80%) no-repeat;
-    height: 740px;
+    height: 700px;
+    overflow: hidden;
 }
 
 .main > h1{
@@ -61,13 +62,13 @@ table {
 .main-container{
 	position: relative;
 	width:960px;
-	height: 740px;
+	height: 700px;
 	margin: 50px auto;
 }
 
 #main-announce1{
 	position: absolute;
-	top:20%;
+	top:25%;
 	left:-10%;
 	border:7px solid rgba(255,255,255,0.8);
 	width: 300px;
@@ -78,7 +79,7 @@ table {
 #main-announce1-img{
 	position: absolute;
 	left:-200px;
-	top:0;
+	top:-120px;
 	bottom: 0;
 	margin: auto 0;
 }
@@ -117,7 +118,7 @@ table {
 
 #main-announce4{
 	position: absolute;
-	bottom:-10%;
+	bottom:-15%;
 	left:0;
 	right: 0;
 	margin:0 auto;
@@ -127,7 +128,7 @@ table {
 
 #main-announce4-img{
 	position:absolute;
-	top:-40px;
+	top:-10%;
 	left:-425px;
 }
 
@@ -137,17 +138,8 @@ table {
 	margin-bottom: 10px;
 }
 
-.button-primary{
-	padding:10px;
-	background-color: transparent;
-	border: 3px solid white;
-	border-radius: 5px;
-	color:white;
-	margin:15px 0;
-}
 
-.button-primary:hover{
-	background-color: white ;
-	color:#009CFF;
-	font-weight: bold;
+#mobile-bottom-header {
+	position: relative !important;
+	top: 15px !important;
 }
