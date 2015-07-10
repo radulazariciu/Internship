@@ -13,11 +13,11 @@ h1,h2,h3,h4,h5,h6{
 	margin-top: 0px;
 }
 
-.accordion-filter{
+.filter{
 
 	width: 22.9452%;
 	float: left;
-	margin: 0px;
+	margin-top: 10px;
 	border-style: solid;
 	border-color: #DADEE2;
 	border-width: 1px;
@@ -71,3 +71,4 @@ a{
 	color: #20A2FF;
 	text-decoration: none;
 }
+
