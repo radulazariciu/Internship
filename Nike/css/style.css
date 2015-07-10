@@ -123,6 +123,7 @@ pre {
 
 pre:hover {
   color: #ff9900;
+
 }
 
 
@@ -136,4 +137,22 @@ pre:hover {
     float: right!important;
     margin-right: 0px;
   }
+}
+
+
+.tdOptions {
+	background-color: #414141;
+}
+
+.sameBackground {
+  background-color: #414141;
+}
+
+
+.tdOptions:hover {
+  background-color: #414141;
+}
+
+.sameBackground:hover {
+  background-color: #414141;
 }
