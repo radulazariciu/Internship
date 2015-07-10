@@ -5,9 +5,10 @@
 
 .divInlineRight {
     display:inline-block;
-    background-color:gainsboro;
+   /* background-color:gainsboro;*/
     height:100%;
     vertical-align:top;
+    border: 3px solid #DCDCDC;
 }
 
 
@@ -130,4 +131,26 @@ li.leftBorder.selected {
 .cellBottom {
     text-align:center;
     width: 100%;
+}
+
+body {
+    margin:0px !important;
+}
+
+
+.button-secondary{
+    width: 150px;
+    height: 50px;
+    padding:5px 10px;
+    background-color: transparent;
+    border: 3px solid #009CFF;
+    border-radius: 5px;
+    color:#009CFF;
+    margin:15px;
+    font-weight: bold;
+}
+
+.button-secondary:hover{
+    background-color: #009CFF ;
+    color:white;
 }
