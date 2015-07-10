@@ -7,7 +7,7 @@
 	margin: 0px;
 	padding: 0px;
 	position: relative;
-
+	display: inline;
 }
 .leftmenu{
 
@@ -103,4 +103,28 @@ ol, ul{
 }
 .facet-menu-items ul {
 	padding-top: 8px;
+}
+.main-grid{
+	margin-left: 5%;
+	margin-right: auto;
+}
+.main-grid .gridtitle{
+	font-size: 27px;
+}
+.main-grid header{
+	height: 110px;
+	position: relative;
+
+}
+.grid-header-text{
+	position:absolute;
+	bottom: 0px;
+}
+.sort-drop-down{
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+}
+.sort-drop-down .dropdown-menu {
+	background-color: white
 }
