@@ -55,6 +55,7 @@
 	line-height: 1;
 	color: #000;
 	padding-top: 5px;
+	padding-bottom: 5px;
 }
 .facet-menu .selected-facet{
 	color: #FFF;
