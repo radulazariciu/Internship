@@ -21,6 +21,7 @@
 
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/register.css">
   <!-- slider stylesheet -->
   
   <script src="js/index.js"></script>
@@ -89,7 +90,7 @@
       <ul class="nav navbar-nav">
         <li class="dropdown">
           <a href="#" class="dropdown-toggle barOptions" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">MEN<span class="caret"></span></a>          
-        
+
         </li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">WOMEN<span class="caret"></span></a>
@@ -114,7 +115,7 @@
         </div>  
       </form>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">JOIN</a></li>
+        <li><a href="#" data-toggle="modal" data-target="#registerModal">JOIN</a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id="loginButton">LOG IN <span class="caret"></span></a>
           <ul class="dropdown-menu" id="loginDropdown">
@@ -122,16 +123,16 @@
             <form class="form-signin">
               <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
               <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-              </form>
-              <li> <label>
-            <input type="checkbox" value="remember-me" id="kmliCk"> Keep me logged in
-          </label></li>
+            </form>
+            <li> <label>
+              <input type="checkbox" value="remember-me" id="kmliCk"> Keep me logged in
+            </label></li>
             
             <li><a href="#" id="phText">Password help</a></li>
             <li><button type="button" class="btn btn-default navbar-btn" id="loginDDLloginBTN">LOG IN</button></li>
             <li role="separator" class="divider"></li>
             <li><a href="#" class="boldText">CREATE A FREE NIKE+ ACCOUNT</a></li>
-            <li><button type="button" class="btn btn-default navbar-btn" id="loginDDLjoinBTN">JOIN</button></li>
+            <li><button type="button" class="btn btn-default navbar-btn" data-toggle="modal" data-target="#registerModal" id="loginDDLjoinBTN">JOIN</button></li>
           </ul>
         </li>
       </ul>
@@ -139,7 +140,74 @@
   </div>
 </nav>
 
+<!-- Register Modal -->
+<div id="registerModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
 
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <p>CREATE A FREE NIKE+ ACCOUNT</p>
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <p>The Plus Means Mode.</p>
+        <p>More Gear. Events. Coaching. Just For You.</p>
+        <div class="row">    
+          <div >  
+            <ul >
+              <li>Free shipping on every order, every time</li>
+              <li>Access to our workouts and events</li>
+              <li>Coaches and apps to be your best</li>    
+            </ul>  
+          </div>    
+        </div>
+        <p><u>Learn Mode</u></p>
+      </div>
+      <div class="modal-body">
+
+        <p>First Name *</p>
+        <input type="text" placeholder="">
+        <p>Last Name *</p>
+        <input type="text" placeholder="">
+        <p>Screen Name *</p>
+        <input type="text" placeholder="">
+        <p>Email Address *</p>
+        <input type="text" placeholder="">
+        <p>Password *</p>
+        <input type="text" placeholder="">
+        <p>Confirm Password *</p>
+        <input type="text" placeholder="">
+        <p>Zipcode *</p>
+        <input type="text" placeholder="">
+
+        <p>* Required Fields</p>
+
+        <input type="checkbox" value="remember-me" checked><b>Sign up for emails to learn about the latest styles, special offers and services from Nike.</b>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="modal-footer">
+        <P>By clicking SIGN UP, you are agreeing to the <u>Nike Policy</u> and <u>Terms & Conditions</u></P>
+        <button type="button" class="btn btn-default" data-dismiss="modal">SIGN UP</button>
+      </div>
+    </div>
+
+  </div>
+</div>
 
 
 

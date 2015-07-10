@@ -1,24 +1,38 @@
-function checklist(ctrl) {
+document.addEventListener("DOMContentLoaded", function(event) { 
+
+//makeGray();
+
+    var overviewID = document.getElementById("overviewID");
+    overviewID.style.background = 'gray';
+    var aboutID = document.getElementById("aboutID");
+    var specsID = document.getElementById("specsID");
+    var reviewsID = document.getElementById("reviewsID");
+    var accessoriesID = document.getElementById("accessoriesID");
+    var manualID = document.getElementById("manualID");
+
+    overviewID.addEventListener("click", checklist);
+    aboutID.addEventListener("click", checklist);
+    specsID.addEventListener("click", checklist);
+    reviewsID.addEventListener("click", checklist);
+    accessoriesID.addEventListener("click", checklist);
+    manualID.addEventListener("click", checklist);
+
+function checklist(e) {
        
-    var list = document.getElementById("menuList").getElementsByTagName('li');
-       
-    for(i=0; i<list.length; i++)
-    {
-            list[i].style.background = '#ffffff';
-    }
-       
-    ctrl.style.background = 'gray';
+    var Item =  e.target.id;
+    console.log(Item);
+    var elemItem = document.getElementById(Item);
+    console.log(elemItem);
+
+    overviewID.style.background = 'white';
+    aboutID.style.background = 'white';
+    specsID.style.background = 'white';
+    reviewsID.style.background = 'white';
+    accessoriesID.style.background = 'white';
+    manualID.style.background = 'white';
+
+    elemItem.style.background = 'gray';
+   
 };
 
-function makeGray()
-{
-    var list = document.getElementById("menuList").getElementsByTagName('li');
-    for(i=0; i<list.length; i++)
-    {
-            list[i].style.background = '#ffffff';
-    }
-       
-    list[0].style.background = 'gray';
-
-}
-
+});
