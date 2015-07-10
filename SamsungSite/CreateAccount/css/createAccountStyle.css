@@ -1,0 +1,100 @@
+#topCreateAccount {
+	color: black;
+	border-bottom: 1px solid;
+	width: 100%;
+}
+
+.topDivElem {
+	display: inline-block;
+	
+}
+
+#floatLeftLogIn {
+	float:right;
+}
+
+label {
+	font-family: InterfaceB,Arial,Helvetica,San-Serif;
+	font-size: 0.875em;
+	margin-bottom: 5px;
+	width: 150px;
+	display: inline-block;
+	line-height: 30px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+
+input {
+	border: 1px solid #DADEE2;
+	font-family: InterfaceR,Arial,Helvetica,San-Serif;
+	font-size: 0.875em;
+	padding: 0.65em !important;
+	border-radius: 3px;
+	margin-bottom: 0.5%;
+	margin-top: 0.5%;
+}
+
+select {
+	border: 1px solid #DADEE2;
+	font-family: InterfaceR,Arial,Helvetica,San-Serif;
+	font-size: 0.875em;
+	padding: 0.65em !important;
+	border-radius: 3px;
+}
+
+h2, h4 , p {
+	font-family: InterfaceR,Arial,Helvetica,San-Serif;
+}
+
+.smallInfo {
+	color: gray;
+	font-size: 0.655em;
+	margin-bottom: 5px !important;
+	margin-top: 10px !important;
+}
+
+button {
+	border: 1px solid #DADEE2;
+	font-family: InterfaceR,Arial,Helvetica,San-Serif;
+	font-size: 1em;
+	padding: 0.65em !important;
+	border-radius: 3px;
+	margin-bottom: 0.5%;
+	margin-top: 0.5%;
+	background-color: #20A2FF;
+	color: white;
+}
+
+
+#bottomCreateAccount {
+	margin-top: 5px;
+	display: inline-block;
+	margin-left: 5%;
+	color: black;
+	border-top: 1px solid;
+	width: 100%;
+}
+
+#bottomCreateAccount > p {
+	display: inline-block;
+}
+
+#middleCreateAccount {
+	margin-left: 5%;
+}
+
+.button-secondary{
+	width: 150px;
+	height: 50px;
+	padding:5px 10px;
+	background-color: transparent;
+	border: 3px solid #009CFF;
+	border-radius: 5px;
+	color:#009CFF;
+	margin:15px;
+}
+
+.button-secondary:hover{
+	background-color: #009CFF !important;
+	color:white !important;
+}
