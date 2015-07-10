@@ -255,9 +255,39 @@ pre:hover {
   width: 98px;
 }
 
+#loginDDLloginBTN {
+  background-color: #ff9900;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  margin-left: 24px;  
+  height: 34px;
+  width: 98px;
+}
 
+.dropdown-menu #inputEmail {
+  margin-left: 18px;
+  width: 312px;
+  margin-top: 3px;
+}
 
+.dropdown-menu #inputPassword {
+  margin-left: 18px;
+  width: 312px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
 
+.dropdown-menu #phText {
+  font-style: italic;
+  text-decoration: underline;
+  margin-top: -29px;
+  margin-left: 185px;
+}
+
+.dropdown-menu #kmliCk {
+  margin-left: 18px;
+}
 
 
 

@@ -119,8 +119,16 @@
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id="loginButton">LOG IN <span class="caret"></span></a>
           <ul class="dropdown-menu" id="loginDropdown">
             <li><a href="#" class="boldText">LOG IN TO NIKE+</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
+            <form class="form-signin">
+              <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+              <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+              </form>
+              <li> <label>
+            <input type="checkbox" value="remember-me" id="kmliCk"> Keep me logged in
+          </label></li>
+            
+            <li><a href="#" id="phText">Password help</a></li>
+            <li><button type="button" class="btn btn-default navbar-btn" id="loginDDLloginBTN">LOG IN</button></li>
             <li role="separator" class="divider"></li>
             <li><a href="#" class="boldText">CREATE A FREE NIKE+ ACCOUNT</a></li>
             <li><button type="button" class="btn btn-default navbar-btn" id="loginDDLjoinBTN">JOIN</button></li>
