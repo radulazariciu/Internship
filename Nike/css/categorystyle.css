@@ -8,6 +8,10 @@
 	padding: 0px;
 	position: relative;
 	display: inline;
+
+}
+.gridcontainer .row{
+	margin-bottom: 40px;
 }
 .leftmenu{
 
@@ -115,6 +119,7 @@ ol, ul{
 	height: 110px;
 	position: relative;
 
+
 }
 .grid-header-text{
 	position:absolute;
@@ -127,4 +132,25 @@ ol, ul{
 }
 .sort-drop-down .dropdown-menu {
 	background-color: white
+}
+.product-block{
+	
+}
+.image-panel{
+	padding-bottom: 10px;
+}
+.number-of-colors, .product-display-name{
+	font-size: 12px;
+	font-weight: bold;
+
+}
+.product-group-details hr{
+	margin: 1px;
+	max-width: 220px;
+}
+.product-name p{
+	margin:0px;
+}
+.product-grid{
+	margin-top: 15px;
 }
