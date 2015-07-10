@@ -1,17 +1,15 @@
 $(document).ready(function() { 
 	var helpButton = document.getElementById("topNavbarButtons8");
 	var topDDL = document.getElementById("topDropDown");
-	
+	var loginBtn = document.getElementById("loginButton");
+
 	helpButton.addEventListener("mouseover", helpHover);
 	helpButton.addEventListener("click", helpClick);
 	helpButton.addEventListener("mouseout", helpMouseOut);
+	loginBtn.addEventListener("mouseover", loginHover);
 	topDDL.addEventListener("mouseover", topDDLover);
 	topDDL.addEventListener("mouseout", topDDLoverOut);
-	$('.bxslider').bxSlider({
-		mode: 'fade',
-		auto: true ,
-		hideControlOnEnd: false
-	});
+	
 
 	function helpHover() {	
 		$("#topNavbar").find('.dropdown-menu').stop(false, false).delay(0).fadeIn(0);
