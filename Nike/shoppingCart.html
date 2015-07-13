@@ -21,11 +21,10 @@
 
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link rel="stylesheet" type="text/css" href="css/register.css">
   <!-- slider stylesheet -->
   
   <script src="js/index.js"></script>
-  <link rel="stylesheet" href="css/slider.css">
+ <link rel="stylesheet" href="css/shoppingCartStyle.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -90,7 +89,7 @@
       <ul class="nav navbar-nav">
         <li class="dropdown">
           <a href="#" class="dropdown-toggle barOptions" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">MEN<span class="caret"></span></a>          
-
+        
         </li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">WOMEN<span class="caret"></span></a>
@@ -115,7 +114,7 @@
         </div>  
       </form>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#" data-toggle="modal" data-target="#registerModal">JOIN</a></li>
+        <li><a href="#">JOIN</a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id="loginButton">LOG IN <span class="caret"></span></a>
           <ul class="dropdown-menu" id="loginDropdown">
@@ -123,16 +122,16 @@
             <form class="form-signin">
               <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
               <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-            </form>
-            <li> <label>
-              <input type="checkbox" value="remember-me" id="kmliCk"> Keep me logged in
-            </label></li>
+              </form>
+              <li> <label>
+            <input type="checkbox" value="remember-me" id="kmliCk"> Keep me logged in
+          </label></li>
             
             <li><a href="#" id="phText">Password help</a></li>
             <li><button type="button" class="btn btn-default navbar-btn" id="loginDDLloginBTN">LOG IN</button></li>
             <li role="separator" class="divider"></li>
             <li><a href="#" class="boldText">CREATE A FREE NIKE+ ACCOUNT</a></li>
-            <li><button type="button" class="btn btn-default navbar-btn" data-toggle="modal" data-target="#registerModal" id="loginDDLjoinBTN">JOIN</button></li>
+            <li><button type="button" class="btn btn-default navbar-btn" id="loginDDLjoinBTN">JOIN</button></li>
           </ul>
         </li>
       </ul>
@@ -140,72 +139,33 @@
   </div>
 </nav>
 
-<!-- Register Modal -->
-<div id="registerModal" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <p>CREATE A FREE NIKE+ ACCOUNT</p>
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-        <p>The Plus Means Mode.</p>
-        <p>More Gear. Events. Coaching. Just For You.</p>
-        <div class="row">    
-          <div >  
-            <ul >
-              <li>Free shipping on every order, every time</li>
-              <li>Access to our workouts and events</li>
-              <li>Coaches and apps to be your best</li>    
-            </ul>  
-          </div>    
-        </div>
-        <p><u>Learn Mode</u></p>
-      </div>
-      <div class="modal-body">
-
-        <p>First Name *</p>
-        <input type="text" placeholder="">
-        <p>Last Name *</p>
-        <input type="text" placeholder="">
-        <p>Screen Name *</p>
-        <input type="text" placeholder="">
-        <p>Email Address *</p>
-        <input type="text" placeholder="">
-        <p>Password *</p>
-        <input type="text" placeholder="">
-        <p>Confirm Password *</p>
-        <input type="text" placeholder="">
-        <p>Zipcode *</p>
-        <input type="text" placeholder="">
-
-        <p>* Required Fields</p>
-
-        <input type="checkbox" value="remember-me" checked><b>Sign up for emails to learn about the latest styles, special offers and services from Nike.</b>
 
 
+<header>
+  <div class="small-top-text">
+    <a href="#">Continue Shopping</a>
+  </div>
+  <div class="page-title">
+    YOUR CART
+  </div>
+  <div class="number-of-items">
+      0 ITEM(S)
+  </div>
+</header>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="modal-footer">
-        <P>By clicking SIGN UP, you are agreeing to the <u>Nike Policy</u> and <u>Terms & Conditions</u></P>
-        <button type="button" class="btn btn-default" data-dismiss="modal">SIGN UP</button>
+<div class="container main">
+  <div class="row">
+    <div class="col-md-8">
+      <div class= "nike-message">
+        <p class="nike-theme-name">GET FREE SHIPPING WITH NIKE+ ON EVERY ORDER, EVERY TIME.</p>
       </div>
     </div>
+    <div class="col-md-4 summary-column">
+      <div id="summary-content">
+        
+      </div>
 
+    </div>
   </div>
 </div>
 
@@ -214,19 +174,7 @@
 
 
 
-
-
-    <!-- slidebox    
-        http://bxslider.com/examples/easing
-      -->
-      <div class="slider">
-        <ul class="bxslider sliderimg">
-         <li><img src="images/homepage/federer.jpg" /></li>
-         <li><img src="images/homepage/team.jpg" /></li>
-         <li><img src="images/homepage/bballer.jpeg" /></li>
-         <li><img src="images/homepage/nike-Ink.jpg" /></li>
-       </ul>
-     </div>
+  
 
 
 
@@ -289,13 +237,8 @@
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
   <script src="js/vendor/bootstrap.min.js"></script>
   <script src="js/main.js"></script>
-
   <script>
-    $('.bxslider').bxSlider({
-      mode: 'fade',
-      auto: true ,
-      hideControlOnEnd: false
-    });
+   
   </script>
 
 </body>

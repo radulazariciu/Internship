@@ -12,6 +12,7 @@ footer{
 	font-family: Helvetica,Arial,sans-serif;
 	font-size: 0.875em;
 	background: black;
+	
 }
 footer a:link {
 	color: #C0C0C0;
@@ -22,8 +23,4 @@ footer a:hover {
 }
 footer a:visited{
 	color: #C0C0C0;
-};
-footer a:active{
-	color: white;
-	text-decoration: none;
 };
