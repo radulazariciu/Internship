@@ -6,7 +6,7 @@ using System.Web.Mvc;
 using NikeWebsite.Models;
 using NikeWebsite.Models.DataMappers;
 using WebMatrix.WebData;
-using NikeServices;
+
 
 namespace NikeWebsite.Controllers
 {
@@ -18,7 +18,7 @@ namespace NikeWebsite.Controllers
         public ActionResult Index()
         {
             return View();
-            NikeManageService manageObject = new NikeManageService{ Name = "ceva" };
+      
         }
 
         //
@@ -27,21 +27,8 @@ namespace NikeWebsite.Controllers
         public ActionResult Details(int id)
         {
             return View();
-        }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        }  
+        
         //
         // GET: /User/Create
 
@@ -56,6 +43,7 @@ namespace NikeWebsite.Controllers
         [HttpPost]
         public ActionResult Create(User user )
         {
+            ModelState.Clear();
             UserMapper um = new UserMapper();
             if((ModelState.IsValid) && (!um.checkUserExists(user)))
             {
@@ -65,23 +53,7 @@ namespace NikeWebsite.Controllers
             ModelState.AddModelError("", "User already exists!");
             return View(user);
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                        
         //
         // GET: /Account/Login
 
