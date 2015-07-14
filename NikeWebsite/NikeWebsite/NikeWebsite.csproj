@@ -186,7 +186,6 @@
     <Compile Include="BusinessLogic\UserBL.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="DataMappers\CartProductMapper.cs" />
     <Compile Include="DataMappers\ProductMapper.cs" />
     <Compile Include="DataMappers\ShoppingCartMapper.cs" />
     <Compile Include="DataMappers\UserMapper.cs" />
@@ -196,7 +195,6 @@
     </Compile>
     <Compile Include="Models\AccountModels.cs" />
     <Compile Include="Controllers\ProductController.cs" />
-    <Compile Include="Models\Order.cs" />
     <Compile Include="Models\Product.cs" />
     <Compile Include="Models\ShoppingCart.cs" />
     <Compile Include="Models\User.cs" />
@@ -315,14 +313,8 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Web.config" />
-<<<<<<< HEAD
-    <Content Include="Views\Product\Index.cshtml" />
-    <Content Include="Views\Product\Details.cshtml" />
-    <Content Include="Views\ShoppingCart\Index.cshtml" />
-=======
     <Content Include="Views\User\Login.cshtml" />
     <Content Include="Views\User\Create.cshtml" />
->>>>>>> eb250d3d0ee6024051670735b9b18865d8c61e3a
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
