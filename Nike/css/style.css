@@ -178,7 +178,9 @@ pre:hover {
 .navbar-form .form-control {
   display: inline-block;
   width: 423px;
-  vertical-align: middle;    
+  vertical-align: middle;  
+  margin-top: 0;
+  margin-bottom: 0;  
 }
 
 .navbar-default .navbar-nav > .open > a,

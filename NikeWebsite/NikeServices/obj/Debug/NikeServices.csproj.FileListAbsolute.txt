@@ -1,0 +1,5 @@
+D:\DEV\Github\Internship\NikeWebsite\NikeServices\bin\Debug\NikeServices.dll
+D:\DEV\Github\Internship\NikeWebsite\NikeServices\bin\Debug\NikeServices.pdb
+D:\DEV\Github\Internship\NikeWebsite\NikeServices\obj\Debug\NikeServices.csprojResolveAssemblyReference.cache
+D:\DEV\Github\Internship\NikeWebsite\NikeServices\obj\Debug\NikeServices.dll
+D:\DEV\Github\Internship\NikeWebsite\NikeServices\obj\Debug\NikeServices.pdb

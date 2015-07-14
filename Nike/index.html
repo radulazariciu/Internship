@@ -141,13 +141,14 @@
 </nav>
 
 <!-- Register Modal -->
+<!-- WIP -->
 <div id="registerModal" class="modal fade" role="dialog">
   <div class="modal-dialog">
 
     <!-- Modal content-->
     <div class="modal-content">
       <div class="modal-header">
-        <p>CREATE A FREE NIKE+ ACCOUNT</p>
+        <p id="theTitle">CREATE A FREE NIKE+ ACCOUNT</p>
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
         <p>The Plus Means Mode.</p>
         <p>More Gear. Events. Coaching. Just For You.</p>
@@ -163,7 +164,6 @@
         <p><u>Learn Mode</u></p>
       </div>
       <div class="modal-body">
-
         <p>First Name *</p>
         <input type="text" placeholder="">
         <p>Last Name *</p>
@@ -178,7 +178,13 @@
         <input type="text" placeholder="">
         <p>Zipcode *</p>
         <input type="text" placeholder="">
-
+        <p>Date of Birth *</p>   
+        <div class="input-append date" data-date="12-02-2012" data-date-format="dd-mm-yyyy">
+          <input class="span2" size="16" type="text" value="12-02-2012">
+          <span class="add-on"><i class="icon-th"></i></span>
+        </div>       
+        <p>Gender *</p>
+        <input type="text" placeholder="">
         <p>* Required Fields</p>
 
         <input type="checkbox" value="remember-me" checked><b>Sign up for emails to learn about the latest styles, special offers and services from Nike.</b>
@@ -191,18 +197,10 @@
 
 
 
-
-
-
-
-
-
-
-
       </div>
-      <div class="modal-footer">
+      <div class="modal-footer" id="footerMessage">
         <P>By clicking SIGN UP, you are agreeing to the <u>Nike Policy</u> and <u>Terms & Conditions</u></P>
-        <button type="button" class="btn btn-default" data-dismiss="modal">SIGN UP</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal" id="signUpButton">SIGN UP</button>
       </div>
     </div>
 
