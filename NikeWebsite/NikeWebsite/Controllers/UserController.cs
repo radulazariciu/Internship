@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using NikeWebsite.Models;
 
 namespace NikeWebsite.Controllers
 {
@@ -29,6 +30,8 @@ namespace NikeWebsite.Controllers
 
         public ActionResult Create()
         {
+            //register
+            //add user to list
             return View();
         }
 
