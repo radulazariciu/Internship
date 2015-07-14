@@ -22,13 +22,14 @@ namespace Samsung.Controllers
         }
 
        //[HttpPost]
-        public ActionResult LogIn(String Name ,String Password ) {
+        public ActionResult LogIn(User model)
+        {
 
-            String userName = Name;
-            String userPassword = Password;
-            //ViewBag.message("Numele: " + userName + "Parola: "+ userPassword);
+            var userEmail = model.email;
+            var userPassword = model.password;
+       //    ViewBag.message("Numele: " + userPassword + "Parola: " + userEmail);
 
-            return View();
+            return View(model);
         }
     }
 }
