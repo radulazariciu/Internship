@@ -1,4 +1,6 @@
-﻿using System;
+﻿using NikeWebsite.Models;
+using NikeWebsite.Models.DataMappers;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,12 +10,17 @@ namespace NikeWebsite.Controllers
 {
     public class ProductController : Controller
     {
+        private ProductMapper _productMapper = new ProductMapper();
         //
         // GET: /Product/
 
         public ActionResult Index()
         {
-            return View();
+            var model = 
+                from p in _productMapper.GetProducts()
+                select p;
+
+            return View(model);
         }
 
         //
@@ -21,7 +28,9 @@ namespace NikeWebsite.Controllers
 
         public ActionResult Details(int id)
         {
-            return View();
+            var product = _productMapper.GetProduct(id);
+                
+            return View(product);
         }
 
         //
