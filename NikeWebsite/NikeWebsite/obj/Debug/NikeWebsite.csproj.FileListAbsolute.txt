@@ -157,6 +157,7 @@ D:\mygit\Internship\NikeWebsite\NikeWebsite\bin\zh-Hans\System.Spatial.resources
 D:\mygit\Internship\NikeWebsite\NikeWebsite\bin\zh-Hant\System.Spatial.resources.dll
 D:\mygit\Internship\NikeWebsite\NikeWebsite\obj\Debug\NikeWebsite.dll
 D:\mygit\Internship\NikeWebsite\NikeWebsite\obj\Debug\NikeWebsite.pdb
+<<<<<<< HEAD
 D:\DEV\Internship\NikeWebsite\NikeWebsite\bin\NikeWebsite.dll.config
 D:\DEV\Internship\NikeWebsite\NikeWebsite\bin\NikeWebsite.dll
 D:\DEV\Internship\NikeWebsite\NikeWebsite\bin\NikeWebsite.pdb
@@ -237,3 +238,6 @@ D:\DEV\Internship\NikeWebsite\NikeWebsite\bin\zh-Hant\System.Spatial.resources.d
 D:\DEV\Internship\NikeWebsite\NikeWebsite\obj\Debug\NikeWebsite.csprojResolveAssemblyReference.cache
 D:\DEV\Internship\NikeWebsite\NikeWebsite\obj\Debug\NikeWebsite.dll
 D:\DEV\Internship\NikeWebsite\NikeWebsite\obj\Debug\NikeWebsite.pdb
+=======
+D:\mygit\Internship\NikeWebsite\NikeWebsite\obj\Debug\NikeWebsite.csprojResolveAssemblyReference.cache
+>>>>>>> 64f9414e35bf75ce3b45aeb28fb39fc52bd5c11a

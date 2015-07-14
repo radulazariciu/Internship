@@ -4,6 +4,8 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using NikeWebsite.Models;
+using NikeWebsite.Models.DataMappers;
+using WebMatrix.WebData;
 
 namespace NikeWebsite.Controllers
 {
@@ -25,13 +27,24 @@ namespace NikeWebsite.Controllers
             return View();
         }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
         //
         // GET: /User/Create
 
         public ActionResult Create()
         {
-            //register
-            //add user to list
             return View();
         }
 
@@ -39,19 +52,71 @@ namespace NikeWebsite.Controllers
         // POST: /User/Create
 
         [HttpPost]
-        public ActionResult Create(FormCollection collection)
+        public ActionResult Create(User user )
         {
-            try
+            UserMapper um = new UserMapper();
+            if((ModelState.IsValid) && !(um.checkUserLogin(user)))
             {
-                // TODO: Add insert logic here
-
-                return RedirectToAction("Index");
+                um.addUser(user);
+                return RedirectToAction("Index", "Home");
             }
-            catch
+            else
             {
-                return View();
+                return View(user);
             }
         }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        //
+        // GET: /Account/Login
+
+        [AllowAnonymous]
+        public ActionResult Login()
+        {
+            return View();
+        }
+
+        //
+        // POST: /Account/Login
+
+        [HttpPost]
+        [AllowAnonymous]
+        [ValidateAntiForgeryToken]
+        public ActionResult Login(User user)
+        {
+            UserMapper um = new UserMapper();
+            if (ModelState.IsValid)
+            {
+                if (um.checkUserLogin(user))
+                {
+                    return RedirectToAction("Index", "Home");
+                }
+                ModelState.AddModelError("", "Login data is incorrect!");
+            }
+            return View(user);
+        }
+
+
+
+
+
+
+
 
         //
         // GET: /User/Edit/5

@@ -185,9 +185,9 @@
     <Compile Include="Models\BusinessLogic\ProductBL.cs" />
     <Compile Include="Models\BusinessLogic\ShoppingBL.cs" />
     <Compile Include="Models\BusinessLogic\UserBL.cs" />
-    <Compile Include="Models\DataMappers\Product.cs" />
-    <Compile Include="Models\DataMappers\ShoppingCart.cs" />
-    <Compile Include="Models\DataMappers\User.cs" />
+    <Compile Include="Models\DataMappers\ProductDM.cs" />
+    <Compile Include="Models\DataMappers\ShoppingCartDM.cs" />
+    <Compile Include="Models\DataMappers\UserDM.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
     <Compile Include="Controllers\ShoppingController.cs" />
@@ -197,6 +197,9 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountModels.cs" />
+    <Compile Include="Models\Product.cs" />
+    <Compile Include="Models\ShoppingCart.cs" />
+    <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
