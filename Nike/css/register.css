@@ -18,3 +18,12 @@ margin-left: 446px;
     text-align: left;
     border-top: 1px solid #E5E5E5;
 }
+
+input {	
+    margin-top: -13px;
+    margin-bottom: 4px;
+}
+
+.modal-header .close {
+    margin-top: -41px;
+}
