@@ -5,6 +5,8 @@ VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NikeWebsite", "NikeWebsite\NikeWebsite.csproj", "{02B5E71E-25AF-4CED-88A3-2D5C660157B0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NikeServices", "NikeServices\NikeServices.csproj", "{00CFC97E-4174-437F-8E79-D52885457F28}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{02B5E71E-25AF-4CED-88A3-2D5C660157B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{02B5E71E-25AF-4CED-88A3-2D5C660157B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{02B5E71E-25AF-4CED-88A3-2D5C660157B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00CFC97E-4174-437F-8E79-D52885457F28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00CFC97E-4174-437F-8E79-D52885457F28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00CFC97E-4174-437F-8E79-D52885457F28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00CFC97E-4174-437F-8E79-D52885457F28}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

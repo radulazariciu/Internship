@@ -4,50 +4,64 @@
     ViewBag.Title = "Details";
 }
 
+
 <h2>Details</h2>
 
-<fieldset>
-    <legend>Product</legend>
+<div>
+    <h4>Product</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
 
-    <div class="display-label">
-         @Html.DisplayNameFor(model => model.Name)
-    </div>
-    <div class="display-field">
-        @Html.DisplayFor(model => model.Name)
-    </div>
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
 
-    <div class="display-label">
-         @Html.DisplayNameFor(model => model.Description)
-    </div>
-    <div class="display-field">
-        @Html.DisplayFor(model => model.Description)
-    </div>
+        <dt>
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
 
-    <div class="display-label">
-         @Html.DisplayNameFor(model => model.Category)
-    </div>
-    <div class="display-field">
-        @Html.DisplayFor(model => model.Category)
-    </div>
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
 
-    <div class="display-label">
-         @Html.DisplayNameFor(model => model.Stock)
-    </div>
-    <div class="display-field">
-        @Html.DisplayFor(model => model.Stock)
-    </div>
+        <dt>
+            @Html.DisplayNameFor(model => model.Stock)
+        </dt>
 
-    <div class="display-label">
-         @Html.DisplayNameFor(model => model.Price)
-    </div>
-    <div class="display-field">
-        @Html.DisplayFor(model => model.Price)
-    </div>
-</fieldset>
+        <dd>
+            @Html.DisplayFor(model => model.Stock)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Category)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Category)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Price)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Price)
+        </dd>
+
+    </dl>
+</div>
 <p>
-    
     @Html.ActionLink("Back to List", "Index")
 </p>
 <div>
-    <input 
+    <fieldset>
+        <label>Size</label>
+        <input type="text" name="size" />
+        <label>Quantity</label>
+        <input type="text" name="quantity" />
+        <button class="btn btn-default" type="submit" value="Index">Add to cart</button>
+    </fieldset>
 </div>

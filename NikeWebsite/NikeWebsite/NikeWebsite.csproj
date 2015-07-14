@@ -187,6 +187,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="DataMappers\ProductMapper.cs" />
+    <Compile Include="DataMappers\ShoppingCartItemMapper.cs" />
     <Compile Include="DataMappers\ShoppingCartMapper.cs" />
     <Compile Include="DataMappers\UserMapper.cs" />
     <Compile Include="Filters\InitializeSimpleMembershipAttribute.cs" />
@@ -197,6 +198,7 @@
     <Compile Include="Controllers\ProductController.cs" />
     <Compile Include="Models\Product.cs" />
     <Compile Include="Models\ShoppingCart.cs" />
+    <Compile Include="Models\ShoppingCartItem.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Controllers\ShoppingCartController.cs" />
@@ -315,6 +317,8 @@
     <Content Include="Views\Web.config" />
     <Content Include="Views\User\Login.cshtml" />
     <Content Include="Views\User\Create.cshtml" />
+    <Content Include="Views\Product\Details.cshtml" />
+    <Content Include="Views\Product\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

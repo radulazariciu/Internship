@@ -6,6 +6,7 @@ using System.Web.Mvc;
 using NikeWebsite.Models;
 using NikeWebsite.Models.DataMappers;
 using WebMatrix.WebData;
+using NikeServices;
 
 namespace NikeWebsite.Controllers
 {
@@ -17,6 +18,7 @@ namespace NikeWebsite.Controllers
         public ActionResult Index()
         {
             return View();
+            NikeManageService manageObject = new NikeManageService{ Name = "ceva" };
         }
 
         //
