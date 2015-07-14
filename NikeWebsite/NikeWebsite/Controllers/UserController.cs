@@ -27,13 +27,24 @@ namespace NikeWebsite.Controllers
             return View();
         }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
         //
         // GET: /User/Create
 
         public ActionResult Create()
         {
-            //register
-            //add user to list
             return View();
         }
 
@@ -41,19 +52,32 @@ namespace NikeWebsite.Controllers
         // POST: /User/Create
 
         [HttpPost]
-        public ActionResult Create(FormCollection collection)
+        public ActionResult Create(User user )
         {
-            try
+            UserMapper um = new UserMapper();
+            if((ModelState.IsValid) && !(um.checkUserLogin(user)))
             {
-                // TODO: Add insert logic here
-
-                return RedirectToAction("Index");
+                um.addUser(user);
+                return RedirectToAction("Index", "Home");
             }
-            catch
+            else
             {
-                return View();
+                return View(user);
             }
         }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
