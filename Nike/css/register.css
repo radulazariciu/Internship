@@ -1,0 +1,20 @@
+#theTitle {
+	font-weight: bold;
+	font-size: 19px;
+}
+
+#signUpButton {
+	background-color: #ff9900;
+	font-weight: bold;
+	color: #fff;
+	width: 118px;
+	height: 38px;
+	text-align: center;
+margin-left: 446px;
+}
+
+.modal-footer {
+    padding-left: 18px;
+    text-align: left;
+    border-top: 1px solid #E5E5E5;
+}
