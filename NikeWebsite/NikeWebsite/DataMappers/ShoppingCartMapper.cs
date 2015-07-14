@@ -9,21 +9,9 @@ namespace NikeWebsite.Models.DataMappers
     {
         private ShoppingCart _shoppingCart = new ShoppingCart();
 
-        public List<Product> GetProducts()
+        public void AddProduct(Order order)
         {
-            return _shoppingCart.Products;
-        }
-        public void AddProduct(Product p)
-        {
-            _shoppingCart.Products.Add(p);
-        }
-        public void RemoveProduct(int id)
-        {
-            var product = _shoppingCart.Products.FirstOrDefault(prod => prod.Id == id);
-            if (product != null)
-            {
-                _shoppingCart.Products.Remove(product);
-            }
+
         }
     }
 }

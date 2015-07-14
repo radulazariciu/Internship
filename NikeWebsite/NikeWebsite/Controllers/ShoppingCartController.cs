@@ -15,11 +15,8 @@ namespace NikeWebsite.Controllers
 
         public ActionResult Index()
         {
-            var cart =
-                from c in _shoppingCartMapper.GetProducts()
-                select c;
-
-            return View(cart);
+           
+            return View();
         }
 
         //
