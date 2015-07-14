@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using Microsoft.Ajax.Utilities;
 
 namespace NikeWebsite.Models.DataMappers
 {
@@ -56,7 +57,17 @@ namespace NikeWebsite.Models.DataMappers
             theUsers.Add(u);
         }
 
-        //check if in list
+        public bool checkUserExists(User u)
+        {
+            var user = theUsers.FirstOrDefault(usr => usr.emailAddress == u.emailAddress);
+            if (user != null)
+            {
+                    return true;
+            }
+            return false;
+        }
+
+        //login check
         public bool checkUserLogin(User u)
         {
             var user = theUsers.FirstOrDefault(usr => usr.emailAddress == u.emailAddress);
