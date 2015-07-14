@@ -27,3 +27,11 @@ input {
 .modal-header .close {
     margin-top: -41px;
 }
+
+.navbar-form .form-control {
+  display: inline-block;
+  width: 423px;
+  vertical-align: middle;  
+  margin-top: 0;
+  margin-bottom: 0;  
+}
