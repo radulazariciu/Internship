@@ -20,7 +20,7 @@ namespace NikeWebsite.Models.DataMappers
                Password = "JimJones",
                emailAddress = "jimjones@gmail.com",
                Zipcode = 12345,
-               DateOfBirth = DateTime.Today;
+               DateOfBirth = DateTime.Today
             },
 
             new User
@@ -33,7 +33,7 @@ namespace NikeWebsite.Models.DataMappers
                Password = "JimJones2",
                emailAddress = "jimjones2@gmail.com",
                Zipcode = 12345,
-               DateOfBirth = DateTime.Today;
+               DateOfBirth = DateTime.Today
             },
 
             new User
@@ -46,7 +46,7 @@ namespace NikeWebsite.Models.DataMappers
                Password = "JimJones3",
                emailAddress = "jimjones3@gmail.com",
                Zipcode = 12345,
-               DateOfBirth = DateTime.Today;
+               DateOfBirth = DateTime.Today
             }
         };
 
@@ -59,7 +59,8 @@ namespace NikeWebsite.Models.DataMappers
         //check if in list
         public bool checkUserLogin(User u)
         {
-            if (theUsers.Contains(u))
+            var user = theUsers.FirstOrDefault(usr => usr.emailAddress == u.emailAddress);
+            if (user.Password == u.Password)
             {
                 return true;
             }

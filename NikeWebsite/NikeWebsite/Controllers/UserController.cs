@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using NikeWebsite.Models;
+using NikeWebsite.Models.DataMappers;
 using WebMatrix.WebData;
 
 namespace NikeWebsite.Controllers
@@ -72,16 +73,18 @@ namespace NikeWebsite.Controllers
         [HttpPost]
         [AllowAnonymous]
         [ValidateAntiForgeryToken]
-        public ActionResult Login(LoginModel model, string returnUrl)
+        public ActionResult Login(User user)
         {
-            if (ModelState.IsValid && WebSecurity.Login(model.UserName, model.Password, persistCookie: model.RememberMe))
+            UserMapper um = new UserMapper();
+            if (ModelState.IsValid)
             {
-                return RedirectToLocal(returnUrl);
+                if (um.checkUserLogin(user))
+                {
+                    return RedirectToAction("Index", "Home");
+                }
+                ModelState.AddModelError("", "Login data is incorrect!");
             }
-
-            // If we got this far, something failed, redisplay form
-            ModelState.AddModelError("", "The user name or password provided is incorrect.");
-            return View(model);
+            return View(user);
         }
 
 

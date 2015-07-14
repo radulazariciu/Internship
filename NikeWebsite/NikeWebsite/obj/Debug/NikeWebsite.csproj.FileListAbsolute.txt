@@ -157,3 +157,4 @@ D:\mygit\Internship\NikeWebsite\NikeWebsite\bin\zh-Hans\System.Spatial.resources
 D:\mygit\Internship\NikeWebsite\NikeWebsite\bin\zh-Hant\System.Spatial.resources.dll
 D:\mygit\Internship\NikeWebsite\NikeWebsite\obj\Debug\NikeWebsite.dll
 D:\mygit\Internship\NikeWebsite\NikeWebsite\obj\Debug\NikeWebsite.pdb
+D:\mygit\Internship\NikeWebsite\NikeWebsite\obj\Debug\NikeWebsite.csprojResolveAssemblyReference.cache
