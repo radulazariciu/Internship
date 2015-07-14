@@ -12,23 +12,41 @@ namespace NikeWebsite.Models.DataMappers
         {
             new User
             {
-                Id = 0,
-                Name = "James",
-                Password = "James"
+               Id = 0,
+               FirstName = "Jim",
+               LastName = "Jones",
+               Gender = "male",
+               ScreenName = "JimJ",
+               Password = "JimJones",
+               emailAddress = "jimjones@gmail.com",
+               Zipcode = 12345,
+               DateOfBirth = DateTime.Today;
             },
 
             new User
             {
-                Id = 1,
-                Name = "John",
-                Password = "John"
+               Id = 1,
+               FirstName = "Jim2",
+               LastName = "Jones2",
+               Gender = "male",
+               ScreenName = "JimJ2",
+               Password = "JimJones2",
+               emailAddress = "jimjones2@gmail.com",
+               Zipcode = 12345,
+               DateOfBirth = DateTime.Today;
             },
 
             new User
             {
                 Id = 2,
-                Name = "Jim",
-                Password = "Jim"
+               FirstName = "Jim3",
+               LastName = "Jones3",
+               Gender = "male",
+               ScreenName = "JimJ3",
+               Password = "JimJones3",
+               emailAddress = "jimjones3@gmail.com",
+               Zipcode = 12345,
+               DateOfBirth = DateTime.Today;
             }
         };
 
