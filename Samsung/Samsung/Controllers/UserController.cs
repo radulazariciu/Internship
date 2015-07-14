@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Samsung.Models;
+
+using Samsung.Controllers.BusinessLogic;
 
 namespace Samsung.Controllers
 {
@@ -13,8 +16,19 @@ namespace Samsung.Controllers
 
         public ActionResult Index()
         {
-            return View();
+            var userBL = new UserBL();
+            var list = userBL.GetAllUsers();
+            return View(list);
         }
 
+       //[HttpPost]
+        public ActionResult LogIn(String Name ,String Password ) {
+
+            String userName = Name;
+            String userPassword = Password;
+            //ViewBag.message("Numele: " + userName + "Parola: "+ userPassword);
+
+            return View();
+        }
     }
 }
