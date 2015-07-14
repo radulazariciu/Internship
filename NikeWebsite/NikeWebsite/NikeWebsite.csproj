@@ -315,9 +315,14 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Web.config" />
+<<<<<<< HEAD
     <Content Include="Views\Product\Index.cshtml" />
     <Content Include="Views\Product\Details.cshtml" />
     <Content Include="Views\ShoppingCart\Index.cshtml" />
+=======
+    <Content Include="Views\User\Login.cshtml" />
+    <Content Include="Views\User\Create.cshtml" />
+>>>>>>> eb250d3d0ee6024051670735b9b18865d8c61e3a
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

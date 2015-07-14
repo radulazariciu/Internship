@@ -55,15 +55,13 @@ namespace NikeWebsite.Controllers
         public ActionResult Create(User user )
         {
             UserMapper um = new UserMapper();
-            if((ModelState.IsValid) && !(um.checkUserLogin(user)))
+            if((ModelState.IsValid) && (!um.checkUserExists(user)))
             {
                 um.addUser(user);
                 return RedirectToAction("Index", "Home");
             }
-            else
-            {
-                return View(user);
-            }
+            ModelState.AddModelError("", "User already exists!");
+            return View(user);
         }
 
 
