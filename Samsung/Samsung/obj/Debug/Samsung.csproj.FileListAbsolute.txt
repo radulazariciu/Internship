@@ -83,3 +83,4 @@ C:\Users\ionut.indre\Desktop\newPUSH\Internship\Samsung\Samsung\bin\zh-Hans\Syst
 C:\Users\ionut.indre\Desktop\newPUSH\Internship\Samsung\Samsung\bin\zh-Hant\System.Spatial.resources.dll
 C:\Users\ionut.indre\Desktop\newPUSH\Internship\Samsung\Samsung\obj\Debug\Samsung.dll
 C:\Users\ionut.indre\Desktop\newPUSH\Internship\Samsung\Samsung\obj\Debug\Samsung.pdb
+C:\Users\ionut.indre\Desktop\newPUSH\Internship\Samsung\Samsung\obj\Debug\Samsung.csprojResolveAssemblyReference.cache
