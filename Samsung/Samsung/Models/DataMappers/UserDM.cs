@@ -73,5 +73,18 @@ namespace Samsung.Controllers.DataMappers
             return _usersList;
         }
 
+
+        
+        //Check Login credentials
+        public bool checkUserLogin(User u)
+        {
+            var user = _usersList.FirstOrDefault(usr => usr.email == u.email);
+            if (user.password == u.password)
+            {
+                return true;
+            }
+            return false;
+        }
     }
+    
 }

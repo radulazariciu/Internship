@@ -6,6 +6,7 @@ using System.Web.Mvc;
 using Samsung.Models;
 
 using Samsung.Controllers.BusinessLogic;
+using Samsung.Controllers.DataMappers;
 
 namespace Samsung.Controllers
 {
@@ -31,5 +32,23 @@ namespace Samsung.Controllers
 
             return View(model);
         }
+
+        [HttpPost]
+        [AllowAnonymous]
+        [ValidateAntiForgeryToken]
+        public ActionResult LogIn2(User user)
+        {
+            UserDM userMap = new UserDM();
+            if (ModelState.IsValid)
+            {
+                if (userMap.checkUserLogin(user))
+                {
+                    return RedirectToAction("Index", "Home");
+                }
+                ModelState.AddModelError("", "Login data is incorrect!");
+            }
+            return View(user);
+        }
+
     }
 }
