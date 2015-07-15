@@ -7,5 +7,6 @@ namespace NikeWebsite.DataMappers
 {
     public class ShoppingCartItemMapper
     {
+
     }
 }

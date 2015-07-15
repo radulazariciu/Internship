@@ -6,10 +6,7 @@ using System.Web.Mvc;
 using NikeWebsite.Models;
 using NikeWebsite.Models.DataMappers;
 using WebMatrix.WebData;
-<<<<<<< HEAD
-=======
 
->>>>>>> ff3be0382229b0a0f4f9d1e79e25ae3b00e464ee
 
 namespace NikeWebsite.Controllers
 {
@@ -21,10 +18,7 @@ namespace NikeWebsite.Controllers
         public ActionResult Index()
         {
             return View();
-<<<<<<< HEAD
-=======
-      
->>>>>>> ff3be0382229b0a0f4f9d1e79e25ae3b00e464ee
+
         }
 
         //
