@@ -4,9 +4,13 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using Samsung.Models;
+<<<<<<< HEAD
+using Samsung.Models.BusinessLogic;
+=======
 
 using Samsung.Controllers.BusinessLogic;
 using Samsung.Controllers.DataMappers;
+>>>>>>> 88e733912c7fd449e56c94f6fe867a5f49ca79fa
 
 namespace Samsung.Controllers
 {
@@ -50,5 +54,19 @@ namespace Samsung.Controllers
             return View(user);
         }
 
+        public ActionResult SignUpUser()
+        {
+            
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult SignUp(string FirstName,string SecondName,string Month,string Day,string BirthYear,string EmailAddress,string ConfirmEmailAddress,string FirstPartCellPhone,
+                                   string SecondPartCellPhone,string ThirdPartCellPhone,string ZipCode,string Password,string ConfirmPassword)
+        {
+            UserBL userBL = new UserBL();
+            userBL.AddUser(FirstName, SecondName, Month, Day, BirthYear, EmailAddress, ConfirmEmailAddress, FirstPartCellPhone, SecondPartCellPhone, ThirdPartCellPhone, ZipCode, Password, ConfirmPassword);
+            return View("SignUpUser", userBL);
+        }
     }
 }

@@ -182,12 +182,16 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\ErrorController.cs" />
     <Compile Include="Models\BusinessLogic\ProductBL.cs" />
     <Compile Include="Models\BusinessLogic\ShoppingBL.cs" />
     <Compile Include="Models\BusinessLogic\UserBL.cs" />
+<<<<<<< HEAD
+=======
     <Compile Include="Models\DataMappers\ProductDM.cs" />
     <Compile Include="Models\DataMappers\ShoppingCartDM.cs" />
     <Compile Include="Models\DataMappers\UserDM.cs" />
+>>>>>>> 88e733912c7fd449e56c94f6fe867a5f49ca79fa
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
     <Compile Include="Controllers\ShoppingController.cs" />
@@ -197,9 +201,23 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountModels.cs" />
+<<<<<<< HEAD
+    <Compile Include="Models\DataMappers\ProductDM.cs" />
+    <Compile Include="Models\DataMappers\ShoppingCartDM.cs" />
+    <Compile Include="Models\DataMappers\UserDM.cs" />
+    <Compile Include="Models\Helpers\ReferenceData.cs" />
     <Compile Include="Models\Product.cs" />
     <Compile Include="Models\ShoppingCart.cs" />
     <Compile Include="Models\User.cs" />
+    <Compile Include="Models\UserCellPhone.cs" />
+    <Compile Include="Models\UserDateOfBirth.cs" />
+    <Compile Include="Models\Validators\InvalidUserException.cs" />
+    <Compile Include="Models\Validators\UserValidator.cs" />
+=======
+    <Compile Include="Models\Product.cs" />
+    <Compile Include="Models\ShoppingCart.cs" />
+    <Compile Include="Models\User.cs" />
+>>>>>>> 88e733912c7fd449e56c94f6fe867a5f49ca79fa
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -313,9 +331,14 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Web.config" />
+<<<<<<< HEAD
+    <Content Include="Views\User\SignUpUser.cshtml" />
+    <Content Include="Views\User\RegisterUser.cshtml" />
+=======
     <Content Include="Views\User\Index.cshtml" />
     <Content Include="Views\User\LogIn.cshtml" />
     <Content Include="Views\User\LogIn2.cshtml" />
+>>>>>>> 88e733912c7fd449e56c94f6fe867a5f49ca79fa
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
