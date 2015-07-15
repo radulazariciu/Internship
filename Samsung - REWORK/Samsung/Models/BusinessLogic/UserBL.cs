@@ -81,5 +81,19 @@ namespace Samsung.Models.BusinessLogic
         {
             return this.messageToBeShown;
         }
+
+        public void verifyCredentials(string email, string password)
+        {
+
+            List<User> users = userDM.GetAllUsers();
+            for (int index = 0; index < users.Count; index++)
+            {
+                if ((users[index].Password == password)&&(users[index].EmailAddress == email)){
+                    Console.WriteLine("true");
+                    messageToBeShown = "true";}
+                else { messageToBeShown = "false"; Console.WriteLine("false"); }
+            }
+            //throw new NotImplementedException();
+        }
     }
 }

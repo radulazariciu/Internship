@@ -36,7 +36,8 @@ namespace Samsung.Controllers
 
         public ActionResult LogIn(string email, string password)
         {
-
+            UserBL userBL = new UserBL();
+            userBL.verifyCredentials(email,password);
             return View();
         }
     }
