@@ -1,0 +1,19 @@
+﻿@model CRUD_MVC_Operations_Users.Models
+@{
+    ViewBag.Title = "AddUser";
+}
+
+<h2>AddUser</h2>
+@using (Html.BeginForm())
+{
+    <div>
+        <fieldset>
+            <legend>Add User</legend>
+            <div class="editor-label">@Html.TextBoxFor(model => model.ID)</div>
+            <div class="editor-field">@Html.TextBoxFor(model => model.Name)</div>
+            <div class="editor-label">@Html.TextBoxFor(model => model.Email)</div>
+            <div class="editor-field">@Html.TextBoxFor(model => model.Password)</div>
+            <input type="submit" value="Log In" />
+        </fieldset>
+    </div>
+}

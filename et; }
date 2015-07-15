@@ -1,0 +1,184 @@
+[33m64da98a[m nike - register UI WIP
+[33m5a24085[m Merge branch 'master' of https://github.com/Techromix/Internship
+[33mf281f88[m hope this works
+[33m7d50b88[m Uses list display and login(Error null elements).
+[33mc2e08b5[m Added atrr for users. Make users workflow.
+[33m92cd1f4[m Added atrr for users. Make users workflow.
+[33m140b1e5[m mvc v0.4
+[33md8e47ee[m mvc v0.3
+[33meb250d3[m cssDay
+[33me540fdd[m register done
+[33mdcd788d[m mvc v0.2
+[33me48eb95[m MVC product ops
+[33m64f9414[m register under construction
+[33ma7c162d[m login done
+[33m3d7796e[m login under construction 2
+[33m6ffa678[m login under construction
+[33md000520[m user and user mapper modified to final
+[33m8961e31[m Merge branch 'master' of https://github.com/Techromix/Internship
+[33m97db3e6[m user and user mapper done
+[33mee43886[m Added data mappers
+[33m61ed5c2[m Added achitectural design for Samsung.
+[33mc96a59c[m architecture 4
+[33mb479fc7[m architecture 3
+[33m35dac04[m architecture 2
+[33m76a34da[m architecture
+[33m3ecdab1[m Merge branch 'master' of https://github.com/Techromix/Internship
+[33mffec28f[m test asp.net application
+[33m3c7f801[m Input Forms MVC
+[33m95b7367[m mvc tutorial work
+[33m6fc51a4[m Merge branch 'master' of https://github.com/Techromix/Internship
+[33m2d1fe62[m shopping cart 30%
+[33m5128e4c[m mvc example
+[33m738daca[m Merge branch 'master' of https://github.com/Techromix/Internship
+[33mf877374[m Added checkout page
+[33m02fd589[m Merge branch 'master' of https://github.com/Techromix/Internship
+[33mdd063ca[m shopping cart 20%
+[33m7a54206[m Merge branch 'master' of https://github.com/Techromix/Internship
+[33m5a5edc5[m Footer menu
+[33m2453ef1[m register 5
+[33m4446c4c[m shopping cart init stage
+[33mbdfc265[m Merge branch 'master' of https://github.com/Techromix/Internship
+[33me5f390a[m register 3
+[33m32ac420[m Repaired detal page js. Dinamyc selection of the menu.
+[33m721fd6c[m Modify Js in detail page. Added header to category page.
+[33m4ff1f43[m register 2
+[33m55d0860[m register 1
+[33mcff6796[m Merge branch 'master' of https://github.com/Techromix/Internship
+[33mff8739a[m Category update
+[33m376a0e2[m merge fix
+[33m2374c16[m categ page almost done
+[33me770012[m Added header to detail page. Modify button style
+[33ma2f7a1b[m Merge branch 'master' of https://github.com/Techromix/Internship
+[33mc155cbe[m navbar - login ddl DONE
+[33m05d07ef[m Menu category
+[33m9f6450e[m Merge branch 'master' of https://github.com/Techromix/Internship
+[33m127201a[m Menu category
+[33me86c2fa[m navbar 10 - login ddl wip
+[33m1c64eb9[m Merge branch 'master' of https://github.com/Techromix/Internship
+[33m9caad49[m details page
+[33m4193a8f[m Combined all pages and added header to all pages.
+[33m7d1fa1b[m grid sort-by dropdown
+[33mb56a096[m navbar 9 - dropdown templates deleted
+[33m4e581cf[m navbar 8 - dropdown working, content to be added
+[33m8bfa8b7[m Menu category
+[33m3d161e3[m navbar 7 - login todo
+[33m1cb7734[m Merge branch 'master' of https://github.com/Techromix/Internship
+[33m520a14a[m navbar 5
+[33mfe591c5[m navbar 4
+[33mf023935[m Added same button forms and feel
+[33mee028f3[m Site
+[33mb9078b5[m Added click sensitive input forms.
+[33md5ba0e0[m navbar 3
+[33m8a859dd[m Collected input forms with JS.
+[33m78763f7[m categ page left pannel
+[33md25ed2e[m Merge branch 'master' of https://github.com/Techromix/Internship
+[33m9d4d93d[m categ page -partial left menu
+[33m4abf30f[m Added create account page.
+[33m56e2f4a[m navbar 2
+[33mdde0a73[m Merge branch 'master' of https://github.com/Techromix/Internship
+[33m0d1ae00[m initial category page
+[33m11dbb3f[m Merge branch 'master' of https://github.com/Techromix/Internship
+[33m9be6d03[m navbar 1
+[33m51421f9[m Fixed sized of second bar for more resolutions
+[33mb17c864[m footer + slider fix
+[33m40d5e47[m top navbar done
+[33ma2d8961[m Account page change
+[33m052bd39[m Account page integrated with header
+[33m4729176[m Account page
+[33m864e7cb[m Main Page
+[33m18213d1[m Solved Flicker. Not the best approach.
+[33m00ce16f[m Merge branch 'master' of https://github.com/Techromix/Internship
+[33m103f70b[m footer improvement
+[33mcf58475[m Added header for SamsungSite
+[33m5d35556[m top bar complete - issue: hover: white
+[33m0be9bff[m bogdan top bar with help almost done
+[33m9519013[m Merge branch 'master' of https://github.com/Techromix/Internship
+[33m8895e13[m footer working
+[33m9291108[m bogdan top bar with help menu issues
+[33m4ccaed2[m Merge branch 'master' of https://github.com/Techromix/Internship
+[33m511ef66[m homepage slider+footer initial phase
+[33m7325888[m bogdan top bar almost done
+[33m6255dcb[m bogdan 2
+[33mf177884[m Merge branch 'master' of https://github.com/Techromix/Internship
+[33m4872291[m bogdan
+[33m5d82f83[m first slider changes
+[33mf846dd2[m bogdan - top navbar
+[33me2cc096[m added slider
+[33m548a5ad[m added bxslider
+[33m825cbc7[m help page under construction
+[33m54644e1[m help page added
+[33me402fbd[m bogdan - top navbar
+[33mce56af7[m bogdan - top navbar
+[33m2816e67[m bogdan - top navbar
+[33mac1a78f[m top navbar black
+[33md13bdda[m Merge branch 'master' of https://github.com/Techromix/Internship
+[33m5c278ba[m store values
+[33mecb1b13[m index JS file added
+[33m5b8dc22[m update
+[33mdb2b4f5[m style.css added in index.html
+[33me1d26c3[m Merge branch 'master' of https://github.com/Techromix/Internship
+[33m446896e[m style.css added - responsible of index.html
+[33mfc7c5fd[m core values
+[33m0e25970[m Merge branch 'master' of https://github.com/Techromix/Internship
+[33md3859f3[m top navbar 2
+[33m4ab7887[m Merge branch 'master' of https://github.com/Techromix/Internship
+[33m0ab0522[m fix merge conflict
+[33m37fdf5d[m Merge branch 'master' of https://github.com/Techromix/Internship
+[33m460ddc1[m top navbar
+[33mb20ac82[m Add First file for SamsungSite
+[33me4938d1[m Merge pull request #4 from Techromix/FirstWork
+[33mef06bb6[m Prepared Master for the new tasks.
+[33m415b67c[m Prepared Master for the new tasks.
+[33m050a538[m deleted
+[33md3bf896[m New files added.
+[33m606d55c[m Merge branch 'master' of https://github.com/Techromix/Internship
+[33ma2c6e14[m COREVALUES
+[33m05d0be0[m Nike homepage
+[33m0f1ca88[m Merge branch 'master' of https://github.com/Techromix/Internship
+[33m13125ef[m nike added
+[33m0034a77[m Merge pull request #3 from Techromix/FirstWork
+[33m3aa721a[m Files from branch.
+[33m9d874d6[m core values
+[33ma2a0b19[m Merge branch 'master' of https://github.com/Techromix/Internship
+[33m4e3a1cd[m Core Values page added
+[33m72155d5[m CoreValues3
+[33m4fe3e14[m CoreValues 2
+[33m024ea59[m Core Values
+[33mb2f6910[m Html
+[33m7a7eea5[m Merge branch 'master' of https://github.com/Techromix/Internship
+[33m42ae5dd[m coffee store first version
+[33mc9605da[m Merge branch 'master' of https://github.com/Techromix/Internship
+[33m05ea3ec[m HTML APP
+[33m6fe4c11[m HTML
+[33mba8dfd3[m Merge branch 'master' of https://github.com/Techromix/Internship
+[33m5b3e106[m bogdan's html app
+[33m4f3cd77[m Merge https://github.com/Techromix/Internship
+[33mf1aa1e3[m HTML
+[33me7c814b[m Merge branch 'master' of https://github.com/Techromix/Internship
+[33mb041ea2[m First version of html page
+[33m7f4020f[m html folder added
+[33m79bbf49[m Marius first
+[33m67a2125[m file
+[33m0b80a28[m first file added
+[33m53350c2[m right version of file
+[33mdcf3352[m versiunea2 for file
+[33mc5abfda[m versiunea1 viorelia file
+[33m8cb9037[m update fis viorelia
+[33m5758a96[m folder
+[33m5161924[m file deleted
+[33md748c0e[m Merge https://github.com/Techromix/Internship
+[33m2445092[m Update myFile
+[33m482fba3[m deleted a txt file
+[33mfbb281e[m folder added
+[33m6c2fb0b[m bogdan
+[33ma9dad54[m test
+[33m0cbd58a[m Merge branch 'master' of https://github.com/Techromix/Internship
+[33mfd2cd8c[m bogdan
+[33m649dde9[m Merge branch 'master' of https://github.com/Techromix/Internship
+[33m355c199[m Merge https://github.com/Techromix/Internship
+[33m1767989[m Merge pull request #1 from OccultScripto/master
+[33mdca8e6e[m first file add
+[33m9800dd8[m Initial file
+[33m8a16243[m Initial Push.
+[33mf8f2449[m Initial commit
