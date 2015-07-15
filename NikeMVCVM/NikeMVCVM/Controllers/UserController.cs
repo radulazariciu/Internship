@@ -34,5 +34,20 @@ namespace NikeMVCVM.Controllers
             }
             return View();
         }
+
+        public ActionResult Register()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult Register(RegisterVM registerVm)
+        {
+            if (UserBL.registerUser(registerVm)) 
+            {
+                return RedirectToAction("Index", "Home");
+            }
+            return View();
+        }
     }
 }

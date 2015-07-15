@@ -58,6 +58,7 @@ namespace Nike.DataLayer.Mappers
             theUsers.Add(u);
         }
 
+
         public Boolean checkUserExists(User u)
         {
            // var user = theUsers.FirstOrDefault(usr => usr.emailAddress == u.emailAddress);
