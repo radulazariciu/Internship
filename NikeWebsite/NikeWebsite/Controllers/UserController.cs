@@ -27,8 +27,8 @@ namespace NikeWebsite.Controllers
         public ActionResult Details(int id)
         {
             return View();
-        }  
-        
+        }
+
         //
         // GET: /User/Create
 
@@ -41,19 +41,31 @@ namespace NikeWebsite.Controllers
         // POST: /User/Create
 
         [HttpPost]
-        public ActionResult Create(User user )
+        public ActionResult Create(User user)
         {
             ModelState.Clear();
             UserMapper um = new UserMapper();
-            if((ModelState.IsValid) && (!um.checkUserExists(user)))
+            if (!ModelState.IsValid)
             {
-                um.addUser(user);
-                return RedirectToAction("Index", "Home");
+                ModelState.AddModelError("", "invalid!");
             }
-            ModelState.AddModelError("", "User already exists!");
-            return View(user);
+            else
+            {
+                if (!um.checkUserExists(user))
+                {
+                    um.addUser(user);
+                    return RedirectToAction("Login", "User");
+                }
+                else
+                {
+                    ModelState.AddModelError("", "User already exists!");
+                    return View(user);
+                }
+            }
+            return View();
         }
-                        
+
+
         //
         // GET: /Account/Login
 
@@ -72,23 +84,13 @@ namespace NikeWebsite.Controllers
         public ActionResult Login(User user)
         {
             UserMapper um = new UserMapper();
-            if (ModelState.IsValid)
+            if (um.checkUserLogin(user))
             {
-                if (um.checkUserLogin(user))
-                {
-                    return RedirectToAction("Index", "Home");
-                }
-                ModelState.AddModelError("", "Login data is incorrect!");
+                return RedirectToAction("Index", "Home");
             }
+            ModelState.AddModelError("", "Login data is incorrect!");
             return View(user);
         }
-
-
-
-
-
-
-
 
         //
         // GET: /User/Edit/5

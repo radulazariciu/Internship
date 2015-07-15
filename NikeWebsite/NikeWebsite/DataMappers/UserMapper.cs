@@ -59,11 +59,18 @@ namespace NikeWebsite.Models.DataMappers
 
         public bool checkUserExists(User u)
         {
-            var user = theUsers.FirstOrDefault(usr => usr.emailAddress == u.emailAddress);
-            if (user != null)
+           // var user = theUsers.FirstOrDefault(usr => usr.emailAddress == u.emailAddress);
+            foreach (var item in theUsers)
             {
+                if(item.emailAddress == u.emailAddress)
+                {
                     return true;
+                }
             }
+            //if (user != null)
+            //{
+            //        return true;
+            //}
             return false;
         }
 

@@ -240,3 +240,5 @@ D:\DEV\Github\Internship\NikeWebsite\NikeWebsite\obj\Debug\NikeWebsite.dll
 D:\DEV\Github\Internship\NikeWebsite\NikeWebsite\obj\Debug\NikeWebsite.pdb
 D:\DEV\Github\Internship\NikeWebsite\NikeWebsite\bin\NikeServices.dll
 D:\DEV\Github\Internship\NikeWebsite\NikeWebsite\bin\NikeServices.pdb
+D:\mygit\Internship\NikeWebsite\NikeWebsite\bin\NikeServices.dll
+D:\mygit\Internship\NikeWebsite\NikeWebsite\bin\NikeServices.pdb

@@ -7,9 +7,10 @@
 
 <h2>Register</h2>
 
-@using (Html.BeginForm()) {
-    @Html.AntiForgeryToken()
-    @Html.ValidationSummary(true)
+@using(@Html.BeginForm())
+{
+   
+    @Html.ValidationSummary(false)
 
     <fieldset>
         <legend>User</legend>
@@ -19,7 +20,6 @@
         </div>
         <div class="editor-field">
             @Html.EditorFor(model => model.FirstName)
-            @Html.ValidationMessageFor(model => model.FirstName)
         </div>
 
         <div class="editor-label">
@@ -27,7 +27,6 @@
         </div>
         <div class="editor-field">
             @Html.EditorFor(model => model.LastName)
-            @Html.ValidationMessageFor(model => model.LastName)
         </div>
 
         <div class="editor-label">
@@ -35,7 +34,6 @@
         </div>
         <div class="editor-field">
             @Html.EditorFor(model => model.ScreenName)
-            @Html.ValidationMessageFor(model => model.ScreenName)
         </div>
 
         <div class="editor-label">
@@ -43,7 +41,6 @@
         </div>
         <div class="editor-field">
             @Html.EditorFor(model => model.Gender)
-            @Html.ValidationMessageFor(model => model.Gender)
         </div>
 
         <div class="editor-label">
@@ -51,7 +48,6 @@
         </div>
         <div class="editor-field">
             @Html.EditorFor(model => model.Zipcode)
-            @Html.ValidationMessageFor(model => model.Zipcode)
         </div>
 
         <div class="editor-label">
@@ -59,15 +55,14 @@
         </div>
         <div class="editor-field">
             @Html.EditorFor(model => model.DateOfBirth)
-            @Html.ValidationMessageFor(model => model.DateOfBirth)
+          <!--  Html.ValidationMessageFor(model => model.DateOfBirth) -->
         </div>
 
-        <div class="editor-label">
+        <div class="editor-label">            
             @Html.LabelFor(model => model.emailAddress)
         </div>
         <div class="editor-field">
             @Html.EditorFor(model => model.emailAddress)
-            @Html.ValidationMessageFor(model => model.emailAddress)
         </div>
 
         <div class="editor-label">
@@ -75,7 +70,6 @@
         </div>
         <div class="editor-field">
             @Html.EditorFor(model => model.Password)
-            @Html.ValidationMessageFor(model => model.Password)
         </div>
 
         <p>
@@ -83,6 +77,10 @@
         </p>
     </fieldset>
 }
+<p id="notify">
+
+</p>
+
 
 <div>
     @Html.ActionLink("Back to List", "Index")
