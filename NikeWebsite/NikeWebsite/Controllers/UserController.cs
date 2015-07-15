@@ -18,7 +18,7 @@ namespace NikeWebsite.Controllers
         public ActionResult Index()
         {
             return View();
-      
+
         }
 
         //

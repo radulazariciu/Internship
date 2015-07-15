@@ -28,7 +28,8 @@ namespace NikeWebsite.Controllers
         public ActionResult Details(int id)
         {
             var model = _productMapper.GetProducts().FirstOrDefault(p => p.Id == id);
-   
+            
+
             return View(model);
         }
 

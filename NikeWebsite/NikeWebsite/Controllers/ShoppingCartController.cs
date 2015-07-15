@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NikeWebsite.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -16,6 +17,12 @@ namespace NikeWebsite.Controllers
             return View();
         }
 
+        [HttpPost]
+        public ActionResult Index(ShoppingCartItem item)
+        {
+
+            return View();
+        }
         //
         // GET: /ShoppingCart/Details/5
 
