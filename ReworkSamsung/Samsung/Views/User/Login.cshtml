@@ -1,0 +1,22 @@
+﻿@{
+    ViewBag.Title = "Login";
+}
+
+<h2>Login</h2>
+<h2>Login</h2>
+@using (Html.BeginForm("Login", "User"))
+{
+    @Html.ValidationSummary(false)
+    <fieldset>
+        <div>
+            @Html.TextBoxFor(model => model.EmailAddress)
+            @Html.TextBoxFor(model => model.Password)
+            <input type="submit" value="Login" />
+
+        </div>
+
+    </fieldset>
+}
+
+<p id="notify">
+</p>
