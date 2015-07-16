@@ -172,3 +172,6 @@ C:\Users\ionut.indre\Desktop\final\Internship\Samsung.Web\Samsung.Web\bin\ko\Sys
 C:\Users\ionut.indre\Desktop\final\Internship\Samsung.Web\Samsung.Web\bin\ru\System.Spatial.resources.dll
 C:\Users\ionut.indre\Desktop\final\Internship\Samsung.Web\Samsung.Web\bin\zh-Hans\System.Spatial.resources.dll
 C:\Users\ionut.indre\Desktop\final\Internship\Samsung.Web\Samsung.Web\bin\zh-Hant\System.Spatial.resources.dll
+C:\Users\ionut.indre\Desktop\327joi\Internship\Samsung.Web\Samsung.Web\obj\Debug\Samsung.Web.csprojResolveAssemblyReference.cache
+C:\Users\ionut.indre\Desktop\327joi\Internship\Samsung.Web\Samsung.Web\obj\Debug\Samsung.Web.dll
+C:\Users\ionut.indre\Desktop\327joi\Internship\Samsung.Web\Samsung.Web\obj\Debug\Samsung.Web.pdb
