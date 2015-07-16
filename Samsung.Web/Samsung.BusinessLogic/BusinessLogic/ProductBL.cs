@@ -13,22 +13,33 @@ namespace Samsung.BusinessLogic.BusinessLogic
     {
         public static List<ProductVM> GetAllProducts()
         {
+            ProductMapper productMapper = new ProductMapper();
+            List<Product> returnedProductsList = productMapper.GetAllProducts();
+            List<ProductVM> returnedProductsVm =new List<ProductVM>();
+            foreach (var productItem in returnedProductsList)
+            {
+                ProductVM newProductVm = new ProductVM(productItem.Id, productItem.Name, productItem.Category, productItem.Color,
+               productItem.Details, productItem.Price, productItem.Stock);
+                returnedProductsVm.Add(newProductVm);
+            }
+
+            return returnedProductsVm;
         }
 
-        public static GetProduct(int id)
+        public static ProductVM GetProduct(int id)
         {
-             ProductMapper userMapper = new UserMapper();
-            return _productDataMapper.GetProduct(id);
+           ProductMapper productMapper = new ProductMapper();
+           Product returnedProduct =  productMapper.GetProduct(id);
+           ProductVM newProductVm = new ProductVM(returnedProduct.Id,returnedProduct.Name, returnedProduct.Category,  returnedProduct.Color,
+               returnedProduct.Details, returnedProduct.Price, returnedProduct.Stock);
+            return newProductVm;
         }
 
-        publicstatic List<Product> CategoryProducts()
+        public static void EditProduct(ProductVM productVM)
         {
-            return _productDataMapper.GetAllProducts();
-        }
-
-        public void Edit(ProductVM productVM)
-        {
-            _productDataMapper.Edit(p);
+            ProductMapper productMapper = new ProductMapper();
+            Product inputProduct = new Product(productVM.Id, productVM.Name, productVM.Category, productVM.Color, productVM.Details, productVM.Price, productVM.Stock);
+            productMapper.EditProduct(inputProduct);
         }
     }
 }
