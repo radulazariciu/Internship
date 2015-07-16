@@ -5,3 +5,10 @@ c:\users\bogdan.mates\documents\visual studio 2013\Projects\NikeMVCVM\Nike.Busin
 c:\users\bogdan.mates\documents\visual studio 2013\Projects\NikeMVCVM\Nike.Business\bin\Debug\Nike.DataLayer.pdb
 c:\users\bogdan.mates\documents\visual studio 2013\Projects\NikeMVCVM\Nike.Business\obj\Debug\Nike.Business.dll
 c:\users\bogdan.mates\documents\visual studio 2013\Projects\NikeMVCVM\Nike.Business\obj\Debug\Nike.Business.pdb
+D:\DEV\Github\Internship\NikeMVCVM\Nike.Business\bin\Debug\Nike.Business.dll
+D:\DEV\Github\Internship\NikeMVCVM\Nike.Business\bin\Debug\Nike.Business.pdb
+D:\DEV\Github\Internship\NikeMVCVM\Nike.Business\bin\Debug\Nike.DataLayer.dll
+D:\DEV\Github\Internship\NikeMVCVM\Nike.Business\bin\Debug\Nike.DataLayer.pdb
+D:\DEV\Github\Internship\NikeMVCVM\Nike.Business\obj\Debug\Nike.Business.csprojResolveAssemblyReference.cache
+D:\DEV\Github\Internship\NikeMVCVM\Nike.Business\obj\Debug\Nike.Business.dll
+D:\DEV\Github\Internship\NikeMVCVM\Nike.Business\obj\Debug\Nike.Business.pdb

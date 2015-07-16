@@ -3,3 +3,8 @@ c:\users\bogdan.mates\documents\visual studio 2013\Projects\NikeMVCVM\Nike.DataL
 c:\users\bogdan.mates\documents\visual studio 2013\Projects\NikeMVCVM\Nike.DataLayer\obj\Debug\Nike.DataLayer.csprojResolveAssemblyReference.cache
 c:\users\bogdan.mates\documents\visual studio 2013\Projects\NikeMVCVM\Nike.DataLayer\obj\Debug\Nike.DataLayer.dll
 c:\users\bogdan.mates\documents\visual studio 2013\Projects\NikeMVCVM\Nike.DataLayer\obj\Debug\Nike.DataLayer.pdb
+D:\DEV\Github\Internship\NikeMVCVM\Nike.DataLayer\bin\Debug\Nike.DataLayer.dll
+D:\DEV\Github\Internship\NikeMVCVM\Nike.DataLayer\bin\Debug\Nike.DataLayer.pdb
+D:\DEV\Github\Internship\NikeMVCVM\Nike.DataLayer\obj\Debug\Nike.DataLayer.csprojResolveAssemblyReference.cache
+D:\DEV\Github\Internship\NikeMVCVM\Nike.DataLayer\obj\Debug\Nike.DataLayer.dll
+D:\DEV\Github\Internship\NikeMVCVM\Nike.DataLayer\obj\Debug\Nike.DataLayer.pdb

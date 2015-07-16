@@ -45,6 +45,9 @@
     <Compile Include="Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModels\LoginVM.cs" />
+    <Compile Include="ViewModels\Product\ProductCartVM.cs" />
+    <Compile Include="ViewModels\Product\ProductCategoryVM.cs" />
+    <Compile Include="ViewModels\Product\ProductDetailsVM.cs" />
     <Compile Include="ViewModels\RegisterVM.cs" />
   </ItemGroup>
   <ItemGroup>
