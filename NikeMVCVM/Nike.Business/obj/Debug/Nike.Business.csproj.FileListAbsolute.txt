@@ -19,3 +19,5 @@ D:\mygit\Internship\NikeMVCVM\Nike.Business\bin\Debug\Nike.DataLayer.pdb
 D:\mygit\Internship\NikeMVCVM\Nike.Business\obj\Debug\Nike.Business.csprojResolveAssemblyReference.cache
 D:\mygit\Internship\NikeMVCVM\Nike.Business\obj\Debug\Nike.Business.dll
 D:\mygit\Internship\NikeMVCVM\Nike.Business\obj\Debug\Nike.Business.pdb
+D:\mygit\Internship\NikeMVCVM\Nike.Business\bin\Debug\EntityFramework.dll
+D:\mygit\Internship\NikeMVCVM\Nike.Business\bin\Debug\EntityFramework.xml

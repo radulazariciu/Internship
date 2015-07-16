@@ -13,3 +13,8 @@ D:\mygit\Internship\NikeMVCVM\Nike.DataLayer\bin\Debug\Nike.DataLayer.pdb
 D:\mygit\Internship\NikeMVCVM\Nike.DataLayer\obj\Debug\Nike.DataLayer.csprojResolveAssemblyReference.cache
 D:\mygit\Internship\NikeMVCVM\Nike.DataLayer\obj\Debug\Nike.DataLayer.dll
 D:\mygit\Internship\NikeMVCVM\Nike.DataLayer\obj\Debug\Nike.DataLayer.pdb
+D:\mygit\Internship\NikeMVCVM\Nike.DataLayer\bin\Debug\Nike.DataLayer.dll.config
+D:\mygit\Internship\NikeMVCVM\Nike.DataLayer\bin\Debug\EntityFramework.dll
+D:\mygit\Internship\NikeMVCVM\Nike.DataLayer\bin\Debug\EntityFramework.SqlServer.dll
+D:\mygit\Internship\NikeMVCVM\Nike.DataLayer\bin\Debug\EntityFramework.xml
+D:\mygit\Internship\NikeMVCVM\Nike.DataLayer\bin\Debug\EntityFramework.SqlServer.xml

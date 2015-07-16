@@ -30,8 +30,19 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,7 +57,60 @@
     <Compile Include="Models\Product.cs" />
     <Compile Include="Models\ShoppingCart.cs" />
     <Compile Include="Models\User.cs" />
+    <Compile Include="NikeDB.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NikeDB.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NikeDB.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NikeDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NikeDB.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>NikeDB.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Nike_Category.cs">
+      <DependentUpon>NikeDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Nike_Images.cs">
+      <DependentUpon>NikeDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Nike_Product.cs">
+      <DependentUpon>NikeDB.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Nike_User.cs">
+      <DependentUpon>NikeDB.tt</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="NikeDB.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>NikeDB.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config" />
+    <None Include="NikeDB.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>NikeDB.edmx</DependentUpon>
+      <LastGenOutput>NikeDB.Context.cs</LastGenOutput>
+    </None>
+    <None Include="NikeDB.edmx.diagram">
+      <DependentUpon>NikeDB.edmx</DependentUpon>
+    </None>
+    <None Include="NikeDB.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>NikeDB.edmx</DependentUpon>
+      <LastGenOutput>NikeDB.cs</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
