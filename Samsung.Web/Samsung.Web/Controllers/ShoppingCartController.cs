@@ -13,8 +13,30 @@ namespace Samsung.Web.Controllers
 
         public ActionResult Index()
         {
+
+        ShoppingBL.GetCart(id.Value);
+        
             return View();
         }
+
+
+        [HttpPost]
+        public ActionResult AddToCart(ShoppingCartItem i , User u )
+        {
+            if (i != null)
+            {
+                var shopBL = new ShoppingBL();
+                shopBL.AddItem(i, u);
+            }
+
+            return View(); 
+        }
+
+        public ActionResult Checkout()
+        {
+             return View(); 
+        }
+    }
 
     }
 }
