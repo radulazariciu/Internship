@@ -1,0 +1,8 @@
+C:\Users\Ionut\documents\visual studio 2013\Projects\Samsung.Web\Samsung.BusinessLogic\bin\Samsung.BusinessLogic.dll.config
+C:\Users\Ionut\documents\visual studio 2013\Projects\Samsung.Web\Samsung.BusinessLogic\bin\Samsung.BusinessLogic.dll
+C:\Users\Ionut\documents\visual studio 2013\Projects\Samsung.Web\Samsung.BusinessLogic\bin\Samsung.BusinessLogic.pdb
+C:\Users\Ionut\documents\visual studio 2013\Projects\Samsung.Web\Samsung.BusinessLogic\bin\Samsung.DataLayer.dll
+C:\Users\Ionut\documents\visual studio 2013\Projects\Samsung.Web\Samsung.BusinessLogic\bin\Samsung.DataLayer.pdb
+C:\Users\Ionut\documents\visual studio 2013\Projects\Samsung.Web\Samsung.BusinessLogic\obj\Debug\Samsung.BusinessLogic.csprojResolveAssemblyReference.cache
+C:\Users\Ionut\documents\visual studio 2013\Projects\Samsung.Web\Samsung.BusinessLogic\obj\Debug\Samsung.BusinessLogic.dll
+C:\Users\Ionut\documents\visual studio 2013\Projects\Samsung.Web\Samsung.BusinessLogic\obj\Debug\Samsung.BusinessLogic.pdb

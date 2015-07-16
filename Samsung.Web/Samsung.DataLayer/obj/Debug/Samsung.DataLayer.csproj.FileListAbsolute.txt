@@ -1,0 +1,6 @@
+C:\Users\Ionut\documents\visual studio 2013\Projects\Samsung.Web\Samsung.DataLayer\bin\Samsung.DataLayer.dll.config
+C:\Users\Ionut\documents\visual studio 2013\Projects\Samsung.Web\Samsung.DataLayer\bin\Samsung.DataLayer.dll
+C:\Users\Ionut\documents\visual studio 2013\Projects\Samsung.Web\Samsung.DataLayer\bin\Samsung.DataLayer.pdb
+C:\Users\Ionut\documents\visual studio 2013\Projects\Samsung.Web\Samsung.DataLayer\obj\Debug\Samsung.DataLayer.csprojResolveAssemblyReference.cache
+C:\Users\Ionut\documents\visual studio 2013\Projects\Samsung.Web\Samsung.DataLayer\obj\Debug\Samsung.DataLayer.dll
+C:\Users\Ionut\documents\visual studio 2013\Projects\Samsung.Web\Samsung.DataLayer\obj\Debug\Samsung.DataLayer.pdb

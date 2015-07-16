@@ -1,0 +1,5 @@
+c:\users\bogdan.mates\documents\visual studio 2013\Projects\NikeMVCVM\Nike.DataLayer\bin\Debug\Nike.DataLayer.dll
+c:\users\bogdan.mates\documents\visual studio 2013\Projects\NikeMVCVM\Nike.DataLayer\bin\Debug\Nike.DataLayer.pdb
+c:\users\bogdan.mates\documents\visual studio 2013\Projects\NikeMVCVM\Nike.DataLayer\obj\Debug\Nike.DataLayer.csprojResolveAssemblyReference.cache
+c:\users\bogdan.mates\documents\visual studio 2013\Projects\NikeMVCVM\Nike.DataLayer\obj\Debug\Nike.DataLayer.dll
+c:\users\bogdan.mates\documents\visual studio 2013\Projects\NikeMVCVM\Nike.DataLayer\obj\Debug\Nike.DataLayer.pdb

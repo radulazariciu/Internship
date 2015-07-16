@@ -1,0 +1,20 @@
+﻿@model Samsung.Models.User
+@{
+    ViewBag.Title = "LogIn";
+}
+
+<h2>LogIn</h2>
+@using (Html.BeginForm("Login", "User"))
+{
+    @Html.ValidationSummary(false)
+    <fieldset>
+        <div>
+            
+            @Html.TextBoxFor(model => model.EmailAddress)
+            @Html.TextBoxFor(model => model.Password)
+            <input type="submit" value="Login" />
+
+        </div>
+
+    </fieldset>
+}
