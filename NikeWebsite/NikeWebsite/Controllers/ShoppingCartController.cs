@@ -1,4 +1,5 @@
-﻿using NikeWebsite.Models;
+﻿using NikeWebsite.BusinessLogic;
+using NikeWebsite.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,18 +10,23 @@ namespace NikeWebsite.Controllers
 {
     public class ShoppingCartController : Controller
     {
+        private ShoppingCart _shoppingCart = new ShoppingCart();
         //
         // GET: /ShoppingCart/
 
         public ActionResult Index()
         {
-            return View();
+            var helper = new ShoppingCartBL();
+            _shoppingCart.TotalPrice = helper.CalcTotalPrice(_shoppingCart);
+            var model = _shoppingCart;                            
+            
+            return View(model);
         }
 
         [HttpPost]
-        public ActionResult Index(ShoppingCartItem item)
+        public ActionResult Message(ShoppingCartItem item)
         {
-
+            _shoppingCart.Items.Add(item);
             return View();
         }
         //

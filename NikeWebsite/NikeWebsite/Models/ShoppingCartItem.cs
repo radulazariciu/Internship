@@ -10,8 +10,8 @@ namespace NikeWebsite.Models
     {
         public int Id { get; set; }
         [Required]
-        [Display(Name="OurQuantity")]
-        
+        [Display(Name="Quantity")]
         public int Quantity { get; set; }
+        public Product Item { get; set; }
     }
 }

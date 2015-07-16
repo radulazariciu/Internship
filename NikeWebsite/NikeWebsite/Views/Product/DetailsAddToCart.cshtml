@@ -1,6 +1,6 @@
 ﻿@model NikeWebsite.Models.ShoppingCartItem
 
-@using (Ajax.BeginForm("Index", "ShoppingCart", new AjaxOptions() { HttpMethod = "post", UpdateTargetId = "notify" }))
+@using (Ajax.BeginForm("Message", "ShoppingCart", new AjaxOptions() { HttpMethod = "post", UpdateTargetId = "notify" }))
 {
     @Html.ValidationSummary(false)
     <fieldset>

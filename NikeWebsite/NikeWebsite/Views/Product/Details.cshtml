@@ -54,7 +54,7 @@
                 </dd>
 
             </dl>
-    @Html.Partial("DetailsAddToCart", new NikeWebsite.Models.ShoppingCartItem() { Id = Model.Id})
+    @Html.Partial("DetailsAddToCart", new NikeWebsite.Models.ShoppingCartItem() { Item = Model})
 </div>
 <p>
     @Html.ActionLink("Back to List", "Index")
