@@ -8,7 +8,7 @@ namespace Samsung.DataLayer.DataMappers
 {
     public class ShoppingCartMapper
     {
-        private List<ShoppingCartItem> shoppingCartList;
+      /*  private List<ShoppingCartItem> shoppingCartList;
 
         public ShoppingCartMapper()
         {
@@ -94,6 +94,6 @@ namespace Samsung.DataLayer.DataMappers
                 cart.User = u;
                 cart.ShoppingCartItemsList.Add(i);
             }
-        }
+        }*/
     }
 }

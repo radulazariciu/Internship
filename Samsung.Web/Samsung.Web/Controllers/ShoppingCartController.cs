@@ -14,13 +14,13 @@ namespace Samsung.Web.Controllers
         public ActionResult Index()
         {
 
-        ShoppingBL.GetCart(id.Value);
+        //ShoppingBL.GetCart(id.Value);
         
             return View();
         }
 
 
-        [HttpPost]
+       /* [HttpPost]
         public ActionResult AddToCart(ShoppingCartItem i , User u )
         {
             if (i != null)
@@ -30,7 +30,7 @@ namespace Samsung.Web.Controllers
             }
 
             return View(); 
-        }
+        }*/
 
         public ActionResult Checkout()
         {
@@ -39,4 +39,3 @@ namespace Samsung.Web.Controllers
     }
 
     }
-}

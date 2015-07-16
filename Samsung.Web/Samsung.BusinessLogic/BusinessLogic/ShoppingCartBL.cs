@@ -11,7 +11,7 @@ namespace Samsung.BusinessLogic.BusinessLogic
     public static class ShoppingCartBL
     {
        
-        public static ShoppingCartVM GetShoppingCart(int id)
+        /*public static ShoppingCartVM GetShoppingCart(int id)
         {
             ShoppingCartMapper shoppingCartMapper = new ShoppingCartMapper();
             ShoppingCart shoppingCart = shoppingCartMapper.GetShoppingCart(id);
@@ -51,6 +51,6 @@ namespace Samsung.BusinessLogic.BusinessLogic
             Product product = productMapper.GetProduct(shoppingCartItemVm.IdProduct);
 
             return product.Price * shoppingCartItemVm.Quantity;
-        }
+        }*/
     }
 }

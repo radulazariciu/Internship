@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Internship2015Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Nike_Category">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Nike_Images">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Path" Type="varchar" MaxLength="150" />
+    <Property Name="ProductId" Type="int" />
+  </EntityType>
+  <EntityType Name="Nike_Product">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="50" />
+    <Property Name="Description" Type="varchar" MaxLength="50" />
+    <Property Name="Stock" Type="int" />
+    <Property Name="CategoryId" Type="int" />
+    <Property Name="Price" Type="decimal" Precision="18" Scale="0" />
+    <Property Name="Size" Type="int" />
+  </EntityType>
+  <EntityType Name="Nike_User">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FirstName" Type="varchar" MaxLength="50" />
+    <Property Name="LastName" Type="varchar" MaxLength="50" />
+    <Property Name="ScreenName" Type="varchar" MaxLength="50" />
+    <Property Name="Gender" Type="varchar" MaxLength="50" />
+    <Property Name="Zipcode" Type="int" />
+    <Property Name="DateOfBirth" Type="date" />
+    <Property Name="emailAddress" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Password" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Samsung_Category">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="name" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Samsung_Images">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="productId" Type="int" />
+    <Property Name="imagePath" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="Samsung_Order">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="userId" Type="int" />
+    <Property Name="productId" Type="int" />
+  </EntityType>
+  <EntityType Name="Samsung_Product">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="name" Type="varchar" MaxLength="50" />
+    <Property Name="categoryId" Type="int" />
+    <Property Name="color" Type="varchar" MaxLength="50" />
+    <Property Name="price" Type="int" />
+    <Property Name="stock" Type="int" />
+    <Property Name="details" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="Samsung_User">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="firstName" Type="varchar" MaxLength="50" />
+    <Property Name="lastName" Type="varchar" MaxLength="50" />
+    <Property Name="zipCode" Type="int" />
+    <Property Name="dateOfBirth" Type="datetime" />
+    <Property Name="emailAddress" Type="varchar" MaxLength="50" />
+    <Property Name="password" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <Association Name="FK__Samsung_I__produ__1BFD2C07">
+    <End Role="Samsung_Product" Type="Self.Samsung_Product" Multiplicity="0..1" />
+    <End Role="Samsung_Images" Type="Self.Samsung_Images" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Samsung_Product">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Samsung_Images">
+        <PropertyRef Name="productId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Samsung_O__produ__21B6055D">
+    <End Role="Samsung_Product" Type="Self.Samsung_Product" Multiplicity="0..1" />
+    <End Role="Samsung_Order" Type="Self.Samsung_Order" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Samsung_Product">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Samsung_Order">
+        <PropertyRef Name="productId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Samsung_O__userI__20C1E124">
+    <End Role="Samsung_User" Type="Self.Samsung_User" Multiplicity="0..1" />
+    <End Role="Samsung_Order" Type="Self.Samsung_Order" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Samsung_User">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Samsung_Order">
+        <PropertyRef Name="userId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Samsung_P__categ__173876EA">
+    <End Role="Samsung_Category" Type="Self.Samsung_Category" Multiplicity="0..1" />
+    <End Role="Samsung_Product" Type="Self.Samsung_Product" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Samsung_Category">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Samsung_Product">
+        <PropertyRef Name="categoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Nike_Product_Nike_Category">
+    <End Role="Nike_Category" Type="Self.Nike_Category" Multiplicity="0..1" />
+    <End Role="Nike_Product" Type="Self.Nike_Product" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Nike_Category">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Nike_Product">
+        <PropertyRef Name="CategoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Nike_Product_Nike_Images">
+    <End Role="Nike_Product" Type="Self.Nike_Product" Multiplicity="0..1" />
+    <End Role="Nike_Images" Type="Self.Nike_Images" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Nike_Product">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Nike_Images">
+        <PropertyRef Name="ProductId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Internship2015ModelStoreContainer">
+    <EntitySet Name="Nike_Category" EntityType="Self.Nike_Category" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Nike_Images" EntityType="Self.Nike_Images" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Nike_Product" EntityType="Self.Nike_Product" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Nike_User" EntityType="Self.Nike_User" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Samsung_Category" EntityType="Self.Samsung_Category" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Samsung_Images" EntityType="Self.Samsung_Images" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Samsung_Order" EntityType="Self.Samsung_Order" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Samsung_Product" EntityType="Self.Samsung_Product" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Samsung_User" EntityType="Self.Samsung_User" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__Samsung_I__produ__1BFD2C07" Association="Self.FK__Samsung_I__produ__1BFD2C07">
+      <End Role="Samsung_Product" EntitySet="Samsung_Product" />
+      <End Role="Samsung_Images" EntitySet="Samsung_Images" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Samsung_O__produ__21B6055D" Association="Self.FK__Samsung_O__produ__21B6055D">
+      <End Role="Samsung_Product" EntitySet="Samsung_Product" />
+      <End Role="Samsung_Order" EntitySet="Samsung_Order" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Samsung_O__userI__20C1E124" Association="Self.FK__Samsung_O__userI__20C1E124">
+      <End Role="Samsung_User" EntitySet="Samsung_User" />
+      <End Role="Samsung_Order" EntitySet="Samsung_Order" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Samsung_P__categ__173876EA" Association="Self.FK__Samsung_P__categ__173876EA">
+      <End Role="Samsung_Category" EntitySet="Samsung_Category" />
+      <End Role="Samsung_Product" EntitySet="Samsung_Product" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Nike_Product_Nike_Category" Association="Self.FK_Nike_Product_Nike_Category">
+      <End Role="Nike_Category" EntitySet="Nike_Category" />
+      <End Role="Nike_Product" EntitySet="Nike_Product" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Nike_Product_Nike_Images" Association="Self.FK_Nike_Product_Nike_Images">
+      <End Role="Nike_Product" EntitySet="Nike_Product" />
+      <End Role="Nike_Images" EntitySet="Nike_Images" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
