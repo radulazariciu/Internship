@@ -18,8 +18,8 @@ namespace Nike.Business.ViewModels.Product
         public string Description { get; set; }
         public decimal Price { get; set; }
         public int Stock { get; set; }
+        [Required]
         public int Size { get; set; }
-
         [Required]
         public int Quantity { get; set; }
         #endregion
