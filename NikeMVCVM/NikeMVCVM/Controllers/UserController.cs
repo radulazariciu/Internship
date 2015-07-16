@@ -6,6 +6,7 @@ using System.Web.Mvc;
 using Nike.Business.ViewModels;
 using Nike.Business.BusinessLogic;
 
+
 namespace NikeMVCVM.Controllers
 {
     public class UserController : Controller
@@ -15,7 +16,8 @@ namespace NikeMVCVM.Controllers
 
         public ActionResult Index()
         {
-            return View();
+            var list = UserBL.displayUserList();
+            return View(list);
         }
 
         public ActionResult Login()
@@ -26,8 +28,8 @@ namespace NikeMVCVM.Controllers
         [HttpPost]
         public ActionResult Login(LoginVM loginVm)
         {
-            Boolean success;
-            success =  UserBL.CheckCredentials(loginVm);
+            Boolean success = true;
+           // success =  UserBL.CheckCredentials(loginVm);
             if (success)
             {
                 return RedirectToAction("Index", "Home");
@@ -43,7 +45,7 @@ namespace NikeMVCVM.Controllers
         [HttpPost]
         public ActionResult Register(RegisterVM registerVm)
         {
-            if (UserBL.registerUser(registerVm)) 
+           // if (UserBL.registerUser(registerVm)) 
             {
                 return RedirectToAction("Index", "Home");
             }
