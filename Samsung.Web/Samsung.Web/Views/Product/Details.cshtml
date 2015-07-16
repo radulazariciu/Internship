@@ -44,7 +44,7 @@
     </div>
 </fieldset>
 
-@Html.Partial("AddToCart", new Samsung.Models.ShoppingCartItem() { IdProduct = Model.Id, CurrentPrice = Model.Price })
+@Html.Partial("AddToCart", new Samsung.BusinessLogic.ViewModels.ShoppingCartItemVM() { IdProduct = Model.Id })
 
 <p>
     @Html.ActionLink("Proceed to checkout", "../Shopping/Index", new { Id = Model.Id }) |
