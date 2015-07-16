@@ -250,3 +250,5 @@ D:\mygit\Internship\NikeMVCVM\NikeMVCVM\bin\zh-Hant\System.Spatial.resources.dll
 D:\mygit\Internship\NikeMVCVM\NikeMVCVM\obj\Debug\Nike.Web.csprojResolveAssemblyReference.cache
 D:\mygit\Internship\NikeMVCVM\NikeMVCVM\obj\Debug\NikeMVCVM.dll
 D:\mygit\Internship\NikeMVCVM\NikeMVCVM\obj\Debug\NikeMVCVM.pdb
+D:\mygit\Internship\NikeMVCVM\NikeMVCVM\bin\EntityFramework.SqlServer.dll
+D:\mygit\Internship\NikeMVCVM\NikeMVCVM\bin\EntityFramework.SqlServer.xml
