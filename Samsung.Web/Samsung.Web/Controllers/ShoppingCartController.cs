@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Samsung.BusinessLogic.BusinessLogic;
+using Samsung.BusinessLogic.ViewModels;
 
 namespace Samsung.Web.Controllers
 {
@@ -14,30 +16,26 @@ namespace Samsung.Web.Controllers
         public ActionResult Index()
         {
 
-        ShoppingBL.GetCart(id.Value);
+        ShoppingCartBL.GetShoppingCart();
         
             return View();
         }
 
-
         [HttpPost]
-        public ActionResult AddToCart(ShoppingCartItem i , User u )
+        public ActionResult AddToCart(ShoppingCartItemVM shoppingCartItemVm)
         {
-            if (i != null)
+            if (shoppingCartItemVm != null)
             {
-                var shopBL = new ShoppingBL();
-                shopBL.AddItem(i, u);
+                ShoppingCartBL.AddItem(shoppingCartItemVm);
             }
 
             return View(); 
         }
 
-        public ActionResult Checkout()
+        public ActionResult Checkout(UserVM userVm)
         {
+            ShoppingCartBL.SetUserToCart(userVm);
              return View(); 
         }
     }
-
-    }
-
 }
