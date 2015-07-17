@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Nike.Business.BusinessLogic
 {
-    class ShoppingCartBL
+    public class ShoppingCartBL
     {
     }
 }
