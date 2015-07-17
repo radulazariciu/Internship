@@ -29,7 +29,7 @@ namespace NikeMVCVM.Controllers
         public ActionResult Login(LoginVM loginVm)
         {
             Boolean success = true;
-           // success =  UserBL.CheckCredentials(loginVm);
+            success =  UserBL.CheckLoginCredentials(loginVm);
             if (success)
             {
                 return RedirectToAction("Index", "Home");

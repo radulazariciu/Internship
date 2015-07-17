@@ -44,10 +44,7 @@ namespace Nike.DataLayer.Mappers
         //    }
         //    return false;
         //}
-
-
-
-
+                    
 
         //EF get user list
         public List<Nike_User> GetAllUsers()
@@ -59,6 +56,7 @@ namespace Nike.DataLayer.Mappers
                 return userList;
             }            
         }
+               
     }
     
 }
