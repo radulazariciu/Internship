@@ -10,11 +10,16 @@ namespace Nike.Business.BusinessLogic
 {
     public static class ProductBL
     {
-       
+        #region Public Members
+
+        //Get a list of {Product Category View Model}
         public static List<ProductCategoryVM> GetProducts()
         {
+            //Instance of productMapper
             ProductMapper _productMapper = new ProductMapper();
+            //List of products
             var productList = _productMapper.GetProducts();
+            //List of View model for Products
             var productVMList = new List<ProductCategoryVM>();
 
             foreach (var item in productList)
@@ -25,7 +30,7 @@ namespace Nike.Business.BusinessLogic
                     Name = item.Name,
                     Description = item.Description,
                     Price = item.Price,
-                    Category = item.Category
+                    Category = _productMapper.GetProductCategory(item)
                 };
 
                 productVMList.Add(prod);
@@ -35,13 +40,28 @@ namespace Nike.Business.BusinessLogic
 
         }
 
+        //Get the ProductCategory View Model with id = {id}
         public static ProductCategoryVM GetProduct(int id)
         {
-            var products = GetProducts();
+            var _productMapper = new ProductMapper();
+            var searchedProduct = _productMapper.GetProduct(id);
 
-            var prod = products.FirstOrDefault(p => p.Id == id);
+            if (searchedProduct != null)
+            {
+                var prodVM = new ProductCategoryVM
+                {
+                    Id = searchedProduct.Id,
+                    Name = searchedProduct.Name,
+                    Description = searchedProduct.Description,
+                    Price = searchedProduct.Price,
+                    Category = _productMapper.GetProductCategory(searchedProduct)
+                };
 
-            return prod;
+                return prodVM;
+            }
+
+            return null;
         }
+        #endregion
     }
 }

@@ -1,5 +1,4 @@
 ﻿using Nike.Business.BusinessLogic;
-using Nike.Business.ViewModels.Product;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -23,16 +22,8 @@ namespace NikeMVCVM.Controllers
         public ActionResult Details(int id)
         {
             var product = ProductBL.GetProduct(id);
-            var model = new ProductDetailsVM()
-            {
-                Id = product.Id,
-                Name = product.Name,
-                Category = product.Category,
-                Description = product.Description,
-                Price = product.Price
-            };
-
-            return View(model);
+            
+            return View(product);
         }
     }
 }
