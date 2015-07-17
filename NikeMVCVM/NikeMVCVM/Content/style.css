@@ -400,3 +400,15 @@ pre:hover  {
 .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
     background-image: none;
 }
+
+#theLoginInput {
+    margin-left: 20px;
+}
+
+input {
+    margin-left: 0px;
+}
+
+label {
+    margin-left: 0px;
+}
