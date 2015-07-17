@@ -1,0 +1,15 @@
+﻿@model NikeWebsite.Models.ShoppingCart
+
+@{
+    ViewBag.Title = "Index";
+    var item = Model.Items
+}
+
+<h2>Index</h2>
+
+<div>
+    <p>
+        @Html.LabelFor(model => model.TotalPrice):
+    </p>
+        @Html.DisplayNameFor(model => model.TotalPrice)
+</div>

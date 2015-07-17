@@ -1,0 +1,22 @@
+﻿@model Samsung.BusinessLogic.ViewModels.ShoppingCartVM
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Shopping Cart Index</h2>
+<table>
+    @foreach (var item in Model.ShoppingCartItemsList)
+    {
+        <tr>
+            <td>@Html.DisplayFor(modelItem => item.IdProduct)</td>
+            <td>@Html.DisplayFor(modelItem => item.Quantity)</td>
+        </tr>
+    }
+</table>
+
+<p>@Html.DisplayFor(model => model.TotalPrice)</p>
+
+<p>
+    @Html.ActionLink("Checkout", "Checkout") |
+    @Html.ActionLink("Continue shopping", "../Product/Index")|
+</p>

@@ -1,0 +1,29 @@
+﻿@Model IEnumerable<webapplication2.models.customer>
+
+    @{
+        Layout = "~/Views/Shared/_Layout.cshtml";
+    }
+
+
+    <!DOCTYPE HTML>
+    <script type="text/javascript">
+        function changeText() {
+            document.getElementById('controlled').innerHTML = 'this is the modified text';
+            document.getElementById('theButton').value = 'pressed';
+        }
+    </script>
+    <html>
+    <head>
+        <meta name="viewport" content="width=device-width" />
+        <title>test index page</title>
+    </head>
+    <body>
+        <div>
+            this is just a test
+        </div>
+        <div>
+            <p id="controlled">this is the sample text</p>
+            <input type="button" id="theButton" onclick="changeText()" value="this button changes the text" />
+        </div>
+    </body>
+</html>

@@ -1,0 +1,91 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
+p, h3, img, div{
+    margin:0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+}
+
+#container{
+    height: 600px;
+    width:800px;
+    background-color: #3a2d79;
+    margin:0 auto;
+    color:#ffffff;
+    font-size: 12px;
+    font-family: Montserrat;
+    overflow: hidden;
+}
+
+.row{
+    margin:20px auto;
+    height: 200px;
+    width: 700px;
+    text-align: center;
+}
+
+.row:last-child{
+    height: 50px;
+    font-size: 24px;
+    margin-top: 40px;
+}
+
+#logo{
+    height: 200px;
+    width: 200px;
+    float:left;
+    margin:10px;
+    position:relative;
+}
+
+#logo img{
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    width:150px;
+    margin: auto;
+}
+
+.sqare{
+    height: 200px;
+    width: 200px;
+    background-color: rgba(108, 210, 113, 0.75);
+    float:left;
+    margin:10px;
+    border-radius: 10px;
+}
+
+.square-inside{
+    position: relative;
+    text-align: left;
+    margin:10px;
+    border:3px solid rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    height: 60%;
+    padding: 27px 10px;
+    
+}
+
+.title{
+    margin-bottom: 10px;
+}
+
+.top-image img{
+    height: 25px;
+    width: 25px; 
+    position: absolute;
+    left:-10px;
+    top:-10px;
+}
+
+.bottom-image img{
+    height: 20px;
+    width: 20px; 
+    position: absolute;
+    right:5px;
+    bottom: 5px;
+}

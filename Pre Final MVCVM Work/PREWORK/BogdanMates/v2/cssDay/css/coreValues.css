@@ -1,0 +1,178 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+body {
+	background-color: #3a2d79;
+	height: 100%;
+	
+}
+
+.row {	
+  width: 100%; 
+  padding-top: 30px; 
+}
+
+.row2 {	
+  width: 100%;  
+  clear: both;	
+  height: 300px;
+  padding-top: 80px;
+}
+
+.row3 {
+	width: 100%;
+	clear: both;
+	position: relative;
+	text-align: center;	
+	font-size: 32px;	
+	bottom: -40px;
+}
+
+.block {	
+	position: relative;
+	display: inline-block;		
+	width: 450px;
+	
+					
+}
+
+.block2 {	
+	display: inline-block;	
+	position: relative;
+	border-radius: 25px 25px 25px 25px;
+	-moz-border-radius: 25px 25px 25px 25px;
+	-webkit-border-radius: 25px 25px 25px 25px;
+	border: 15px rgba(255, 255, 255, 0.5);
+	box-shadow: 0 0 0 4px #fff, 0 0 0 12px rgba(108, 210, 113, 0.75);
+	
+}
+
+
+.alignment {
+	width: 33%;
+	float: left;  
+	text-align: center;	
+}
+
+#theLogo {
+	clear: both;
+	max-width: 450px;
+	max-height: 450px;
+	text-align: center;
+	vertical-align: middle;
+	padding-top: 15%;
+
+	
+}
+
+#theArrow {
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	margin-top: -7px;
+	left: -7px;
+}
+
+.smallImages {
+	clear: both;
+	max-width: 40px;
+	max-height: 40px;
+	position: absolute;
+	bottom: 15px;
+	right: 20px;
+	opacity: 1.00;
+	color: rgba(0, 0, 0, 1);
+}
+
+#tnc {		
+	background-color: rgba(108, 210, 113, 0.75); 	
+	border-radius: 25px 25px 25px 25px;
+	-moz-border-radius: 25px 25px 25px 25px;
+	-webkit-border-radius: 25px 25px 25px 25px;
+	border: 15px rgba(255, 255, 255, 0.5);
+	height: 350px;
+	box-shadow: 0 0 0 4px #fff, 0 0 0 12px rgba(108, 210, 113, 0.75);
+	
+	
+
+}
+
+#osc {		
+	background-color: rgba(108, 210, 113, 0.75);
+	float: right;
+	height: 350px;
+	border-radius: 25px 25px 25px 25px;
+	-moz-border-radius: 25px 25px 25px 25px;
+	-webkit-border-radius: 25px 25px 25px 25px;
+	border: 15px rgba(255, 255, 255, 0.5);
+	box-shadow: 0 0 0 4px #fff, 0 0 0 12px rgba(108, 210, 113, 0.75);
+
+}
+
+
+
+
+
+#atol {
+	width: 450px;	
+	height: 350px;	
+	background-color: rgba(108, 210, 113, 0.75); 
+	
+}
+
+#clg {
+	width: 450px;	
+	height: 350px;	
+	background-color: rgba(108, 210, 113, 0.75); 
+	
+}
+
+#ffs {
+	width: 450px;	
+	height: 350px;	
+	background-color: rgba(108, 210, 113, 0.75); 
+	float: right;
+	
+}
+
+
+
+#ocv {
+
+	font-family: 'Montserrat';
+	clear: both;
+	bottom: 50px;
+
+}
+
+h1 {
+	color: #ffffff;
+}
+
+pre {
+	color: #ffffff;
+	font-family: 'Montserrat';
+}
+
+.topText {
+	clear: both;
+	font-size: 32px;
+	position: relative;
+	padding-top: 50px;
+	left: -190px;	
+}
+
+.bottomText {
+	clear: both;
+	position: relative;
+	font-size: 21px;
+	top: -25px;
+	left: -85px;
+}
+
+.bottomTextSpecial {
+	clear: both;
+	position: relative;
+	font-size: 21px;
+	top: -25px;
+	left: -155px;
+}

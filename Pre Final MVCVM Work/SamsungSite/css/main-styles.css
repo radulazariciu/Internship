@@ -1,0 +1,145 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Starting main */
+
+.main{
+	position:relative;
+	color:white;
+    background: linear-gradient(0deg, white, #577BD9 80%) no-repeat;
+    height: 700px;
+    overflow: hidden;
+}
+
+.main > h1{
+	position:absolute;
+	top:10px;
+	left:10%;
+}
+
+.main-container{
+	position: relative;
+	width:960px;
+	height: 700px;
+	margin: 50px auto;
+}
+
+#main-announce1{
+	position: absolute;
+	top:25%;
+	left:-10%;
+	border:7px solid rgba(255,255,255,0.8);
+	width: 300px;
+	height: 300px;
+	padding: 20px 20px 20px 50px;
+}
+
+#main-announce1-img{
+	position: absolute;
+	left:-200px;
+	top:-120px;
+	bottom: 0;
+	margin: auto 0;
+}
+
+#main-announce2{
+	position: absolute;
+	top:5%;
+	right:0;
+	left:0;
+	margin:0 auto;
+	padding:20px;
+	width:250px;
+	height: 300px;
+	background-image: url("../images/announce2.jpg");
+}
+
+#main-announce3{
+	position: absolute;
+	top:28%;
+	right:5%;
+	width:200px;
+	height: 400px;
+}
+
+#main-announce3-img1{
+	position:absolute;
+	top:0;
+	left:-50px;
+}
+
+#main-announce3-img2{
+	position:absolute;
+	bottom:50px;
+	left:-100px;
+}
+
+#main-announce4{
+	position: absolute;
+	bottom:-15%;
+	left:0;
+	right: 0;
+	margin:0 auto;
+	width:200px;
+	height: 400px;
+}
+
+#main-announce4-img{
+	position:absolute;
+	top:-10%;
+	left:-425px;
+}
+
+.main h1{
+	font-size: 22px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+
+#mobile-bottom-header {
+	position: relative !important;
+	top: 15px !important;
+}
