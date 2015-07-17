@@ -5,6 +5,16 @@
     background-color: #000;
 }
 
+.navbar-default {
+    clear: both;
+    background-image: none;
+    background-color: #000;
+}
+
+#topNavbar {
+    background-color: #000;
+}
+
 #topNavbarButtons6 {
   background-image: url("../Images/header/emailSignUp.png");
   margin-top: 6px;
@@ -87,6 +97,7 @@
 }
 
 #topNavbarButtons6 {
+    margin-top: 1px;
   font-size: 15px;
   font-weight: bold;
 }
@@ -149,7 +160,9 @@ pre:hover {
   color: #ff9900;
 }
 
-
+.btn-default {
+    background-image: none;
+}
 
 
 

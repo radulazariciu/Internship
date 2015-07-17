@@ -20,13 +20,19 @@ namespace NikeMVCVM
 
             bundles.Add(new ScriptBundle("~/bundles/custom").Include(
                         "~/Scripts/index.js", 
-                        "~/Scripts/main.js"
+                        "~/Scripts/main.js",
+                        "~/Scripts/bootstrap.js",
+                        "~/Scripts/bootstrap.min.js"
                        ));
             // Use the development version of Modernizr to develop with and learn from. Then, when you're
             // ready for production, use the build tool at http://modernizr.com to pick only the tests you need.
             bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
                         "~/Scripts/modernizr-*"));
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> b1844a77ddea1375d29eae96e197be3d075ea6ed
             bundles.Add(new StyleBundle("~/Content/css").Include( 
                         "~/Content/register.css",
                         "~/Content/slider.css", 
