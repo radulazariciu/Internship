@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-  <EntityContainerMapping StorageEntityContainer="Internship2015ModelStoreContainer" CdmEntityContainer="SamsungEntity">
+  <EntityContainerMapping StorageEntityContainer="Internship2015ModelStoreContainer" CdmEntityContainer="EntitySamsung">
     <EntitySetMapping Name="Samsung_Category">
       <EntityTypeMapping TypeName="Internship2015Model.Samsung_Category">
         <MappingFragment StoreEntitySet="Samsung_Category">
@@ -23,7 +23,17 @@
         <MappingFragment StoreEntitySet="Samsung_Order">
           <ScalarProperty Name="id" ColumnName="id" />
           <ScalarProperty Name="userId" ColumnName="userId" />
+          <ScalarProperty Name="totalPrice" ColumnName="totalPrice" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Samsung_OrderItem">
+      <EntityTypeMapping TypeName="Internship2015Model.Samsung_OrderItem">
+        <MappingFragment StoreEntitySet="Samsung_OrderItem">
+          <ScalarProperty Name="id" ColumnName="id" />
           <ScalarProperty Name="productId" ColumnName="productId" />
+          <ScalarProperty Name="orderId" ColumnName="orderId" />
+          <ScalarProperty Name="quantity" ColumnName="quantity" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

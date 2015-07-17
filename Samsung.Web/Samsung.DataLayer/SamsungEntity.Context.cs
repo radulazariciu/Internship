@@ -13,10 +13,10 @@ namespace Samsung.DataLayer
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class SamsungEntity : DbContext
+    public partial class EntitySamsung : DbContext
     {
-        public SamsungEntity()
-            : base("name=SamsungEntity")
+        public EntitySamsung()
+            : base("name=EntitySamsung")
         {
         }
     
@@ -28,6 +28,7 @@ namespace Samsung.DataLayer
         public virtual DbSet<Samsung_Category> Samsung_Category { get; set; }
         public virtual DbSet<Samsung_Images> Samsung_Images { get; set; }
         public virtual DbSet<Samsung_Order> Samsung_Order { get; set; }
+        public virtual DbSet<Samsung_OrderItem> Samsung_OrderItem { get; set; }
         public virtual DbSet<Samsung_Product> Samsung_Product { get; set; }
         public virtual DbSet<Samsung_User> Samsung_User { get; set; }
     }

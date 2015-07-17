@@ -4,7 +4,7 @@
 }
 
 <h2>Login Page</h2>
-@using (Html.BeginForm("Login", "User"))
+@using (Ajax.BeginForm("Login", "User", new AjaxOptions(){HttpMethod = "post", UpdateTargetId = "notify"}))
 {
     @Html.AntiForgeryToken()
     <div>
