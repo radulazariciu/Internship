@@ -63,6 +63,7 @@
     <Compile Include="ViewModels\Product\ProductCategoryVM.cs" />
     <Compile Include="ViewModels\Product\ProductDetailsVM.cs" />
     <Compile Include="ViewModels\RegisterVM.cs" />
+    <Compile Include="ViewModels\UserVM.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Nike.DataLayer\Nike.DataLayer.csproj">

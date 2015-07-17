@@ -54,7 +54,6 @@
     <Compile Include="Mappers\ProductMapper.cs" />
     <Compile Include="Mappers\ShoppingCartMapper.cs" />
     <Compile Include="Mappers\UserMapper.cs" />
-    <Compile Include="Models\Product.cs" />
     <Compile Include="Models\ShoppingCart.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="NikeDB.Context.cs">
