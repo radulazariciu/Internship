@@ -27,7 +27,7 @@ namespace NikeMVCVM
 
             bundles.Add(new StyleBundle("~/Content/css").Include( "~/Content/bootstrap.min.css", "~/Content/bootstrap.css", "~/Content/register.css", "~/Content/slider.css", "~/Content/style.css", "~/Content/categorystyle.css", "~/Content/mainradu.css",
                 "~/Content/shoppingCartStyle.css", "~/Content/underConstructionStyle.css", "~/Content/working.css", "~/Content/main.css",
-                "~/Content/bootstrap-theme.css", "~/Content/bootstrap-theme.min.css", "~/Content/bootstrap-theme.css.map", "~/Content/bootstrap.css.map"));
+                 "~/Content/bootstrap-theme.min.css", "~/Content/bootstrap-theme.css.map", "~/Content/bootstrap.css.map"));
 
             bundles.Add(new StyleBundle("~/Content/themes/base/css").Include(
                         "~/Content/themes/base/jquery.ui.core.css",

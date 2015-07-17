@@ -2,22 +2,23 @@
   position: relative;
   margin-bottom: 0px;
   min-height: 1px;
+    background-color: #000;
 }
 
 #topNavbarButtons6 {
-  background-image: url("../img/emailSignUp.png");
+  background-image: url("../Images/header/emailSignUp.png");
   margin-top: 6px;
   height: 29px;
   width: 111px;
 }
 
 #topNavbarButtons6:hover {
-  background-image: url("../img/emailSignUpOrange.png");
+  background-image: url("../Images/header/emailSignUpOrange.png");
   background-position: 1px 1px;
 }
 
 #topNavbarButtons3 {
-  background-image: url("../img/image.png");
+  background-image: url("../Images/header/image.png");
   background-repeat: no-repeat;  
   margin-top: 7px;
   max-width: 50px;
@@ -25,12 +26,12 @@
 }
 
 #topNavbarButtons3:hover{
-  background-image: url("../img/imageOrange.png");
+  background-image: url("../Images/header/imageOrange.png");
   margin-top: 5px;
 }
 
 #topNavbarButtons4 {
-  background-image: url("../img/hurley.png");
+  background-image: url("../Images/header/hurley.png");
   background-repeat: no-repeat;
   min-width: 50px;
   margin-top: 9px;
@@ -38,14 +39,18 @@
 }
 
 #topNavbarButtons4:hover {
-  background-image: url("../img/hurleyOrange.png");
+  background-image: url("../Images/header/hurleyOrange.png");
   background-position: -1px -1px;
 }
 
 .navbar-default {
-  background-color: #000000;
+  background-color: #000;
   border: 0;
   height: 30px; 
+
+    background-repeat: repeat-x;
+    border-radius: 4px;
+    box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.15) inset, 0px 1px 5px rgba(0, 0, 0, 0.075);
 }
 
 .navbar-default .navbar-brand {
@@ -89,6 +94,23 @@
 #topNavbarButtons7 {
   font-size: 15px;
   font-weight: bold;
+}
+
+.glyphicon {
+     font-family: 'Glyphicons Halflings';
+     font-style: normal;
+     text-decoration: inherit;
+     line-height: normal;
+ }
+
+.glyphicon-shopping-cart {
+   zoom: expression( this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe116;');
+}
+
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url('../fonts/glyphicons-halflings-regular.eot');
+  src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
 }
 
 #topNavbarButtons8 {
@@ -193,7 +215,7 @@ pre:hover {
 }
 
 #nikeLogo {
-  background-image: url("../img/logo.png");
+  background-image: url("../Images/header/logo.png");
   background-repeat: no-repeat; 
   height: 71px;
   width: 70px;
@@ -201,7 +223,7 @@ pre:hover {
 }
 
 #nikeLogo:hover {
-  background-image: url("../img/logoOrange.png");
+  background-image: url("../Images/header/logoOrange.png");
   background-repeat: no-repeat; 
   height: 71px;
   width: 70px;
