@@ -11,10 +11,13 @@ namespace Nike.DataLayer.Mappers
     {    
 
         //add user
-        //public void addUser(User u)
-        //{
-        //    theUsers.Add(u);
-        //}
+        public void addUser(Nike_User u)
+        {
+            using(var db = new NikeDBEntities())
+            {
+                db.Nike_User.Add(u);
+            }
+        }
 
 
         //public Boolean checkUserExists(User u)
