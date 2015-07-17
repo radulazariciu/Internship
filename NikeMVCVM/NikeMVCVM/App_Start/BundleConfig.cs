@@ -19,15 +19,41 @@ namespace NikeMVCVM
                         "~/Scripts/jquery.validate*"));
 
             bundles.Add(new ScriptBundle("~/bundles/custom").Include(
-                        "~/Scripts/index.js", "~/Scripts/jquery.bxslider.min.js", "~/Scripts/main.js", "~/Scripts/slider.js"));
+                        "~/Scripts/index.js", 
+                        "~/Scripts/main.js"
+                       ));
             // Use the development version of Modernizr to develop with and learn from. Then, when you're
             // ready for production, use the build tool at http://modernizr.com to pick only the tests you need.
             bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
                         "~/Scripts/modernizr-*"));
 
-            bundles.Add(new StyleBundle("~/Content/css").Include( "~/Content/bootstrap.min.css", "~/Content/bootstrap.css", "~/Content/register.css", "~/Content/slider.css", "~/Content/style.css", "~/Content/categorystyle.css", "~/Content/mainradu.css",
-                "~/Content/shoppingCartStyle.css", "~/Content/underConstructionStyle.css", "~/Content/working.css", "~/Content/main.css",
-                "~/Content/bootstrap-theme.css", "~/Content/bootstrap-theme.min.css", "~/Content/bootstrap-theme.css.map", "~/Content/bootstrap.css.map"));
+            bundles.Add(new StyleBundle("~/Content/css").Include( 
+                        "~/Content/register.css",
+                        "~/Content/slider.css", 
+                        "~/Content/style.css", 
+                        "~/Content/categorystyle.css", 
+                        "~/Content/mainradu.css",
+                        "~/Content/shoppingCartStyle.css", 
+                        "~/Content/underConstructionStyle.css",
+                        "~/Content/working.css", 
+                        "~/Content/main.css"));
+            
+            bundles.Add(new StyleBundle("~/Content/bootstrap").Include(
+                        "~/Content/bootstrap.min.css", 
+                        "~/Content/bootstrap.css",
+                        "~/Content/bootstrap-theme.css",
+                        "~/Content/bootstrap-theme.min.css",
+                        "~/Content/bootstrap-theme.css.map", 
+                        "~/Content/bootstrap.css.map"));
+
+            bundles.Add(new StyleBundle("~/Content/bx-slider").Include(
+                        "~/Content/jquery.bxslider.css"));
+
+            bundles.Add(new ScriptBundle("~/bundles/bx-slider").Include(
+                       "~/Scripts/jquery.bxslider.min.js"));
+
+            bundles.Add(new ScriptBundle("~/bundles/slider").Include(
+                         "~/Scripts/slider.js"));
 
             bundles.Add(new StyleBundle("~/Content/themes/base/css").Include(
                         "~/Content/themes/base/jquery.ui.core.css",
