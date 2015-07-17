@@ -12,30 +12,16 @@ namespace Nike.Business.BusinessLogic
 {
     public static class UserBL
     {
-               
-        //public static Boolean CheckCredentials(LoginVM userVm)
-        //{
-        //    UserMapper userMapper = new UserMapper();
-        //    List<User> parsedList = userMapper.GetAllUsers();
 
-        //    foreach (var item in parsedList)
-        //    {
-        //        if ((item.emailAddress == userVm.EmailAddress) && (item.Password == userVm.Password))
-        //        {
-        //            return true;
-        //        }
-        //    }
-        //    return false;
-        //}
-
+        #region Public Members
         public static Boolean CheckLoginCredentials(LoginVM userVm)
         {
             UserMapper userMapper = new UserMapper();
             List<Nike_User> parsedList = userMapper.GetAllUsers();
 
-            foreach(var item in parsedList)
+            foreach (var item in parsedList)
             {
-                if((item.emailAddress == userVm.EmailAddress) && (item.Password == userVm.Password))
+                if ((item.emailAddress == userVm.EmailAddress) && (item.Password == userVm.Password))
                 {
                     return true;
                 }
@@ -73,8 +59,9 @@ namespace Nike.Business.BusinessLogic
         public static List<Nike_User> displayUserList()
         {
             var um = new UserMapper();
-            var users =  um.GetAllUsers();
+            var users = um.GetAllUsers();
             return users;
         }
+        #endregion
     }
 }
