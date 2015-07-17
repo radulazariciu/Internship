@@ -17,7 +17,7 @@ namespace Samsung.DataLayer
         public Samsung_Product()
         {
             this.Samsung_Images = new HashSet<Samsung_Images>();
-            this.Samsung_Order = new HashSet<Samsung_Order>();
+            this.Samsung_OrderItem = new HashSet<Samsung_OrderItem>();
         }
     
         public int id { get; set; }
@@ -30,6 +30,6 @@ namespace Samsung.DataLayer
     
         public virtual Samsung_Category Samsung_Category { get; set; }
         public virtual ICollection<Samsung_Images> Samsung_Images { get; set; }
-        public virtual ICollection<Samsung_Order> Samsung_Order { get; set; }
+        public virtual ICollection<Samsung_OrderItem> Samsung_OrderItem { get; set; }
     }
 }

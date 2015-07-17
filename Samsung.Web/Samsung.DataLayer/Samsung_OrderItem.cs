@@ -12,18 +12,14 @@ namespace Samsung.DataLayer
     using System;
     using System.Collections.Generic;
     
-    public partial class Samsung_Order
+    public partial class Samsung_OrderItem
     {
-        public Samsung_Order()
-        {
-            this.Samsung_OrderItem = new HashSet<Samsung_OrderItem>();
-        }
-    
         public int id { get; set; }
-        public Nullable<int> userId { get; set; }
-        public Nullable<int> totalPrice { get; set; }
+        public Nullable<int> productId { get; set; }
+        public Nullable<int> orderId { get; set; }
+        public Nullable<int> quantity { get; set; }
     
-        public virtual ICollection<Samsung_OrderItem> Samsung_OrderItem { get; set; }
-        public virtual Samsung_User Samsung_User { get; set; }
+        public virtual Samsung_Order Samsung_Order { get; set; }
+        public virtual Samsung_Product Samsung_Product { get; set; }
     }
 }
