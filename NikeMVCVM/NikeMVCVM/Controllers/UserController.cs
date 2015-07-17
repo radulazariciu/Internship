@@ -45,8 +45,9 @@ namespace NikeMVCVM.Controllers
         [HttpPost]
         public ActionResult Register(RegisterVM registerVm)
         {
-           // if (UserBL.registerUser(registerVm)) 
+            if (UserBL.registerUser(registerVm)) 
             {
+
                 return RedirectToAction("Index", "Home");
             }
             return View();
