@@ -159,9 +159,11 @@ pre {
   padding: 0;
 }
 
-pre:hover {
+pre:hover  {
   color: #ff9900;
+  background-color: #424141 !important;
 }
+
 
 .btn-default {
     background-image: none;
@@ -171,20 +173,20 @@ pre:hover {
 
 
 .tdOptions {
-	background-color: #414141;
+	background-color: #414141 !important;
 }
 
 .sameBackground {
-  background-color: #414141;
+  background-color: #414141 !important;
 }
 
 
 .tdOptions:hover {
-  background-color: #414141;
+  background-color: #414141 !important;
 }
 
 .sameBackground:hover {
-  background-color: #414141;
+  background-color: #414141 !important;
 }
 
 
@@ -353,4 +355,60 @@ pre:hover {
 
 #topNavbarButtons6 {
     margin-top: 5px;
+}
+
+.tdOptions:hover > li > a {
+	background-color: #414141 !important;
+}
+
+.sameBackground:hover > li {
+  background-color: #414141 !important;
+}
+
+.sameBackground:hover > a {
+  background-color: #414141 !important;
+}
+
+.sameBackground:hover{
+  background-color: #414141 !important;
+}
+
+.tdOptions:hover > a{
+    background-color: #414141 !important;
+}
+
+
+
+.tdOptions {
+	background-color: #414141!important;
+}
+
+.sameBackground {
+  background-color: #414141 !important;
+}
+
+
+.tdOptions:hover {
+  background-color: #414141 !important;
+}
+
+.sameBackground:hover {
+  background-color: #414141!important;
+}
+
+
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+    background-image: none;
+}
+
+#theLoginInput {
+    margin-left: 20px;
+}
+
+input {
+    margin-left: 0px;
+}
+
+label {
+    margin-left: 0px;
 }
