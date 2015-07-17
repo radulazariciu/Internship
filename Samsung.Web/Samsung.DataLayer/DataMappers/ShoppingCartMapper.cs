@@ -8,7 +8,11 @@ namespace Samsung.DataLayer.DataMappers
 {
     public class ShoppingCartMapper
     {
+<<<<<<< HEAD
+      /*  private List<ShoppingCartItem> shoppingCartList;
+=======
         private ShoppingCart shoppingCart;
+>>>>>>> 9079e8b81ed9aa51e4a7bc031af98a25d22f8255
 
         public void SetUserToShoppingCart(User user)
         {
@@ -42,7 +46,19 @@ namespace Samsung.DataLayer.DataMappers
 
         public void AddShoppingCartItem(ShoppingCartItem sc)
         {
+<<<<<<< HEAD
+
+            var cart = shoppingCartList.Find(x => x.User.EmailAddress == u.EmailAddress);
+            if (cart == null)
+            {
+                cart = new ShoppingCart();
+                cart.User = u;
+                cart.ShoppingCartItemsList.Add(i);
+            }
+        }*/
+=======
             shoppingCart.ShoppingCartItemsList.Add(sc);
         }
+>>>>>>> 9079e8b81ed9aa51e4a7bc031af98a25d22f8255
     }
 }

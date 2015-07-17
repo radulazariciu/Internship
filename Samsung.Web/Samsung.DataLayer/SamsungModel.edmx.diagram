@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="37ec8c083c1942f7b88c3529d76c4247" Name="Diagram1">
+        <EntityTypeShape EntityType="Internship2015Model.Nike_Category" Width="1.5" PointX="5.75" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="Internship2015Model.Nike_Images" Width="1.5" PointX="10.25" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Internship2015Model.Nike_Product" Width="1.5" PointX="8" PointY="7.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Internship2015Model.Nike_User" Width="1.5" PointX="7.75" PointY="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Internship2015Model.Samsung_Category" Width="1.5" PointX="0.75" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="Internship2015Model.Samsung_Images" Width="1.5" PointX="5.25" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Internship2015Model.Samsung_Order" Width="1.5" PointX="5.25" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Internship2015Model.Samsung_Product" Width="1.5" PointX="3" PointY="3.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Internship2015Model.Samsung_User" Width="1.5" PointX="3" PointY="7" IsExpanded="true" />
+        <AssociationConnector Association="Internship2015Model.FK_Nike_Product_Nike_Category" ManuallyRouted="false" />
+        <AssociationConnector Association="Internship2015Model.FK_Nike_Product_Nike_Images" ManuallyRouted="false" />
+        <AssociationConnector Association="Internship2015Model.FK__Samsung_P__categ__173876EA" ManuallyRouted="false" />
+        <AssociationConnector Association="Internship2015Model.FK__Samsung_I__produ__1BFD2C07" ManuallyRouted="false" />
+        <AssociationConnector Association="Internship2015Model.FK__Samsung_O__produ__21B6055D" ManuallyRouted="false" />
+        <AssociationConnector Association="Internship2015Model.FK__Samsung_O__userI__20C1E124" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
