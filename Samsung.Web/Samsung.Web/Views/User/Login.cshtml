@@ -4,7 +4,7 @@
 }
 
 <h2>Login Page</h2>
-@using (Ajax.BeginForm("Login", "User", new AjaxOptions(){HttpMethod = "post", UpdateTargetId = "notify"}))
+@using (Html.BeginForm("Login", "User"))
 {
     @Html.AntiForgeryToken()
     <div>
@@ -23,7 +23,12 @@
     </div>
 }
 
-<p id="notify"></p>
+
+
+
+<p id="notify">
+   
+</p>
 
 @section Scripts {
     @Scripts.Render("~/bundles/jqueryval")

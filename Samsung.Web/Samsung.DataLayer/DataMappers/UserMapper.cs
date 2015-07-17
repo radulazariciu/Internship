@@ -8,7 +8,8 @@ namespace Samsung.DataLayer.DataMappers
 {
     public class UserMapper
     {
-
+        public User LoggedUser { get; set; }
+    
         public List<Samsung_User> usersList = new List<Samsung_User>();
 
         public void AddUser(User user)
