@@ -38,7 +38,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -65,10 +73,59 @@
     <Compile Include="DataMappers\UserMapper.cs" />
     <Compile Include="Models\Product.cs" />
     <Compile Include="Models\ShoppingCart.cs" />
+    <Compile Include="Models\ShoppingCartItem.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SamsungModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SamsungModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SamsungModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SamsungModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SamsungModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SamsungModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Samsung_Category.cs">
+      <DependentUpon>SamsungModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Samsung_Images.cs">
+      <DependentUpon>SamsungModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Samsung_Order.cs">
+      <DependentUpon>SamsungModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Samsung_Product.cs">
+      <DependentUpon>SamsungModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Samsung_User.cs">
+      <DependentUpon>SamsungModel.tt</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EntityDeploy Include="SamsungModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>SamsungModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="packages.config" />
+    <Content Include="SamsungModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>SamsungModel.edmx</DependentUpon>
+      <LastGenOutput>SamsungModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="SamsungModel.edmx.diagram">
+      <DependentUpon>SamsungModel.edmx</DependentUpon>
+    </Content>
+    <Content Include="SamsungModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>SamsungModel.edmx</DependentUpon>
+      <LastGenOutput>SamsungModel.cs</LastGenOutput>
+    </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -76,7 +133,9 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

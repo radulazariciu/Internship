@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-
+using Samsung.BusinessLogic.ViewModels;
+using Samsung.BusinessLogic.BusinessLogic;
 namespace Samsung.Web.Controllers
 {
     public class ProductController : Controller
@@ -13,39 +14,29 @@ namespace Samsung.Web.Controllers
 
         public ActionResult Index()
         {
-            var prodBL = new ProductBL();
-            var list = prodBL.CategoryProducts();
-            return View(list);
+            var listProductVM = ProductBL.GetAllProducts();
+            return View(listProductVM);
         }
 
         //GET: /Product/Details/3
         public ActionResult Details(int? id)
         {
-            var prodBL = new ProductBL();
-            var prod = prodBL.GetProduct(id.Value);
-            return View(prod);
+            var prodVm = ProductBL.GetProduct(id.Value);
+            return View(prodVm);
         }
 
         public ActionResult Edit(int? id)
         {
-            var prodBL = new ProductBL();
-            var prod = prodBL.GetProduct(id.Value);
+            var prod = ProductBL.GetProduct(id.Value);
             return View(prod);
         }
 
         [HttpPost]
-        public ActionResult Edit(Product p = null)
+        public ActionResult Edit(ProductVM productVm)
         {
-            var prodBL = new ProductBL();
-            prodBL.Edit(p);
+            ProductBL.EditProduct(productVm);
             return RedirectToAction("Index");
         }
-
-        public ActionResult ShoppingCart(int id = 0)
-        {
-            return RedirectToAction("Shopping/Index");
-        }
-
 
     }
 }

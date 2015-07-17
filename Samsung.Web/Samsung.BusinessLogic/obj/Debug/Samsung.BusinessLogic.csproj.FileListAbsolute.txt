@@ -6,3 +6,34 @@ C:\Users\Ionut\documents\visual studio 2013\Projects\Samsung.Web\Samsung.Busines
 C:\Users\Ionut\documents\visual studio 2013\Projects\Samsung.Web\Samsung.BusinessLogic\obj\Debug\Samsung.BusinessLogic.csprojResolveAssemblyReference.cache
 C:\Users\Ionut\documents\visual studio 2013\Projects\Samsung.Web\Samsung.BusinessLogic\obj\Debug\Samsung.BusinessLogic.dll
 C:\Users\Ionut\documents\visual studio 2013\Projects\Samsung.Web\Samsung.BusinessLogic\obj\Debug\Samsung.BusinessLogic.pdb
+C:\Users\ionut.indre\Desktop\final\Internship\Samsung.Web\Samsung.BusinessLogic\bin\Samsung.BusinessLogic.dll.config
+C:\Users\ionut.indre\Desktop\final\Internship\Samsung.Web\Samsung.BusinessLogic\bin\Samsung.BusinessLogic.dll
+C:\Users\ionut.indre\Desktop\final\Internship\Samsung.Web\Samsung.BusinessLogic\bin\Samsung.BusinessLogic.pdb
+C:\Users\ionut.indre\Desktop\final\Internship\Samsung.Web\Samsung.BusinessLogic\bin\Samsung.DataLayer.dll
+C:\Users\ionut.indre\Desktop\final\Internship\Samsung.Web\Samsung.BusinessLogic\bin\Samsung.DataLayer.pdb
+C:\Users\ionut.indre\Desktop\final\Internship\Samsung.Web\Samsung.BusinessLogic\obj\Debug\Samsung.BusinessLogic.csprojResolveAssemblyReference.cache
+C:\Users\ionut.indre\Desktop\final\Internship\Samsung.Web\Samsung.BusinessLogic\obj\Debug\Samsung.BusinessLogic.dll
+C:\Users\ionut.indre\Desktop\final\Internship\Samsung.Web\Samsung.BusinessLogic\obj\Debug\Samsung.BusinessLogic.pdb
+<<<<<<< HEAD
+C:\Users\andrei.toader\test\testRepository\Internship - Copy\actualVersion\Internship\Samsung.Web\Samsung.BusinessLogic\obj\Debug\Samsung.BusinessLogic.csprojResolveAssemblyReference.cache
+C:\Users\andrei.toader\test\testRepository\Internship - Copy\actualVersion\Internship\Samsung.Web\Samsung.BusinessLogic\obj\Debug\Samsung.BusinessLogic.dll
+C:\Users\andrei.toader\test\testRepository\Internship - Copy\actualVersion\Internship\Samsung.Web\Samsung.BusinessLogic\bin\Samsung.BusinessLogic.dll.config
+C:\Users\andrei.toader\test\testRepository\Internship - Copy\actualVersion\Internship\Samsung.Web\Samsung.BusinessLogic\bin\Samsung.BusinessLogic.dll
+C:\Users\andrei.toader\test\testRepository\Internship - Copy\actualVersion\Internship\Samsung.Web\Samsung.BusinessLogic\bin\Samsung.BusinessLogic.pdb
+C:\Users\andrei.toader\test\testRepository\Internship - Copy\actualVersion\Internship\Samsung.Web\Samsung.BusinessLogic\bin\Samsung.DataLayer.dll
+C:\Users\andrei.toader\test\testRepository\Internship - Copy\actualVersion\Internship\Samsung.Web\Samsung.BusinessLogic\bin\Samsung.DataLayer.pdb
+C:\Users\andrei.toader\test\testRepository\Internship - Copy\actualVersion\Internship\Samsung.Web\Samsung.BusinessLogic\obj\Debug\Samsung.BusinessLogic.pdb
+C:\Users\andrei.toader\test\testRepository\Internship - Copy\actualVersion\Internship\Samsung.Web\Samsung.BusinessLogic\bin\EntityFramework.dll
+C:\Users\andrei.toader\test\testRepository\Internship - Copy\actualVersion\Internship\Samsung.Web\Samsung.BusinessLogic\bin\EntityFramework.xml
+C:\Users\andrei.toader\test\testRepository\Internship - Copy\actualVersion\Internship\Samsung.Web\Samsung.BusinessLogic\bin\EntityFramework.SqlServer.dll
+C:\Users\andrei.toader\test\testRepository\Internship - Copy\actualVersion\Internship\Samsung.Web\Samsung.BusinessLogic\bin\EntityFramework.SqlServer.xml
+=======
+C:\Users\ionut.indre\Desktop\327joi\Internship\Samsung.Web\Samsung.BusinessLogic\obj\Debug\Samsung.BusinessLogic.csprojResolveAssemblyReference.cache
+C:\Users\ionut.indre\Desktop\327joi\Internship\Samsung.Web\Samsung.BusinessLogic\obj\Debug\Samsung.BusinessLogic.dll
+C:\Users\ionut.indre\Desktop\327joi\Internship\Samsung.Web\Samsung.BusinessLogic\bin\Samsung.BusinessLogic.dll.config
+C:\Users\ionut.indre\Desktop\327joi\Internship\Samsung.Web\Samsung.BusinessLogic\bin\Samsung.BusinessLogic.dll
+C:\Users\ionut.indre\Desktop\327joi\Internship\Samsung.Web\Samsung.BusinessLogic\bin\Samsung.BusinessLogic.pdb
+C:\Users\ionut.indre\Desktop\327joi\Internship\Samsung.Web\Samsung.BusinessLogic\bin\Samsung.DataLayer.dll
+C:\Users\ionut.indre\Desktop\327joi\Internship\Samsung.Web\Samsung.BusinessLogic\bin\Samsung.DataLayer.pdb
+C:\Users\ionut.indre\Desktop\327joi\Internship\Samsung.Web\Samsung.BusinessLogic\obj\Debug\Samsung.BusinessLogic.pdb
+>>>>>>> 9079e8b81ed9aa51e4a7bc031af98a25d22f8255

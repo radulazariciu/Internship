@@ -14,12 +14,12 @@ namespace Nike.DataLayer.Mappers
         #endregion
 
         #region Public Members
-        public ShoppingCart getCart(int userId)
-        {
-            var cart = _shoppingCarts.FirstOrDefault(s => s.Customer.Id == userId);
+        //public ShoppingCart getCart(int userId)
+        //{
+        //    var cart = _shoppingCarts.FirstOrDefault(s => s.Customer.Id == userId);
 
-            return cart;
-        }
+        //    return cart;
+        //}
 
         #endregion
     }

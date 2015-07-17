@@ -25,10 +25,7 @@ namespace Samsung.DataLayer.DataMappers
             p.Name="Samsung Galaxy S6 edge";
             p.Category = "T-Mobile";
             p.Color = "black";
-            p.Details = new List<string>();
-            p.Details.Add("Reimagined Design Inside and Out");
-            p.Details.Add("Innovative Dual-Edge Screen");
-            p.Details.Add("5.1\" Quad HD Super AMOLED® display ");
+            p.Details ="Reimagined Design Inside and Out";
             p.Price = 600;
             p.Stock = 5;
             productsList.Add(p);
@@ -38,10 +35,7 @@ namespace Samsung.DataLayer.DataMappers
             p.Name = "Samsung Galaxy Note Edge";
             p.Category = "T-Mobile";
             p.Color = "black";
-            p.Details = new List<string>();
-            p.Details.Add("Innovative Smart Edge Screen");
-            p.Details.Add("Enhanced S Pen™ with more precision and functions");
-            p.Details.Add("16MP rear camera with Optical Image Stabilization");
+            p.Details = "Reimagined Design Inside and Out";
             p.Price = 550;
             p.Stock = 10;
             productsList.Add(p);
@@ -51,10 +45,7 @@ namespace Samsung.DataLayer.DataMappers
             p.Name = "Samsung Galaxy Note II ";
             p.Category = "Sprint";
             p.Color = "gray";
-            p.Details = new List<string>();
-            p.Details.Add("Built for productivity, multitasking, capturing and sharing");
-            p.Details.Add("Power and performance with 4G speed, quad-core processor on the Android platform");
-            p.Details.Add("Intuitive interacting by tapping, hovering and speaking");
+            p.Details = "Reimagined Design Inside and Out";
             p.Price = 850;
             p.Stock = 7;
             productsList.Add(p);
@@ -75,7 +66,7 @@ namespace Samsung.DataLayer.DataMappers
             return productsList;
         }
 
-        public void Edit(Product p)
+        public void EditProduct(Product p)
         {
             var prod = productsList.Find(i => i.Id == p.Id);
             prod.Name = p.Name;
