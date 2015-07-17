@@ -10,7 +10,7 @@ namespace Nike.DataLayer.Models
     class ShoppingCart
     {
         public int Id { get; set; }
-        public List<Product> Items { get; set; }
+      // public List<Product> Items { get; set; }
         public int CustomerId { get; set; }
         public string Address { get; set; }
         public decimal TotalPrice { get; set; }

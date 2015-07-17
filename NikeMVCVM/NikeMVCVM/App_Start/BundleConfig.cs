@@ -20,14 +20,16 @@ namespace NikeMVCVM
 
             bundles.Add(new ScriptBundle("~/bundles/custom").Include(
                         "~/Scripts/index.js", 
-                        "~/Scripts/main.js"
+                        "~/Scripts/main.js",
+                        "~/Scripts/bootstrap.js",
+                        "~/Scripts/bootstrap.min.js"
                        ));
             // Use the development version of Modernizr to develop with and learn from. Then, when you're
             // ready for production, use the build tool at http://modernizr.com to pick only the tests you need.
             bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
                         "~/Scripts/modernizr-*"));
 
-<<<<<<< HEAD
+
             bundles.Add(new StyleBundle("~/Content/css").Include( 
                         "~/Content/register.css",
                         "~/Content/slider.css", 
@@ -55,11 +57,7 @@ namespace NikeMVCVM
 
             bundles.Add(new ScriptBundle("~/bundles/slider").Include(
                          "~/Scripts/slider.js"));
-=======
-            bundles.Add(new StyleBundle("~/Content/css").Include( "~/Content/bootstrap.min.css", "~/Content/bootstrap.css", "~/Content/register.css", "~/Content/slider.css", "~/Content/style.css", "~/Content/categorystyle.css", "~/Content/mainradu.css",
-                "~/Content/shoppingCartStyle.css", "~/Content/underConstructionStyle.css", "~/Content/working.css", "~/Content/main.css",
-                 "~/Content/bootstrap-theme.min.css", "~/Content/bootstrap-theme.css.map", "~/Content/bootstrap.css.map"));
->>>>>>> a239ea079cbf046d593f55d8dac771dd33e74051
+
 
             bundles.Add(new StyleBundle("~/Content/themes/base/css").Include(
                         "~/Content/themes/base/jquery.ui.core.css",
