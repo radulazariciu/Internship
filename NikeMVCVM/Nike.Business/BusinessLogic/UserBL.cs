@@ -28,30 +28,47 @@ namespace Nike.Business.BusinessLogic
         //    return false;
         //}
 
-        //public static void AddUser(RegisterVM registerVm)
-        //{
-        //    UserMapper userMapper = new UserMapper();
-        //    User newUser = new User(registerVm.Password,registerVm.emailAddress, registerVm.DateOfBirth,registerVm.Zipcode,
-        //        registerVm.Gender, registerVm.ScreenName, registerVm.LastName, registerVm.FirstName);
+        public static Boolean CheckLoginCredentials(LoginVM userVm)
+        {
+            UserMapper userMapper = new UserMapper();
+            List<Nike_User> parsedList = userMapper.GetAllUsers();
 
-        //    userMapper.addUser(newUser);
-        //}
+            foreach(var item in parsedList)
+            {
+                if((item.emailAddress == userVm.EmailAddress) && (item.Password == userVm.Password))
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        public static void AddUser(RegisterVM registerVm)
+        {
+            UserMapper userMapper = new UserMapper();
+            Nike_User newUser = new Nike_User(registerVm.Password, registerVm.emailAddress, registerVm.DateOfBirth, registerVm.Zipcode,
+                registerVm.Gender, registerVm.ScreenName, registerVm.LastName, registerVm.FirstName);
+
+            userMapper.addUser(newUser);
+        }
 
 
-        //public static Boolean registerUser(RegisterVM registerVm)
-        //{
-        //    UserMapper userMapper = new UserMapper();
-        //    User newUser = new User(registerVm.Password, registerVm.emailAddress, registerVm.DateOfBirth, registerVm.Zipcode,
-        //        registerVm.Gender, registerVm.ScreenName, registerVm.LastName, registerVm.FirstName);
+        public static Boolean registerUser(RegisterVM registerVm)
+        {
+            UserMapper userMapper = new UserMapper();
+            Nike_User newUser = new Nike_User(registerVm.Password, registerVm.emailAddress, registerVm.DateOfBirth, registerVm.Zipcode,
+                registerVm.Gender, registerVm.ScreenName, registerVm.LastName, registerVm.FirstName);
 
-        //    Boolean succes = userMapper.checkUserExists(newUser);
-        //    if (!succes)
-        //    {
-        //        userMapper.addUser(newUser);
-        //        return true;
-        //    }
-        //    return false;
-        //}
+            Boolean succes = userMapper.checkUserExists(newUser);
+            if (!succes)
+            {
+                userMapper.addUser(newUser);
+                return true;
+            }
+            return false;
+        }
+
+
 
         public static List<Nike_User> displayUserList()
         {

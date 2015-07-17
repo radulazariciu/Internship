@@ -29,7 +29,7 @@ namespace NikeMVCVM.Controllers
         public ActionResult Login(LoginVM loginVm)
         {
             Boolean success = true;
-           // success =  UserBL.CheckCredentials(loginVm);
+            success =  UserBL.CheckLoginCredentials(loginVm);
             if (success)
             {
                 return RedirectToAction("Index", "Home");
@@ -45,8 +45,9 @@ namespace NikeMVCVM.Controllers
         [HttpPost]
         public ActionResult Register(RegisterVM registerVm)
         {
-           // if (UserBL.registerUser(registerVm)) 
+            if (UserBL.registerUser(registerVm)) 
             {
+
                 return RedirectToAction("Index", "Home");
             }
             return View();
