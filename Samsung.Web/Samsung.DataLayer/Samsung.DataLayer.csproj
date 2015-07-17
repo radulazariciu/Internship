@@ -102,6 +102,9 @@
     <Compile Include="Samsung_Order.cs">
       <DependentUpon>SamsungEntity.tt</DependentUpon>
     </Compile>
+    <Compile Include="Samsung_OrderItem.cs">
+      <DependentUpon>SamsungEntity.tt</DependentUpon>
+    </Compile>
     <Compile Include="Samsung_Product.cs">
       <DependentUpon>SamsungEntity.tt</DependentUpon>
     </Compile>
@@ -116,6 +119,8 @@
     <None Include="Models\Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+    <Content Include="Web.Config" />
+    <Content Include="packages.config" />
     <EntityDeploy Include="SamsungEntity.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>SamsungEntity.Designer.cs</LastGenOutput>
@@ -133,8 +138,6 @@
       <DependentUpon>SamsungEntity.edmx</DependentUpon>
       <LastGenOutput>SamsungEntity.cs</LastGenOutput>
     </Content>
-    <Content Include="Web.Config" />
-    <Content Include="packages.config" />
     <None Include="Web.Debug.Config">
       <DependentUpon>Web.Config</DependentUpon>
     </None>

@@ -8,31 +8,30 @@ namespace Samsung.DataLayer.DataMappers
 {
     public class UserMapper
     {
-   
-        public List<User> usersList = new List<User>
-        {
-            new User
-            {
-               Id = 0,
-               FirstName = "TestFM",
-               LastName = "TestSN",
-               Password = "test",
-               EmailAddress = "test@test.com",
-               Zipcode = 12345,
-               DateOfBirth = DateTime.Today
-            }
-        };
+
+        public List<Samsung_User> usersList = new List<Samsung_User>();
 
         public void AddUser(User user)
         {
-            usersList.Add(user);
+
+            Samsung_User samsungUser = new Samsung_User(user.FirstName,user.LastName, user.Zipcode, user.DateOfBirth, user.EmailAddress, user.Password);
+            usersList.Add(samsungUser);
+            using (var db = new EntitySamsung())
+            {
+                db.Samsung_User.Add(samsungUser);
+            }
+
+           
         }
 
-        public Boolean CheckUserExistence(User user)
+        public Boolean CheckUserExistence(Samsung_User user)
         {
-            foreach (var item in usersList)
+
+            List<Samsung_User> checkSamsungUsersList = GetAllSamsungUsers();
+
+            foreach (var item in checkSamsungUsersList)
             {
-                if (item.EmailAddress.Equals(user.EmailAddress))
+                if (item.emailAddress.Equals(user.emailAddress))
                 {
                     return true;
                 }
@@ -40,23 +39,18 @@ namespace Samsung.DataLayer.DataMappers
             return false;
         }
 
-        public List<User> GetAllUsers()
-        {
-            return usersList;
-        }
-
-
         public void AddUser(Samsung_User user)
         {
-            using (var db= new SamsungEntity())
+            using (var db = new EntitySamsung())
             {
                 db.Samsung_User.Add(user);
+                db.SaveChanges();
             }
         }
 
         public List<Samsung_User> GetAllSamsungUsers()
         {
-            using (var db = new SamsungEntity())
+            using (var db = new EntitySamsung())
             {
 
                 return db.Samsung_User.ToList();

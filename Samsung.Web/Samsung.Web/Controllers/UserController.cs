@@ -29,7 +29,7 @@ namespace Samsung.Web.Controllers
             Boolean success = UserBL.CheckCredentials(loginVm);
             if (success)
             {
-                return RedirectToAction("Index", "Home");
+                return RedirectToAction("Index", "Product");
             }
             return View();
         }
@@ -45,7 +45,7 @@ namespace Samsung.Web.Controllers
             Boolean success = UserBL.RegisterUser(registerVm);
             if (success)
             {
-                return RedirectToAction("Index", "Home");
+                return RedirectToAction("Login", "User");
             }
             return View();
         }

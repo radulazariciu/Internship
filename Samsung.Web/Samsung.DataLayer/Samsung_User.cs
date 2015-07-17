@@ -18,7 +18,17 @@ namespace Samsung.DataLayer
         {
             this.Samsung_Order = new HashSet<Samsung_Order>();
         }
-    
+
+        public Samsung_User(string firstName, string lastName, int? zipCode, DateTime? dateOfBirth, string emailAddress, string password)
+        {
+            this.firstName = firstName;
+            this.lastName = lastName;
+            this.zipCode = zipCode;
+            this.dateOfBirth = dateOfBirth;
+            this.emailAddress = emailAddress;
+            this.password = password;
+        }
+
         public int id { get; set; }
         public string firstName { get; set; }
         public string lastName { get; set; }
