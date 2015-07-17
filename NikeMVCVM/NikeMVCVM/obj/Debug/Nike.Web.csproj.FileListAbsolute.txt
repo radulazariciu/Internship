@@ -252,3 +252,5 @@ D:\mygit\Internship\NikeMVCVM\NikeMVCVM\obj\Debug\NikeMVCVM.dll
 D:\mygit\Internship\NikeMVCVM\NikeMVCVM\obj\Debug\NikeMVCVM.pdb
 D:\mygit\Internship\NikeMVCVM\NikeMVCVM\bin\EntityFramework.SqlServer.dll
 D:\mygit\Internship\NikeMVCVM\NikeMVCVM\bin\EntityFramework.SqlServer.xml
+D:\DEV\Github\Internship\NikeMVCVM\NikeMVCVM\bin\EntityFramework.SqlServer.dll
+D:\DEV\Github\Internship\NikeMVCVM\NikeMVCVM\bin\EntityFramework.SqlServer.xml
