@@ -1,0 +1,50 @@
+﻿@model Samsung.BusinessLogic.ViewModels.ShoppingCartVM
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Shopping Cart Index</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Category</th>
+            <th>Color</th>
+            <th>Price</th>
+            <th>Quantity</th>
+        </tr>
+    </thead>
+    @foreach (var item in Model.ShoppingCartItemDetailList)
+    {
+        <tr>
+            <td>@Html.DisplayFor(modelItem => item.Product.Name)</td>
+            <td>@Html.DisplayFor(modelItem => item.Product.Category)</td>
+            <td>@Html.DisplayFor(modelItem => item.Product.Color)</td>
+            <td>@Html.DisplayFor(modelItem => item.Product.Price)</td>
+            <td>@Html.EditorFor(modelItem => item.Quantity)</td>
+            
+            @using (@Html.BeginForm("UpdateItem", "ShoppingCart", new Samsung.BusinessLogic.ViewModels.ShoppingCartItemVM() { IdProduct = item.Product.Id, Quantity = item.Quantity }))
+            {         
+                <td><input id="update" type="submit" value="Update" /></td>     
+            } 
+
+            @using (@Html.BeginForm("RemoveItem", "ShoppingCart", new { IdProduct = item.Product.Id}))
+            { 
+                <td><input id="delete" type="submit" value="Remove" /></td>
+            }
+            
+        </tr>
+    }
+</table>
+
+<p>Total price: @Html.DisplayFor(model => model.TotalPrice)</p>
+
+<p>
+    @using (Ajax.BeginForm("Checkout", "ShoppingCart", new AjaxOptions() {HttpMethod = "post", UpdateTargetId = "notify"}))
+    {
+        <input type="submit" name="button" value="Checkout"/>
+    }
+
+    @Html.ActionLink("Continue shopping", "../Product/Index")
+</p>
+<p id="notify"></p>
