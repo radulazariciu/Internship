@@ -29,6 +29,7 @@ namespace NikeMVCVM
             bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
                         "~/Scripts/modernizr-*"));
 
+
             bundles.Add(new StyleBundle("~/Content/css").Include( 
                         "~/Content/register.css",
                         "~/Content/slider.css", 
@@ -52,7 +53,7 @@ namespace NikeMVCVM
                         "~/Content/jquery.bxslider.css"));
 
             bundles.Add(new ScriptBundle("~/bundles/bx-slider").Include(
-                       "~/Scripts/jquery.bxslider.min.js"));
+                       "~/Scripts/jquery.bxslider.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/slider").Include(
                          "~/Scripts/slider.js"));
@@ -72,5 +73,6 @@ namespace NikeMVCVM
                         "~/Content/themes/base/jquery.ui.progressbar.css",
                         "~/Content/themes/base/jquery.ui.theme.css"));
         }
+        
     }
 }
