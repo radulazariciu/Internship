@@ -8,8 +8,7 @@ using System.Threading.Tasks;
 namespace Nike.DataLayer.Mappers
 {
     public class UserMapper
-    {
-       
+    {    
 
         //add user
         //public void addUser(User u)
@@ -46,7 +45,11 @@ namespace Nike.DataLayer.Mappers
         //    return false;
         //}
 
-        //get user list
+
+
+
+
+        //EF get user list
         public List<Nike_User> GetAllUsers()
         {
             List<Nike_User> userList;
@@ -54,8 +57,7 @@ namespace Nike.DataLayer.Mappers
             {
                 userList = db.Nike_User.ToList();
                 return userList;
-            }
-            return userList;
+            }            
         }
     }
     
