@@ -2,16 +2,18 @@
   position: relative;
   margin-bottom: 0px;
   min-height: 1px;
-    background-color: #000;
+    background-image: none;
+  background-color: #000;
 }
 
-.navbar-default {
+.navbar navbar-default {
     clear: both;
     background-image: none;
     background-color: #000;
 }
 
 #topNavbar {
+    background-image: none;
     background-color: #000;
     height: 36px;
 }
@@ -98,7 +100,7 @@
 }
 
 #topNavbarButtons6 {
-    margin-top: 1px;
+    margin-top: 5px;
   font-size: 15px;
   font-weight: bold;
 }
@@ -327,13 +329,15 @@ pre:hover {
   margin-left: 18px;
 }
 
+.navbar navbar-default {
+    clear: both;
+    background-image: none;
+    background-color: #000;
+}
 
-
-
-
-
-
-
+#topNavbarButtons6 {
+    margin-top: 5px;
+}
 
 
 @media (min-width: 768px) {
@@ -345,4 +349,8 @@ pre:hover {
     float: right!important;
     margin-right: 0px;
   }
+}
+
+#topNavbarButtons6 {
+    margin-top: 5px;
 }
