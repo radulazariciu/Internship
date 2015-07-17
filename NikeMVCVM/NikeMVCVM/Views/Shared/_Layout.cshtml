@@ -1,4 +1,4 @@
-﻿@model Nike.Business.ViewModels.LoginVM
+﻿@model Nike.Business.ViewModels.UserVM
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -126,10 +126,10 @@
                             {
                                 @Html.AntiForgeryToken()
                                 <div id="theLoginInput">
-                                <div class="editor-label">@Html.LabelFor(model => model.EmailAddress)</div>
-                                <div class="editor-field">@Html.TextBoxFor(model => model.EmailAddress)</div>
-                                <div class="editor-label">@Html.LabelFor(model => model.Password)</div>
-                                <div class="editor-field">@Html.PasswordFor(model => model.Password)</div>
+                                <div class="editor-label">@Html.LabelFor(model => model.LoginVm.EmailAddress)</div>
+                                <div class="editor-field">@Html.TextBoxFor(model => model.LoginVm.EmailAddress)</div>
+                                <div class="editor-label">@Html.LabelFor(model => model.LoginVm.Password)</div>
+                                <div class="editor-field">@Html.PasswordFor(model => model.LoginVm.Password)</div>
                                 </div>
                                 
                                 <li>
@@ -317,7 +317,7 @@
 
 
 
-
+    
     @Scripts.Render("~/bundles/jquery")
         @RenderSection("scripts", required: false)
     </body>
