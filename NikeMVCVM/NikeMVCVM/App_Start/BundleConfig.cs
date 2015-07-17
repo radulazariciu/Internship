@@ -29,10 +29,7 @@ namespace NikeMVCVM
             bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
                         "~/Scripts/modernizr-*"));
 
-<<<<<<< HEAD
-=======
 
->>>>>>> b1844a77ddea1375d29eae96e197be3d075ea6ed
             bundles.Add(new StyleBundle("~/Content/css").Include( 
                         "~/Content/register.css",
                         "~/Content/slider.css", 
