@@ -14,8 +14,20 @@ namespace Nike.Business.ViewModels
         public string Gender { get; set; }
         public int Zipcode { get; set; }
         public DateTime DateOfBirth { get; set; }
-        public string emailAddress { get; set; }
+        public string EmailAddress { get; set; }
         public string Password { get; set; }
+
+        public RegisterVM(string firstName, string lastName, string screenName, int zipcode, string gender, DateTime dateOfBirth, string emailAddress, string password)
+        {
+            FirstName = firstName;
+            LastName = lastName;
+            ScreenName = screenName;
+            Zipcode = zipcode;
+            Gender = gender;
+            DateOfBirth = dateOfBirth;
+            this.EmailAddress = emailAddress;
+            Password = password;
+        }
 
         public RegisterVM()
         {

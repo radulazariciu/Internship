@@ -14,6 +14,8 @@ namespace Nike.DataLayer
     
     public partial class Nike_User
     {
+        
+
         public int Id { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
@@ -23,5 +25,22 @@ namespace Nike.DataLayer
         public Nullable<System.DateTime> DateOfBirth { get; set; }
         public string emailAddress { get; set; }
         public string Password { get; set; }
+
+        public Nike_User(string firstName, string lastName, string screenName, string gender, int? zipcode, string emailAddress, DateTime? dateOfBirth, string password)
+        {
+            FirstName = firstName;
+            LastName = lastName;
+            ScreenName = screenName;
+            Gender = gender;
+            Zipcode = zipcode;
+            this.emailAddress = emailAddress;
+            DateOfBirth = dateOfBirth;
+            Password = password;
+        }
+
+       public Nike_User()
+        {
+        }
     }
+    
 }

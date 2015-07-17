@@ -16,26 +16,32 @@ namespace Nike.DataLayer.Mappers
             using(var db = new NikeDBEntities())
             {
                 db.Nike_User.Add(u);
+                db.SaveChanges();
             }
         }
 
 
-        //public Boolean checkUserExists(User u)
-        //{
-        //   // var user = theUsers.FirstOrDefault(usr => usr.emailAddress == u.emailAddress);
-        //    foreach (var item in theUsers)
-        //    {
-        //        if(item.emailAddress == u.emailAddress)
-        //        {
-        //            return true;
-        //        }
-        //    }
-        //    //if (user != null)
-        //    //{
-        //    //        return true;
-        //    //}
-        //    return false;
-        //}
+        public Boolean checkUserExists(Nike_User u)
+        {
+            // var user = theUsers.FirstOrDefault(usr => usr.emailAddress == u.emailAddress);
+            List<Nike_User> userList;
+            using (var db = new NikeDBEntities())
+            {
+                userList = db.Nike_User.ToList();
+                foreach (var item in userList)
+                {
+                    if (item.emailAddress == u.emailAddress)
+                    {
+                        return true;
+                    }
+                }
+            }
+            //if (user != null)
+            //{
+            //        return true;
+            //}
+            return false;
+        }
 
         ////login check
         //public bool checkUserLogin(User u)
