@@ -8,15 +8,14 @@
     @Scripts.Render("~/bundles/modernizr")
     @Scripts.Render("~/bundles/jquery")
     
-    
     @Scripts.Render("~/bundles/bx-slider")
     @Styles.Render("~/Content/bx-slider")
+    
     @Styles.Render("~/Content/bootstrap")
     @Scripts.Render("~/bundles/custom")
-    @Styles.Render("~/Content/bootstrap")
+    
     @Styles.Render("~/Content/css")
   
-    <script src="Scripts/jquery.bxslider.min.js"></script>
 </head>
 
 
@@ -307,7 +306,12 @@
 
 
 
-    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bx-slider")
+
+    @Scripts.Render("~/bundles/slider")
+
+
         @RenderSection("scripts", required: false)
+
     </body>
 </html>
