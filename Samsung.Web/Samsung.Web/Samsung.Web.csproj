@@ -317,6 +317,7 @@
     <Content Include="Views\Product\AddToCart.cshtml" />
     <Content Include="Views\User\Index.cshtml" />
     <Content Include="Views\ShoppingCart\Checkout.cshtml" />
+    <Content Include="Views\User\LoginFailed.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

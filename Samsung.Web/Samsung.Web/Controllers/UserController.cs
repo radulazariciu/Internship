@@ -50,5 +50,11 @@ namespace Samsung.Web.Controllers
             return View();
         }
 
+        public ActionResult LoginFailed()
+        {
+           
+            return View();
+        }
+
     }
 }

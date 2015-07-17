@@ -5,8 +5,10 @@ using System.Web;
 
 namespace Samsung.DataLayer.Models
 {
+    
     public class User
     {
+        public static User LoggedUser;
 
         public int Id { get; set; }
         public string FirstName { get; set; }
