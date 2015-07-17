@@ -46,8 +46,8 @@ namespace Nike.Business.BusinessLogic
         public static void AddUser(RegisterVM registerVm)
         {
             UserMapper userMapper = new UserMapper();
-            Nike_User newUser = new Nike_User(registerVm.Password, registerVm.emailAddress, registerVm.DateOfBirth, registerVm.Zipcode,
-                registerVm.Gender, registerVm.ScreenName, registerVm.LastName, registerVm.FirstName);
+            Nike_User newUser = new Nike_User(registerVm.FirstName, registerVm.LastName, registerVm.ScreenName, registerVm.Gender,
+                registerVm.Zipcode, registerVm.EmailAddress, registerVm.DateOfBirth, registerVm.Password);
 
             userMapper.addUser(newUser);
         }
@@ -56,8 +56,8 @@ namespace Nike.Business.BusinessLogic
         public static Boolean registerUser(RegisterVM registerVm)
         {
             UserMapper userMapper = new UserMapper();
-            Nike_User newUser = new Nike_User(registerVm.Password, registerVm.emailAddress, registerVm.DateOfBirth, registerVm.Zipcode,
-                registerVm.Gender, registerVm.ScreenName, registerVm.LastName, registerVm.FirstName);
+            Nike_User newUser = new Nike_User(registerVm.FirstName, registerVm.LastName, registerVm.ScreenName, registerVm.Gender,
+                registerVm.Zipcode, registerVm.EmailAddress, registerVm.DateOfBirth, registerVm.Password);
 
             Boolean succes = userMapper.checkUserExists(newUser);
             if (!succes)
