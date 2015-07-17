@@ -8,12 +8,11 @@ using System.Threading.Tasks;
 namespace Nike.DataLayer.Mappers
 {
     public class UserMapper
-    {    
-
-        //add user
+    {
+        #region Public Members
         public void addUser(Nike_User u)
         {
-            using(var db = new NikeDBEntities())
+            using (var db = new NikeDBEntities())
             {
                 db.Nike_User.Add(u);
                 db.SaveChanges();
@@ -23,7 +22,6 @@ namespace Nike.DataLayer.Mappers
 
         public Boolean checkUserExists(Nike_User u)
         {
-            // var user = theUsers.FirstOrDefault(usr => usr.emailAddress == u.emailAddress);
             List<Nike_User> userList;
             using (var db = new NikeDBEntities())
             {
@@ -36,26 +34,9 @@ namespace Nike.DataLayer.Mappers
                     }
                 }
             }
-            //if (user != null)
-            //{
-            //        return true;
-            //}
             return false;
         }
 
-        ////login check
-        //public bool checkUserLogin(User u)
-        //{
-        //    var user = theUsers.FirstOrDefault(usr => usr.emailAddress == u.emailAddress);
-        //    if (user.Password == u.Password)
-        //    {
-        //        return true;
-        //    }
-        //    return false;
-        //}
-                    
-
-        //EF get user list
         public List<Nike_User> GetAllUsers()
         {
             List<Nike_User> userList;
@@ -63,9 +44,8 @@ namespace Nike.DataLayer.Mappers
             {
                 userList = db.Nike_User.ToList();
                 return userList;
-            }            
+            }
         }
-               
+        #endregion
     }
-    
 }
