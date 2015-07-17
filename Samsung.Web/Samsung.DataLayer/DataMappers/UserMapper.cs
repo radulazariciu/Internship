@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using Samsung.DataLayer.Models;
-using Samsung.DataLayer;
 
 namespace Samsung.DataLayer.DataMappers
 {
@@ -12,7 +11,7 @@ namespace Samsung.DataLayer.DataMappers
    
         public List<User> usersList = new List<User>
         {
-            /*new User
+            new User
             {
                Id = 0,
                FirstName = "TestFM",
@@ -21,19 +20,12 @@ namespace Samsung.DataLayer.DataMappers
                EmailAddress = "test@test.com",
                Zipcode = 12345,
                DateOfBirth = DateTime.Today
-            }*/
+            }
         };
 
         public void AddUser(User user)
         {
             usersList.Add(user);
-            using (var db = new SamsungContext())
-            {
-                db.Samsung_User.Add(new Samsung_User { id = 1, firstName = "firstName",lastName="lastName",zipCode = 1,dateOfBirth = null,emailAddress = "email@yahoo.com",password = "password"});
-                db.SaveChanges();
-                int nr = db.Samsung_User.Count();
-            }
-
         }
 
         public Boolean CheckUserExistence(User user)
@@ -48,12 +40,26 @@ namespace Samsung.DataLayer.DataMappers
             return false;
         }
 
-        public List<Samsung_User> GetAllUsers()
+        public List<User> GetAllUsers()
         {
-            using (var db = new SamsungContext())
+            return usersList;
+        }
+
+
+        public void AddUser(Samsung_User user)
+        {
+            using (var db= new SamsungEntity())
             {
-                var allRows = db.Samsung_User.ToList();
-                return allRows;       
+                db.Samsung_User.Add(user);
+            }
+        }
+
+        public List<Samsung_User> GetAllSamsungUsers()
+        {
+            using (var db = new SamsungEntity())
+            {
+
+                return db.Samsung_User.ToList();
             }
         }
     }

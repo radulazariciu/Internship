@@ -38,11 +38,13 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="EntityFramework">
-      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.dll</HintPath>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
-    <Reference Include="EntityFramework.SqlServer">
-      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Runtime.Serialization" />
@@ -65,7 +67,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Web.config" />
+    <Content Include="Models\Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataMappers\ProductMapper.cs" />
@@ -76,61 +78,68 @@
     <Compile Include="Models\ShoppingCartItem.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SamsungModel.Context.cs">
+    <Compile Include="SamsungEntity.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>SamsungModel.Context.tt</DependentUpon>
+      <DependentUpon>SamsungEntity.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="SamsungModel.cs">
+    <Compile Include="SamsungEntity.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>SamsungModel.tt</DependentUpon>
+      <DependentUpon>SamsungEntity.tt</DependentUpon>
     </Compile>
-    <Compile Include="SamsungModel.Designer.cs">
+    <Compile Include="SamsungEntity.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>SamsungModel.edmx</DependentUpon>
+      <DependentUpon>SamsungEntity.edmx</DependentUpon>
     </Compile>
     <Compile Include="Samsung_Category.cs">
-      <DependentUpon>SamsungModel.tt</DependentUpon>
+      <DependentUpon>SamsungEntity.tt</DependentUpon>
     </Compile>
     <Compile Include="Samsung_Images.cs">
-      <DependentUpon>SamsungModel.tt</DependentUpon>
+      <DependentUpon>SamsungEntity.tt</DependentUpon>
     </Compile>
     <Compile Include="Samsung_Order.cs">
-      <DependentUpon>SamsungModel.tt</DependentUpon>
+      <DependentUpon>SamsungEntity.tt</DependentUpon>
     </Compile>
     <Compile Include="Samsung_Product.cs">
-      <DependentUpon>SamsungModel.tt</DependentUpon>
+      <DependentUpon>SamsungEntity.tt</DependentUpon>
     </Compile>
     <Compile Include="Samsung_User.cs">
-      <DependentUpon>SamsungModel.tt</DependentUpon>
+      <DependentUpon>SamsungEntity.tt</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EntityDeploy Include="SamsungModel.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>SamsungModel.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <Content Include="packages.config" />
-    <Content Include="SamsungModel.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>SamsungModel.edmx</DependentUpon>
-      <LastGenOutput>SamsungModel.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="SamsungModel.edmx.diagram">
-      <DependentUpon>SamsungModel.edmx</DependentUpon>
-    </Content>
-    <Content Include="SamsungModel.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>SamsungModel.edmx</DependentUpon>
-      <LastGenOutput>SamsungModel.cs</LastGenOutput>
-    </Content>
-    <None Include="Web.Debug.config">
+    <None Include="Models\Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
-    <None Include="Web.Release.config">
+    <None Include="Models\Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <EntityDeploy Include="SamsungEntity.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>SamsungEntity.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="SamsungEntity.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>SamsungEntity.edmx</DependentUpon>
+      <LastGenOutput>SamsungEntity.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="SamsungEntity.edmx.diagram">
+      <DependentUpon>SamsungEntity.edmx</DependentUpon>
+    </Content>
+    <Content Include="SamsungEntity.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>SamsungEntity.edmx</DependentUpon>
+      <LastGenOutput>SamsungEntity.cs</LastGenOutput>
+    </Content>
+    <Content Include="Web.Config" />
+    <Content Include="packages.config" />
+    <None Include="Web.Debug.Config">
+      <DependentUpon>Web.Config</DependentUpon>
+    </None>
+    <None Include="Web.Release.Config">
+      <DependentUpon>Web.Config</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>

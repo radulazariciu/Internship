@@ -5,6 +5,7 @@ using System.Web;
 using Samsung.BusinessLogic.ViewModels;
 using Samsung.DataLayer.DataMappers;
 using Samsung.DataLayer.Models;
+using  Samsung.DataLayer;
 
 namespace Samsung.BusinessLogic.BusinessLogic
 {
@@ -35,10 +36,20 @@ namespace Samsung.BusinessLogic.BusinessLogic
             
             if (!succes)
             {
+                getAllUsers();
                 userMapper.AddUser(newUser);
                 return true;
             }
+            getAllUsers();
             return false;
+        }
+
+
+        public static void getAllUsers()
+        {
+            UserMapper userMapper = new UserMapper();
+            Samsung_User userSamsung = new Samsung_User();
+            userMapper.GetAllSamsungUsers();
         }
     }
 }
