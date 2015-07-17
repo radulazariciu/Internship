@@ -1,0 +1,338 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="Internship2015Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Samsung_Category">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" />
+          <Property Name="name" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Samsung_Images">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" />
+          <Property Name="productId" Type="int" />
+          <Property Name="imagePath" Type="varchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="Samsung_Order">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" />
+          <Property Name="userId" Type="int" />
+          <Property Name="productId" Type="int" />
+        </EntityType>
+        <EntityType Name="Samsung_Product">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" />
+          <Property Name="name" Type="varchar" MaxLength="50" />
+          <Property Name="categoryId" Type="int" />
+          <Property Name="color" Type="varchar" MaxLength="50" />
+          <Property Name="price" Type="int" />
+          <Property Name="stock" Type="int" />
+          <Property Name="details" Type="varchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="Samsung_User">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" />
+          <Property Name="firstName" Type="varchar" MaxLength="50" />
+          <Property Name="lastName" Type="varchar" MaxLength="50" />
+          <Property Name="zipCode" Type="int" />
+          <Property Name="dateOfBirth" Type="datetime" />
+          <Property Name="emailAddress" Type="varchar" MaxLength="50" />
+          <Property Name="password" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <Association Name="FK__Samsung_I__produ__1BFD2C07">
+          <End Role="Samsung_Product" Type="Self.Samsung_Product" Multiplicity="0..1" />
+          <End Role="Samsung_Images" Type="Self.Samsung_Images" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Samsung_Product">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="Samsung_Images">
+              <PropertyRef Name="productId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Samsung_O__produ__21B6055D">
+          <End Role="Samsung_Product" Type="Self.Samsung_Product" Multiplicity="0..1" />
+          <End Role="Samsung_Order" Type="Self.Samsung_Order" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Samsung_Product">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="Samsung_Order">
+              <PropertyRef Name="productId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Samsung_O__userI__20C1E124">
+          <End Role="Samsung_User" Type="Self.Samsung_User" Multiplicity="0..1" />
+          <End Role="Samsung_Order" Type="Self.Samsung_Order" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Samsung_User">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="Samsung_Order">
+              <PropertyRef Name="userId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Samsung_P__categ__173876EA">
+          <End Role="Samsung_Category" Type="Self.Samsung_Category" Multiplicity="0..1" />
+          <End Role="Samsung_Product" Type="Self.Samsung_Product" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Samsung_Category">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="Samsung_Product">
+              <PropertyRef Name="categoryId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="Internship2015ModelStoreContainer">
+          <EntitySet Name="Samsung_Category" EntityType="Self.Samsung_Category" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Samsung_Images" EntityType="Self.Samsung_Images" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Samsung_Order" EntityType="Self.Samsung_Order" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Samsung_Product" EntityType="Self.Samsung_Product" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Samsung_User" EntityType="Self.Samsung_User" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK__Samsung_I__produ__1BFD2C07" Association="Self.FK__Samsung_I__produ__1BFD2C07">
+            <End Role="Samsung_Product" EntitySet="Samsung_Product" />
+            <End Role="Samsung_Images" EntitySet="Samsung_Images" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Samsung_O__produ__21B6055D" Association="Self.FK__Samsung_O__produ__21B6055D">
+            <End Role="Samsung_Product" EntitySet="Samsung_Product" />
+            <End Role="Samsung_Order" EntitySet="Samsung_Order" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Samsung_O__userI__20C1E124" Association="Self.FK__Samsung_O__userI__20C1E124">
+            <End Role="Samsung_User" EntitySet="Samsung_User" />
+            <End Role="Samsung_Order" EntitySet="Samsung_Order" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Samsung_P__categ__173876EA" Association="Self.FK__Samsung_P__categ__173876EA">
+            <End Role="Samsung_Category" EntitySet="Samsung_Category" />
+            <End Role="Samsung_Product" EntitySet="Samsung_Product" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="Internship2015Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Samsung_Category">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" />
+          <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Samsung_Product" Relationship="Self.FK__Samsung_P__categ__173876EA" FromRole="Samsung_Category" ToRole="Samsung_Product" />
+        </EntityType>
+        <EntityType Name="Samsung_Images">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" />
+          <Property Name="productId" Type="Int32" />
+          <Property Name="imagePath" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Samsung_Product" Relationship="Self.FK__Samsung_I__produ__1BFD2C07" FromRole="Samsung_Images" ToRole="Samsung_Product" />
+        </EntityType>
+        <EntityType Name="Samsung_Order">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" />
+          <Property Name="userId" Type="Int32" />
+          <Property Name="productId" Type="Int32" />
+          <NavigationProperty Name="Samsung_Product" Relationship="Self.FK__Samsung_O__produ__21B6055D" FromRole="Samsung_Order" ToRole="Samsung_Product" />
+          <NavigationProperty Name="Samsung_User" Relationship="Self.FK__Samsung_O__userI__20C1E124" FromRole="Samsung_Order" ToRole="Samsung_User" />
+        </EntityType>
+        <EntityType Name="Samsung_Product">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" />
+          <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="categoryId" Type="Int32" />
+          <Property Name="color" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="price" Type="Int32" />
+          <Property Name="stock" Type="Int32" />
+          <Property Name="details" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Samsung_Category" Relationship="Self.FK__Samsung_P__categ__173876EA" FromRole="Samsung_Product" ToRole="Samsung_Category" />
+          <NavigationProperty Name="Samsung_Images" Relationship="Self.FK__Samsung_I__produ__1BFD2C07" FromRole="Samsung_Product" ToRole="Samsung_Images" />
+          <NavigationProperty Name="Samsung_Order" Relationship="Self.FK__Samsung_O__produ__21B6055D" FromRole="Samsung_Product" ToRole="Samsung_Order" />
+        </EntityType>
+        <EntityType Name="Samsung_User">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" />
+          <Property Name="firstName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="lastName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="zipCode" Type="Int32" />
+          <Property Name="dateOfBirth" Type="DateTime" Precision="3" />
+          <Property Name="emailAddress" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Samsung_Order" Relationship="Self.FK__Samsung_O__userI__20C1E124" FromRole="Samsung_User" ToRole="Samsung_Order" />
+        </EntityType>
+        <Association Name="FK__Samsung_P__categ__173876EA">
+          <End Role="Samsung_Category" Type="Self.Samsung_Category" Multiplicity="0..1" />
+          <End Role="Samsung_Product" Type="Self.Samsung_Product" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Samsung_Category">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="Samsung_Product">
+              <PropertyRef Name="categoryId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Samsung_I__produ__1BFD2C07">
+          <End Role="Samsung_Product" Type="Self.Samsung_Product" Multiplicity="0..1" />
+          <End Role="Samsung_Images" Type="Self.Samsung_Images" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Samsung_Product">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="Samsung_Images">
+              <PropertyRef Name="productId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Samsung_O__produ__21B6055D">
+          <End Role="Samsung_Product" Type="Self.Samsung_Product" Multiplicity="0..1" />
+          <End Role="Samsung_Order" Type="Self.Samsung_Order" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Samsung_Product">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="Samsung_Order">
+              <PropertyRef Name="productId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Samsung_O__userI__20C1E124">
+          <End Role="Samsung_User" Type="Self.Samsung_User" Multiplicity="0..1" />
+          <End Role="Samsung_Order" Type="Self.Samsung_Order" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Samsung_User">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="Samsung_Order">
+              <PropertyRef Name="userId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="SamsungEntity" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Samsung_Category" EntityType="Self.Samsung_Category" />
+          <EntitySet Name="Samsung_Images" EntityType="Self.Samsung_Images" />
+          <EntitySet Name="Samsung_Order" EntityType="Self.Samsung_Order" />
+          <EntitySet Name="Samsung_Product" EntityType="Self.Samsung_Product" />
+          <EntitySet Name="Samsung_User" EntityType="Self.Samsung_User" />
+          <AssociationSet Name="FK__Samsung_P__categ__173876EA" Association="Self.FK__Samsung_P__categ__173876EA">
+            <End Role="Samsung_Category" EntitySet="Samsung_Category" />
+            <End Role="Samsung_Product" EntitySet="Samsung_Product" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Samsung_I__produ__1BFD2C07" Association="Self.FK__Samsung_I__produ__1BFD2C07">
+            <End Role="Samsung_Product" EntitySet="Samsung_Product" />
+            <End Role="Samsung_Images" EntitySet="Samsung_Images" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Samsung_O__produ__21B6055D" Association="Self.FK__Samsung_O__produ__21B6055D">
+            <End Role="Samsung_Product" EntitySet="Samsung_Product" />
+            <End Role="Samsung_Order" EntitySet="Samsung_Order" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Samsung_O__userI__20C1E124" Association="Self.FK__Samsung_O__userI__20C1E124">
+            <End Role="Samsung_User" EntitySet="Samsung_User" />
+            <End Role="Samsung_Order" EntitySet="Samsung_Order" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="Internship2015ModelStoreContainer" CdmEntityContainer="SamsungEntity">
+          <EntitySetMapping Name="Samsung_Category">
+            <EntityTypeMapping TypeName="Internship2015Model.Samsung_Category">
+              <MappingFragment StoreEntitySet="Samsung_Category">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="name" ColumnName="name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Samsung_Images">
+            <EntityTypeMapping TypeName="Internship2015Model.Samsung_Images">
+              <MappingFragment StoreEntitySet="Samsung_Images">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="productId" ColumnName="productId" />
+                <ScalarProperty Name="imagePath" ColumnName="imagePath" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Samsung_Order">
+            <EntityTypeMapping TypeName="Internship2015Model.Samsung_Order">
+              <MappingFragment StoreEntitySet="Samsung_Order">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="userId" ColumnName="userId" />
+                <ScalarProperty Name="productId" ColumnName="productId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Samsung_Product">
+            <EntityTypeMapping TypeName="Internship2015Model.Samsung_Product">
+              <MappingFragment StoreEntitySet="Samsung_Product">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="categoryId" ColumnName="categoryId" />
+                <ScalarProperty Name="color" ColumnName="color" />
+                <ScalarProperty Name="price" ColumnName="price" />
+                <ScalarProperty Name="stock" ColumnName="stock" />
+                <ScalarProperty Name="details" ColumnName="details" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Samsung_User">
+            <EntityTypeMapping TypeName="Internship2015Model.Samsung_User">
+              <MappingFragment StoreEntitySet="Samsung_User">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="firstName" ColumnName="firstName" />
+                <ScalarProperty Name="lastName" ColumnName="lastName" />
+                <ScalarProperty Name="zipCode" ColumnName="zipCode" />
+                <ScalarProperty Name="dateOfBirth" ColumnName="dateOfBirth" />
+                <ScalarProperty Name="emailAddress" ColumnName="emailAddress" />
+                <ScalarProperty Name="password" ColumnName="password" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
