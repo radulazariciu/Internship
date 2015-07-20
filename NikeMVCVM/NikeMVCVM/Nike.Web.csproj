@@ -369,6 +369,7 @@
     <Content Include="Views\Product\Details.cshtml" />
     <Content Include="Views\Product\DetailsAddToCart.cshtml" />
     <Content Include="Views\User\Index.cshtml" />
+    <Content Include="Views\Shared\_Layout2.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
