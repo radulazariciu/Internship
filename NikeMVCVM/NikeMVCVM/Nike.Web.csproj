@@ -292,6 +292,7 @@
     <Content Include="Images\header\logoOrange.png" />
     <Content Include="Images\header\soon.jpg" />
     <Content Include="Images\notification-bg.jpg" />
+    <Content Include="Images\Shoes\First\shoe5.PNG" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\index.js" />
@@ -368,6 +369,7 @@
     <Content Include="Views\Product\Details.cshtml" />
     <Content Include="Views\Product\DetailsAddToCart.cshtml" />
     <Content Include="Views\User\Index.cshtml" />
+    <Content Include="Views\Shared\_Layout2.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
