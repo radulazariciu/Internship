@@ -1,0 +1,4 @@
+Faild to update quatity from input field on checkout page. => Status: UNSOLVED; Priority: HIGH
+Show MSSQL querry in details product => Status: SOLVED; Priority: CRITICAL
+Add 2X selected quatity in the database when purchasing a product. => Status: UNSOLVED; Priority: CRITICAL
+Check if quatity exists in database => Status: SOLVED; Priority: MEDIUM
