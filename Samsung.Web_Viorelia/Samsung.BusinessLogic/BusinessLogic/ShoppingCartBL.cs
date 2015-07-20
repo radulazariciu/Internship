@@ -33,11 +33,23 @@ namespace Samsung.BusinessLogic.BusinessLogic
         }
 
 
-        public static void AddItem(ShoppingCartItemVM shoppingCartItemVm)
+        public static Boolean AddItem(ShoppingCartItemVM shoppingCartItemVm)
         {
-            ShoppingCartMapper shoppingCartMapper = new ShoppingCartMapper();
-            ShoppingCartItem shoppingCartItem = new ShoppingCartItem(shoppingCartItemVm.IdProduct, shoppingCartItemVm.Quantity);
-            shoppingCartMapper.AddShoppingCartItem(shoppingCartItem);
+            ProductMapper productMapper = new ProductMapper();
+            Product product = productMapper.GetProduct(shoppingCartItemVm.IdProduct);
+            if (product.Stock > shoppingCartItemVm.Quantity)
+            {
+                ShoppingCartMapper shoppingCartMapper = new ShoppingCartMapper();
+                ShoppingCartItem shoppingCartItem = new ShoppingCartItem(shoppingCartItemVm.IdProduct,
+                    shoppingCartItemVm.Quantity);
+                shoppingCartMapper.AddShoppingCartItem(shoppingCartItem);
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+       
         }
 
         public static void UpdateItem(ShoppingCartItemVM shoppingCartItemVm)

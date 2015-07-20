@@ -24,10 +24,12 @@ namespace Samsung.Web.Controllers
         {
             if (shoppingCartItemVm != null)
             {
-                ShoppingCartBL.AddItem(shoppingCartItemVm);
+                var success = ShoppingCartBL.AddItem(shoppingCartItemVm);
+                if (success)
+                    return View();
             }
-
-            return View(); 
+            
+            return RedirectToAction("WrongStock"); 
         }
 
         public ActionResult ShoppingCart()
@@ -53,6 +55,11 @@ namespace Samsung.Web.Controllers
         public ActionResult Checkout()
         {
             ShoppingCartBL.PayOrder();
+            return View();
+        }
+
+        public ActionResult WrongStock()
+        {
             return View();
         }
     }
