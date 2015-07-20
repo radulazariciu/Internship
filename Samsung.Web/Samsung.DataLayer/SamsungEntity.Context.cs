@@ -10,8 +10,8 @@
 namespace Samsung.DataLayer
 {
     using System;
-    using System.Data.Entity;
-    using System.Data.Entity.Infrastructure;
+    using System.Data.EntitySamsung;
+    using System.Data.SamsungEntity.Infrastructure;
     
     public partial class EntitySamsung : DbContext
     {

@@ -56,3 +56,13 @@ D:\vineri1209 - Copy\Samsung.Web\Samsung.DataLayer\bin\EntityFramework.SqlServer
 D:\vineri1209 - Copy\Samsung.Web\Samsung.DataLayer\obj\Debug\Samsung.DataLayer.csprojResolveAssemblyReference.cache
 D:\vineri1209 - Copy\Samsung.Web\Samsung.DataLayer\obj\Debug\Samsung.DataLayer.dll
 D:\vineri1209 - Copy\Samsung.Web\Samsung.DataLayer\obj\Debug\Samsung.DataLayer.pdb
+C:\Users\ionut.indre\Desktop\luni\Internship\Samsung.Web_Viorelia\Samsung.DataLayer\bin\Samsung.DataLayer.dll.config
+C:\Users\ionut.indre\Desktop\luni\Internship\Samsung.Web_Viorelia\Samsung.DataLayer\bin\Samsung.DataLayer.dll
+C:\Users\ionut.indre\Desktop\luni\Internship\Samsung.Web_Viorelia\Samsung.DataLayer\bin\Samsung.DataLayer.pdb
+C:\Users\ionut.indre\Desktop\luni\Internship\Samsung.Web_Viorelia\Samsung.DataLayer\bin\EntityFramework.dll
+C:\Users\ionut.indre\Desktop\luni\Internship\Samsung.Web_Viorelia\Samsung.DataLayer\bin\EntityFramework.SqlServer.dll
+C:\Users\ionut.indre\Desktop\luni\Internship\Samsung.Web_Viorelia\Samsung.DataLayer\bin\EntityFramework.xml
+C:\Users\ionut.indre\Desktop\luni\Internship\Samsung.Web_Viorelia\Samsung.DataLayer\bin\EntityFramework.SqlServer.xml
+C:\Users\ionut.indre\Desktop\luni\Internship\Samsung.Web_Viorelia\Samsung.DataLayer\obj\Debug\Samsung.DataLayer.csprojResolveAssemblyReference.cache
+C:\Users\ionut.indre\Desktop\luni\Internship\Samsung.Web_Viorelia\Samsung.DataLayer\obj\Debug\Samsung.DataLayer.dll
+C:\Users\ionut.indre\Desktop\luni\Internship\Samsung.Web_Viorelia\Samsung.DataLayer\obj\Debug\Samsung.DataLayer.pdb

@@ -352,3 +352,4 @@ C:\Users\ionut.indre\Desktop\Samsung.Web\Samsung.Web\bin\zh-Hant\System.Spatial.
 C:\Users\ionut.indre\Desktop\Samsung.Web\Samsung.Web\obj\Debug\Samsung.Web.csprojResolveAssemblyReference.cache
 C:\Users\ionut.indre\Desktop\Samsung.Web\Samsung.Web\obj\Debug\Samsung.Web.dll
 C:\Users\ionut.indre\Desktop\Samsung.Web\Samsung.Web\obj\Debug\Samsung.Web.pdb
+C:\Users\ionut.indre\Desktop\luni\Internship\Samsung.Web\Samsung.Web\obj\Debug\Samsung.Web.csprojResolveAssemblyReference.cache

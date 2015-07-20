@@ -71,13 +71,13 @@
     <Compile Include="BusinessLogic\ShoppingCartBL.cs" />
     <Compile Include="BusinessLogic\UserBL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ViewModels\LoginVM.cs" />
-    <Compile Include="ViewModels\ProductVM.cs" />
-    <Compile Include="ViewModels\RegisterVM.cs" />
-    <Compile Include="ViewModels\ShoppingCartItemDetailVM.cs" />
-    <Compile Include="ViewModels\ShoppingCartItemVM.cs" />
-    <Compile Include="ViewModels\ShoppingCartVM.cs" />
-    <Compile Include="ViewModels\UserVM.cs" />
+    <Compile Include="BusinessLogic\ViewModels\LoginVM.cs" />
+    <Compile Include="BusinessLogic\ViewModels\ProductVM.cs" />
+    <Compile Include="BusinessLogic\ViewModels\RegisterVM.cs" />
+    <Compile Include="BusinessLogic\ViewModels\ShoppingCartItemDetailVM.cs" />
+    <Compile Include="BusinessLogic\ViewModels\ShoppingCartItemVM.cs" />
+    <Compile Include="BusinessLogic\ViewModels\ShoppingCartVM.cs" />
+    <Compile Include="BusinessLogic\ViewModels\UserVM.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
