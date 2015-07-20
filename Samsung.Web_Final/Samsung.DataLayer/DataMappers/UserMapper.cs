@@ -10,6 +10,7 @@ namespace Samsung.DataLayer.DataMappers
     {
 
         public User LoggedUser { get; set; }
+        public int LoggedUserId { get; set; }
 
         public List<Samsung_User> usersList = new List<Samsung_User>();
 
@@ -24,6 +25,15 @@ namespace Samsung.DataLayer.DataMappers
             }
 
 
+        }
+
+
+        public int getIdByEmail(string email)
+        {
+            using (var db = new EntitySamsung())
+            {
+             return db.Samsung_User.First(user => user.emailAddress.Equals(email)).id;
+            }
         }
 
         public Boolean CheckUserExistence(Samsung_User user)

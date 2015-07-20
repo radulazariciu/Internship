@@ -17,7 +17,7 @@ namespace Samsung.BusinessLogic.BusinessLogic
             ShoppingCart shoppingCart = shoppingCartMapper.GetShoppingCart();
             shoppingCart.TotalPrice = TotalPrice(shoppingCart);
            // LoginVM loginVm = new LoginVM(shoppingCart.User.EmailAddress, shoppingCart.User.Password);
-            LoginVM loginVm = new LoginVM("test", "test");
+           LoginVM loginVm = new LoginVM("test", "test");
             List<ShoppingCartItemDetailVM> shoppingCartItemVmList = new List<ShoppingCartItemDetailVM>();
             foreach (var shoppingCartItem in shoppingCart.ShoppingCartItemsList)
             {

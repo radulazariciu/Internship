@@ -59,9 +59,11 @@ namespace Samsung.DataLayer.DataMappers
 
         public void AddOrder()
         {
+            UserMapper userMapper = new UserMapper();
+            User loggedUser = userMapper.LoggedUser;
             var productMapper = new ProductMapper();
             var order = new Samsung_Order();
-            order.userId = 4;
+            order.userId = loggedUser.Id;
             order.totalPrice = Convert.ToInt32(shoppingCart.TotalPrice);
 
             using (var db = new EntitySamsung())

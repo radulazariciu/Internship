@@ -20,7 +20,9 @@ namespace Samsung.BusinessLogic.BusinessLogic
             {
                 if ((item.emailAddress.Equals(userVm.EmailAddress)) && (item.password.Equals(userVm.Password)))
                 {
+                    userMapper.LoggedUserId = userMapper.getIdByEmail(item.emailAddress);
                     return true;
+                   
                 }
             }
             return false;
