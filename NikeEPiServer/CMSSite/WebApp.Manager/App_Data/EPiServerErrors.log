@@ -1,0 +1,82 @@
+﻿2015-07-23 16:16:47,286 [829] ERROR Mediachase.Search.SearchManager: Search failed.
+Lucene.Net.Store.NoSuchDirectoryException: directory 'c:\Users\bogdan.mates\documents\visual studio 2013\Projects\CMSSite\WebApp.Manager\App_Data\Search\ECApplication\ECApplication\catalog' does not exist
+   at Lucene.Net.Store.FSDirectory.ListAll(DirectoryInfo dir) in d:\Lucene.Net\FullRepo\trunk\src\core\Store\FSDirectory.cs:line 301
+   at Lucene.Net.Store.FSDirectory.ListAll() in d:\Lucene.Net\FullRepo\trunk\src\core\Store\FSDirectory.cs:line 331
+   at Lucene.Net.Index.SegmentInfos.FindSegmentsFile.Run(IndexCommit commit) in d:\Lucene.Net\FullRepo\trunk\src\core\Index\SegmentInfos.cs:line 628
+   at Lucene.Net.Index.DirectoryReader.Open(Directory directory, IndexDeletionPolicy deletionPolicy, IndexCommit commit, Boolean readOnly, Int32 termInfosIndexDivisor) in d:\Lucene.Net\FullRepo\trunk\src\core\Index\DirectoryReader.cs:line 117
+   at Lucene.Net.Index.IndexReader.Open(Directory directory, Boolean readOnly) in d:\Lucene.Net\FullRepo\trunk\src\core\Index\IndexReader.cs:line 220
+   at Mediachase.Search.Providers.Lucene.CachedIndexSearcher..ctor(TimeSpan cacheTimeout, String dirPath)
+   at Mediachase.Search.Providers.Lucene.IndexSearcherPool.Get(String dirPath)
+   at Mediachase.Search.Providers.Lucene.LuceneSearchProvider.GetSearcher(String applicationName, String scope)
+   at Mediachase.Search.Providers.Lucene.LuceneSearchProvider.Search(String applicationName, ISearchCriteria criteria)
+   at Mediachase.Search.SearchManager.Search(ISearchCriteria criteria)
+Lucene.Net.Store.NoSuchDirectoryException: directory 'c:\Users\bogdan.mates\documents\visual studio 2013\Projects\CMSSite\WebApp.Manager\App_Data\Search\ECApplication\ECApplication\catalog' does not exist
+   at Lucene.Net.Store.FSDirectory.ListAll(DirectoryInfo dir) in d:\Lucene.Net\FullRepo\trunk\src\core\Store\FSDirectory.cs:line 301
+   at Lucene.Net.Store.FSDirectory.ListAll() in d:\Lucene.Net\FullRepo\trunk\src\core\Store\FSDirectory.cs:line 331
+   at Lucene.Net.Index.SegmentInfos.FindSegmentsFile.Run(IndexCommit commit) in d:\Lucene.Net\FullRepo\trunk\src\core\Index\SegmentInfos.cs:line 628
+   at Lucene.Net.Index.DirectoryReader.Open(Directory directory, IndexDeletionPolicy deletionPolicy, IndexCommit commit, Boolean readOnly, Int32 termInfosIndexDivisor) in d:\Lucene.Net\FullRepo\trunk\src\core\Index\DirectoryReader.cs:line 117
+   at Lucene.Net.Index.IndexReader.Open(Directory directory, Boolean readOnly) in d:\Lucene.Net\FullRepo\trunk\src\core\Index\IndexReader.cs:line 220
+   at Mediachase.Search.Providers.Lucene.CachedIndexSearcher..ctor(TimeSpan cacheTimeout, String dirPath)
+   at Mediachase.Search.Providers.Lucene.IndexSearcherPool.Get(String dirPath)
+   at Mediachase.Search.Providers.Lucene.LuceneSearchProvider.GetSearcher(String applicationName, String scope)
+   at Mediachase.Search.Providers.Lucene.LuceneSearchProvider.Search(String applicationName, ISearchCriteria criteria)
+   at Mediachase.Search.SearchManager.Search(ISearchCriteria criteria)
+2015-07-23 16:16:47,577 [829] ERROR ASP.global_asax: Backend encountered unhandled error.
+Lucene.Net.Store.NoSuchDirectoryException: directory 'c:\Users\bogdan.mates\documents\visual studio 2013\Projects\CMSSite\WebApp.Manager\App_Data\Search\ECApplication\ECApplication\catalog' does not exist
+   at Lucene.Net.Store.FSDirectory.ListAll(DirectoryInfo dir) in d:\Lucene.Net\FullRepo\trunk\src\core\Store\FSDirectory.cs:line 301
+   at Lucene.Net.Store.FSDirectory.ListAll() in d:\Lucene.Net\FullRepo\trunk\src\core\Store\FSDirectory.cs:line 331
+   at Lucene.Net.Index.SegmentInfos.FindSegmentsFile.Run(IndexCommit commit) in d:\Lucene.Net\FullRepo\trunk\src\core\Index\SegmentInfos.cs:line 628
+   at Lucene.Net.Index.DirectoryReader.Open(Directory directory, IndexDeletionPolicy deletionPolicy, IndexCommit commit, Boolean readOnly, Int32 termInfosIndexDivisor) in d:\Lucene.Net\FullRepo\trunk\src\core\Index\DirectoryReader.cs:line 117
+   at Lucene.Net.Index.IndexReader.Open(Directory directory, Boolean readOnly) in d:\Lucene.Net\FullRepo\trunk\src\core\Index\IndexReader.cs:line 220
+   at Mediachase.Search.Providers.Lucene.CachedIndexSearcher..ctor(TimeSpan cacheTimeout, String dirPath)
+   at Mediachase.Search.Providers.Lucene.IndexSearcherPool.Get(String dirPath)
+   at Mediachase.Search.Providers.Lucene.LuceneSearchProvider.GetSearcher(String applicationName, String scope)
+   at Mediachase.Search.Providers.Lucene.LuceneSearchProvider.Search(String applicationName, ISearchCriteria criteria)
+   at Mediachase.Search.SearchManager.Search(ISearchCriteria criteria)
+   at Mediachase.Commerce.Manager.Catalog.CatalogEntrySearch.BindGrid(Boolean retryOnSearchException)
+   at Mediachase.Commerce.Manager.Catalog.CatalogEntrySearch.CurrentListView_PagePropertiesChanged(Object sender, EventArgs e)
+   at System.Web.UI.WebControls.ListView.OnPagePropertiesChanged(EventArgs e)
+   at System.Web.UI.WebControls.ListView.SetPageProperties(Int32 startRowIndex, Int32 maximumRows, Boolean databind)
+   at System.Web.UI.WebControls.ListView.System.Web.UI.WebControls.IPageableItemContainer.SetPageProperties(Int32 startRowIndex, Int32 maximumRows, Boolean databind)
+   at System.Web.UI.WebControls.DataPager.SetPageProperties(Int32 startRowIndex, Int32 maximumRows, Boolean databind)
+   at Mediachase.Commerce.Manager.Core.Controls.EcfListViewControl.Page_Load(Object sender, EventArgs e)
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+Lucene.Net.Store.NoSuchDirectoryException: directory 'c:\Users\bogdan.mates\documents\visual studio 2013\Projects\CMSSite\WebApp.Manager\App_Data\Search\ECApplication\ECApplication\catalog' does not exist
+   at Lucene.Net.Store.FSDirectory.ListAll(DirectoryInfo dir) in d:\Lucene.Net\FullRepo\trunk\src\core\Store\FSDirectory.cs:line 301
+   at Lucene.Net.Store.FSDirectory.ListAll() in d:\Lucene.Net\FullRepo\trunk\src\core\Store\FSDirectory.cs:line 331
+   at Lucene.Net.Index.SegmentInfos.FindSegmentsFile.Run(IndexCommit commit) in d:\Lucene.Net\FullRepo\trunk\src\core\Index\SegmentInfos.cs:line 628
+   at Lucene.Net.Index.DirectoryReader.Open(Directory directory, IndexDeletionPolicy deletionPolicy, IndexCommit commit, Boolean readOnly, Int32 termInfosIndexDivisor) in d:\Lucene.Net\FullRepo\trunk\src\core\Index\DirectoryReader.cs:line 117
+   at Lucene.Net.Index.IndexReader.Open(Directory directory, Boolean readOnly) in d:\Lucene.Net\FullRepo\trunk\src\core\Index\IndexReader.cs:line 220
+   at Mediachase.Search.Providers.Lucene.CachedIndexSearcher..ctor(TimeSpan cacheTimeout, String dirPath)
+   at Mediachase.Search.Providers.Lucene.IndexSearcherPool.Get(String dirPath)
+   at Mediachase.Search.Providers.Lucene.LuceneSearchProvider.GetSearcher(String applicationName, String scope)
+   at Mediachase.Search.Providers.Lucene.LuceneSearchProvider.Search(String applicationName, ISearchCriteria criteria)
+   at Mediachase.Search.SearchManager.Search(ISearchCriteria criteria)
+   at Mediachase.Commerce.Manager.Catalog.CatalogEntrySearch.BindGrid(Boolean retryOnSearchException)
+   at Mediachase.Commerce.Manager.Catalog.CatalogEntrySearch.CurrentListView_PagePropertiesChanged(Object sender, EventArgs e)
+   at System.Web.UI.WebControls.ListView.OnPagePropertiesChanged(EventArgs e)
+   at System.Web.UI.WebControls.ListView.SetPageProperties(Int32 startRowIndex, Int32 maximumRows, Boolean databind)
+   at System.Web.UI.WebControls.ListView.System.Web.UI.WebControls.IPageableItemContainer.SetPageProperties(Int32 startRowIndex, Int32 maximumRows, Boolean databind)
+   at System.Web.UI.WebControls.DataPager.SetPageProperties(Int32 startRowIndex, Int32 maximumRows, Boolean databind)
+   at Mediachase.Commerce.Manager.Core.Controls.EcfListViewControl.Page_Load(Object sender, EventArgs e)
+   at System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
